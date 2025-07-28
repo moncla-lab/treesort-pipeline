@@ -1,0 +1,72 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+ancestral        1
+export           1
+traits           1
+translate        1
+total            5
+
+Select jobs to execute...
+
+[Wed Jul  9 18:41:47 2025]
+Job 2: Inferring ancestral traits for host country region subtype order
+Reason: Missing output files: summary_95/traits/traits_h3nx_ha.json
+
+
+        augur traits             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --output summary_95/traits/traits_h3nx_ha.json             --columns host country region subtype order             --confidence
+        
+
+[Wed Jul  9 18:41:47 2025]
+Job 3: Reconstructing ancestral sequences and mutations
+Reason: Missing output files: summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json
+
+
+        augur ancestral             --tree summary_95_CV/summary.nwk             --alignment data/alignments/h3nx_ha.fasta             --output-node-data summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json             --inference joint            --keep-ambiguous
+        
+[Wed Jul  9 18:41:49 2025]
+Finished job 3.
+1 of 5 steps (20%) done
+Select jobs to execute...
+
+[Wed Jul  9 18:41:49 2025]
+Job 4: Translating amino acid sequences
+Reason: Missing output files: summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json; Input files updated by another job: summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json
+
+
+        augur translate             --tree summary_95_CV/summary.nwk             --ancestral-sequences summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json             --reference-sequence data/config/ref/h3nx_ha.gb             --output summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json
+        
+[Wed Jul  9 18:41:50 2025]
+Finished job 4.
+2 of 5 steps (40%) done
+[Wed Jul  9 18:41:51 2025]
+Finished job 2.
+3 of 5 steps (60%) done
+Select jobs to execute...
+
+[Wed Jul  9 18:41:51 2025]
+Job 1: Exporting data files for for auspice
+Reason: Missing output files: summary_95/treesort_auspice/treesort_ha_h3nx.json; Input files updated by another job: summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json, summary_95/traits/traits_h3nx_ha.json, summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json
+
+
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json
+        
+[Wed Jul  9 18:41:51 2025]
+Error in rule export:
+    jobid: 1
+    input: summary_95_CV/summary.nwk, data/meta/h3nx_ha.csv, summary_95_CV/summary_reassortment.json, summary_95/traits/traits_h3nx_ha.json, summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json, summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json, data/config/auspice_config_h3nx.json, data/config/colors_h3nx.tsv, data/config/lat_longs_h3nx.tsv
+    output: summary_95/treesort_auspice/treesort_ha_h3nx.json
+    shell:
+        
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-07-09T184146.953908.snakemake.log

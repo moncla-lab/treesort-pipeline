@@ -1,0 +1,8 @@
+*HA,data/alignments/h3nx_ha.fasta,data/ha/output.nwk
+PB2,data/alignments/h3nx_pb2.fasta,trees_rooted/h3nx_pb2_rooted/rerooted.newick
+PB1,data/alignments/h3nx_pb1.fasta,trees_rooted/h3nx_pb1_rooted/rerooted.newick
+NA,data/alignments/h3nx_na.fasta,trees_rooted/h3nx_na_rooted/rerooted.newick
+NP,data/alignments/h3nx_np.fasta,trees_rooted/h3nx_np_rooted/rerooted.newick
+PA,data/alignments/h3nx_pa.fasta,trees_rooted/h3nx_pa_rooted/rerooted.newick
+NS,data/alignments/h3nx_ns.fasta,trees_rooted/h3nx_ns_rooted/rerooted.newick
+MP,data/alignments/h3nx_mp.fasta,trees_rooted/h3nx_mp_rooted/rerooted.newick

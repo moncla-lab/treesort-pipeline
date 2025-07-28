@@ -1,0 +1,48 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+ancestral        1
+export           1
+traits           1
+translate        1
+total            5
+
+Select jobs to execute...
+
+[Wed Jul 23 17:35:01 2025]
+Job 2: Inferring ancestral traits for host country region subtype order
+Reason: Missing output files: summary_95/traits/traits_h3nx_ha.json
+
+
+        augur traits             --tree data/tree/summary.nwk             --metadata data/meta/h3nx_ha.csv             --output summary_95/traits/traits_h3nx_ha.json             --columns host country region subtype order             --confidence
+        
+
+[Wed Jul 23 17:35:01 2025]
+Job 3: Reconstructing ancestral sequences and mutations
+Reason: Missing output files: summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json
+
+
+        augur ancestral             --tree data/tree/summary.nwk             --alignment data/alignments/h3nx_ha.fasta             --output-node-data summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json             --inference joint            --keep-ambiguous
+        
+[Wed Jul 23 17:35:02 2025]
+Error in rule ancestral:
+    jobid: 3
+    input: data/tree/summary.nwk, data/alignments/h3nx_ha.fasta
+    output: summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json
+    shell:
+        
+        augur ancestral             --tree data/tree/summary.nwk             --alignment data/alignments/h3nx_ha.fasta             --output-node-data summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json             --inference joint            --keep-ambiguous
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Jul 23 17:35:06 2025]
+Finished job 2.
+1 of 5 steps (20%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-07-23T173501.014653.snakemake.log
