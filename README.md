@@ -35,7 +35,7 @@ Clone this repo:
 
 Create a conda environment:
 
-			conda create -n nextstrain-treesort --override-channels --strict-channel-priority -c conda-forge -c bioconda --yes dendropy snakemake augur auspice fasttree iqtree
+			conda create -n nextstrain-treesort --override-channels --strict-channel-priority -c conda-forge -c bioconda --yes --file conda-requirements.txt
 
 Activate the conda environment:
 
