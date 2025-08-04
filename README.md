@@ -3,7 +3,7 @@
 
 Warning: This repository is a work in progress. It will be integrated with a [cladeset-mapping tool](https://github.com/moncla-lab/treesort-cladeset-mapping) developed by Stephen Shank in the Moncla lab.
 
-### Overview
+## Overview
 
 This pipeline provides a snakemake framework to run [TreeSort](https://github.com/flu-crew/TreeSort/tree/main) in replicate 
 to traverse over uncertainties in tree topology and produce reassortment confidence values for each node & leaf. Before running this pipeline, you must first run 
@@ -21,13 +21,13 @@ This summary tree can be plotted in Baltic and is used as the source tree for th
 
 The summary node data is used for ```rule export``` and allows the visualization of reassortment event and reassorting segment confidence at each node & leaf via the [nextstrain auspice dashboard](https://docs.nextstrain.org/projects/auspice/en/stable/).
 
-### Installation
+## Installation
 
 **  nextstrain-treesort conda environment instructions will be updated here **
 
 			conda create -n nextstrain-treesort dendropy snakemake augur auspice
 
-### Prerequisites 
+## Prerequisites 
 
 1. This pipeline assumes you already have generated alignment files, metadata files, and divergence trees for your dataset.
    Things to keep in mind:
@@ -67,7 +67,7 @@ The summary node data is used for ```rule export``` and allows the visualization
 		
 	c. your ```Snakefile``` where you can tailor the wildcards to fit your data needs.
 
-### Running the pipeline:
+## Running the pipeline:
 
 **1. Activate the conda environment:**
 			
@@ -85,9 +85,9 @@ Here, ```clock.txt``` records compute time.
 The ```-k``` flag tells snakemake that if there is an error, to keep going if with remaining independent jobs. 
 Since this pipeline is parallelized, the ```-j``` flag denotes how many jobs to run at once. Thus, ```$NUMBER_OF_JOBS``` should be at least 1, and no more than the number of cores on your computer.
 		
-### Usage
+## Usage
 
-```rule tree```:
+### ```rule tree```:
 
 Generates new divergence trees for each challenge segment.
 
@@ -99,7 +99,7 @@ Generates new divergence trees for each challenge segment.
 
 + ```tree```: unrooted divergence tree (method iqtree) for each segment
 
-```rule root```:
+### ```rule root```:
 
 Infers a root for each of the challenge segment divergence trees using TreeTime.
 
@@ -113,7 +113,7 @@ Infers a root for each of the challenge segment divergence trees using TreeTime.
 
 + ```tree```: rooted divergence tree for each segment
 		
-```rule treesort```:
+### ```rule treesort```:
 
 Runs TreeSort at each replicate using the alignments and the rooted trees 
 
@@ -126,20 +126,20 @@ Runs TreeSort at each replicate using the alignments and the rooted trees
 
 + ```tree```: backbone tree annotated with reassortments outputted by TreeSort
 
-### **TO COME:**
+## **TO COME:**
 
-```rule summary```:
+### ```rule summary```:
 
 Generates a summary tree and node data used for cladeset mapping & augur export
 
-```rule cladeset-mapping```
+### ```rule cladeset-mapping```
 
 Resolves the TreeSort tree to match the topology of the unaltered rooted backbone tree
 
-```rule ancestral/translate/traits```
+### ```rule ancestral/translate/traits```
 
 See nextstrain documentation
 
-```rule export```
+### ```rule export```
 
 Visualizes summary tree and node data with [nextstrain augur/auspice](https://docs.nextstrain.org/projects/auspice/en/stable/)
