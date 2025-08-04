@@ -6,8 +6,8 @@ Warning: This repository is a work in progress. It will be integrated with a [cl
 ### Overview
 
 This pipeline provides a snakemake framework to run [TreeSort](https://github.com/flu-crew/TreeSort/tree/main) in replicate 
-to traverse over uncertainties in tree topology and produce reassortment confidence values for each node & leaf. This is done by first running 
-TreeSort normally to generate the binarized backbone tree annotated with reassortment events. This tree will be used as the backbone tree input for each 
+to traverse over uncertainties in tree topology and produce reassortment confidence values for each node & leaf. Before running this pipeline, you must first run 
+TreeSort once to generate the binarized backbone tree annotated with reassortment events. This tree will be used as the backbone tree input for each 
 replicate run.  
 
 While this backbone tree input does not change, new divergence trees are generated for the challenge segments for each replicate run.
