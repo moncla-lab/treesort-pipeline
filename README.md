@@ -16,7 +16,7 @@ The ```no-collapse``` flag is used during ```rule treesort``` so that for each r
 This amount of runs this pipeline is set to is at default ```REPS=range(1000)``` but you can change this in the Snakefile. 
 It is recommended to use an HPC to run this pipeline.
 
-** To come: 
+**To come: 
 
 Once annotated TreeSort trees have been generated for each replicate, ```rule summary``` creates a (1) summary node data json and a (2) summary newick tree.
 This summary tree can be plotted in Baltic and is used as the source tree for the [cladeset-mapping tool](https://github.com/moncla-lab/treesort-cladeset-mapping).
