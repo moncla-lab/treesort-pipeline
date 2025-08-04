@@ -34,6 +34,7 @@ The summary node data is used for ```rule export``` and allows the visualization
 **nextstrain-treesort conda environment instructions will be updated here**
 
 			conda create -n nextstrain-treesort dendropy snakemake augur auspice
+   			conda activate nextstrain-treesort
 
 ## Prerequisites 
 
