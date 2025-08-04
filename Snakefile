@@ -6,7 +6,7 @@ REPS = range(1000)
 
 rule all:
 	input:
-		treesort = expand("results/{rep}/ha_treesort.tre", subtype=SUBTYPES, segment=SEGMENTS, rep= REPS)
+		treesort = expand("results/{rep}/annotated.tre", subtype=SUBTYPES, segment=SEGMENTS, rep= REPS)
 
 """Specify all input files here.  """
 rule files:
@@ -63,12 +63,12 @@ rule treesort:
             segment=SEGMENTS
         )
     output:
-    	  tree = "results/{rep}/ha_treesort.tre"
+    	  tree = "results/{rep}/annotated.tre"
     shell:
     	"""
         # Copy only what treesort needs
         mkdir -p results/{wildcards.rep}/data/alignments
-        mkdir -p results/{wildcards.rep}/data/ha
+        mkdir -p results/{wildcards.rep}/data/backbone
         mkdir -p results/{wildcards.rep}/results/trees_rooted
         
         # Copy FASTA files only (not logs)
@@ -77,12 +77,12 @@ rule treesort:
         # Copy descriptor
         cp {input.descriptor} results/{wildcards.rep}/
 
-        # Copy HA tree
-        cp data/ha/output.nwk results/{wildcards.rep}/data/ha
+        # Copy backbone tree
+        cp data/backbone/output.nwk results/{wildcards.rep}/data/backbone
         
         # Run treesort in isolated environment
         cd results/{wildcards.rep}
-        treesort -i descriptor.csv -o ha_treesort.tre --no-collapse
+        treesort -i descriptor.csv -o annotated.tre --no-collapse
         
         # Copy result back and cleanup
         rm -rf results/{wildcards.rep}/data results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
