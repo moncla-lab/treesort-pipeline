@@ -12,7 +12,7 @@ TreeSort once to generate the binarized backbone tree annotated with reassortmen
 While this backbone tree input does not change, new divergence trees are generated for the challenge segments for each replicate run.
 The ```--no-collapse``` flag is used during ```rule treesort``` to ensure that all annotated TreeSort tree outputs retain the same topology as the backbone.
 
-By default, the pipeline runs REPS=range(1000) replicates, but this can be adjusted in the Snakefile. Due to its computational intensity, we recommend running the pipeline on an HPC system
+By default, the pipeline runs ```REPS=range(1000)``` replicates, but this can be adjusted in the Snakefile. Due to its computational intensity, we recommend running the pipeline on an HPC system
 
 **Coming soon:**
 
