@@ -158,7 +158,7 @@ Resolves the TreeSort tree to match the topology of the unaltered rooted backbon
 
 ### ```rule ancestral/translate/traits```
 
-See nextstrain documentation
+See [nextstrain documentation](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/cli.html)
 
 ### ```rule export```
 
