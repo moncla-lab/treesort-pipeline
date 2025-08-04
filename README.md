@@ -16,7 +16,7 @@ By default, the pipeline runs REPS=range(1000) replicates, but this can be adjus
 
 **Coming soon:**
 
-Once TreeSort has been run for all replicates,``` rule summary``` will generate:
+Once TreeSort has been run for all replicates, ```rule summary``` will generate:
 
 * A summary node data JSON.
 * A summary Newick tree.
