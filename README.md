@@ -29,11 +29,15 @@ The summary node data is used for ```rule export``` and allows the visualization
 
 ## Installation
 
+Clone this repo:
+
 			git clone https://github.com/moncla-lab/treesort-pipeline.git
 
-**nextstrain-treesort conda environment instructions will be updated here**
+Create a conda environment:
 
 			conda create -n nextstrain-treesort --override-channels --strict-channel-priority -c conda-forge -c bioconda --yes dendropy snakemake augur auspice
+
+Activate the conda environment:
 
    			conda activate nextstrain-treesort
 
