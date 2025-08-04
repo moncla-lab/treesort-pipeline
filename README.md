@@ -51,9 +51,9 @@ The summary node data is used for ```rule export``` and allows the visualization
 
 			treesort -i descriptor.csv -o annotated.tre
 				
-3. Run your HA alignment through ```strain-dates-csv-maker.py``` to create a ```strain_dates.csv``` required by TreeTime for ```rule root``` in the snakemake. 
+3. Run your backbone alignment through ```strain-dates-csv-maker.py``` to create a ```strain_dates.csv``` required by TreeTime for ```rule root``` in the snakemake. 
 
-			python strain-dates-csv-maker.py -aln 'path_to_your_ha_alignment_file' 
+			python strain-dates-csv-maker.py -aln 'path_to_your_backbone_alignment_file' 
 				
 4. Convert the TreeSort ```annotated.tre``` nexus output to a newick format using ```prep.py``` since 
 
