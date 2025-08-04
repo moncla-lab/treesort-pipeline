@@ -7,14 +7,12 @@ Warning: This repository is a work in progress. It will be integrated with a [cl
 
 This pipeline provides a snakemake framework to run [TreeSort](https://github.com/flu-crew/TreeSort/tree/main) in replicate 
 to traverse over uncertainties in tree topology and produce reassortment confidence values for each node & leaf. Before running this pipeline, you must first run 
-TreeSort once to generate the binarized backbone tree annotated with reassortment events (See Prerequisites 2). This tree will be used as the backbone tree input for each 
-replicate run.  
+TreeSort once to generate the binarized backbone tree annotated with reassortment events (see **Prerequisites 2**). This backbone tree remains fixed across all replicates and is used as the input for each replicate run.
 
 While this backbone tree input does not change, new divergence trees are generated for the challenge segments for each replicate run.
-The ```no-collapse``` flag is used during ```rule treesort``` so that for each replicate, the annotated tree outputs have identical topology.
+The ```--no-collapse``` flag is used during ```rule treesort``` to ensure that all annotated TreeSort tree outputs retain the same topology as the backbone.
 
-This amount of runs this pipeline is set to is at default ```REPS=range(1000)``` but you can change this in the Snakefile. 
-It is recommended to use an HPC to run this pipeline.
+By default, the pipeline runs REPS=range(1000) replicates, but this can be adjusted in the Snakefile. Due to its computational intensity, we recommend running the pipeline on an HPC system
 
 **To come:**
 
@@ -109,7 +107,7 @@ Infers a root for each of the challenge segment divergence trees using TreeTime.
 
 + ```tree```: outputted divergence tree from ```rule tree```
 + ```alignment```: alignment files for each segment provided in ```rule files```
-+ ```dates```: ```strain_dates.csv``` provided in ```rule files``` (See Prerequisites 3)
++ ```dates```: ```strain_dates.csv``` provided in ```rule files``` (see **Prerequisites 3**)
 
 **Ouptut**:
 
@@ -121,7 +119,7 @@ Runs TreeSort at each replicate using the alignments and the rooted trees
 
 **Input**:
 
-+ ```descriptor```: ```descriptor.csv``` provided in ```rule files``` (See Prerequisites 5b)
++ ```descriptor```: ```descriptor.csv``` provided in ```rule files``` (see **Prerequisites 5b**)
 + ```trees```: outputted rooted divergence trees from ```rule root```
 
 **Ouptut**:
