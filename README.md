@@ -14,10 +14,14 @@ The ```--no-collapse``` flag is used during ```rule treesort``` to ensure that a
 
 By default, the pipeline runs REPS=range(1000) replicates, but this can be adjusted in the Snakefile. Due to its computational intensity, we recommend running the pipeline on an HPC system
 
-**To come:**
+**Coming soon:**
 
-Once annotated TreeSort trees have been generated for each replicate, ```rule summary``` creates a (1) summary node data json and a (2) summary newick tree.
-This summary tree can be plotted in Baltic and is used as the source tree for the [cladeset-mapping tool](https://github.com/moncla-lab/treesort-cladeset-mapping).
+Once TreeSort has been run for all replicates, rule summary will generate:
+
+* A summary node data JSON.
+* A summary Newick tree.
+
+The summary tree can be plotted in [Baltic](https://github.com/evogytis/baltic/tree/master) and serves as the source tree for the [cladeset-mapping tool](https://github.com/moncla-lab/treesort-cladeset-mapping).
 
 The summary node data is used for ```rule export``` and allows the visualization of reassortment event and reassorting segment confidence at each node & leaf via the [nextstrain auspice dashboard](https://docs.nextstrain.org/projects/auspice/en/stable/).
 
@@ -126,7 +130,7 @@ Runs TreeSort at each replicate using the alignments and the rooted trees
 
 + ```tree```: backbone tree annotated with reassortments outputted by TreeSort
 
-## **TO COME:**
+## ** COMING SOON:**
 
 ### ```rule summary```:
 
