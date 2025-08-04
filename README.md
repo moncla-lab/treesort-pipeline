@@ -1,7 +1,7 @@
 
 # Pipeline for running Treesort in replicate 
 
-Warning: This repository is a work in progress. It will be integrated with a [cladeset-mapping tool](https://github.com/moncla-lab/treesort-cladeset-mapping) developed by Stephan Shank in the Moncla lab.
+Warning: This repository is a work in progress. It will be integrated with a [cladeset-mapping tool](https://github.com/moncla-lab/treesort-cladeset-mapping) developed by Stephen Shank in the Moncla lab.
 
 ### Overview
 
