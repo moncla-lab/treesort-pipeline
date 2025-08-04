@@ -53,7 +53,7 @@ The summary node data is used for ```rule export``` and allows the visualization
 
 5. Now you have all the required data to run the pipeline. The folder organization should be as follows:
 	
-	a. ```data``` folder should include:
+	a. the ```data``` folder which should include:
 		
 	* a folder with your alignments
 	* a folder named ```backbone``` with the annotated tree generated in (2) and converted to newick format in (4)
