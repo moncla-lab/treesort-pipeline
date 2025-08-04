@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job stats:
+job       count
+------  -------
+all           1
+export        1
+total         2
+
+Select jobs to execute...
+
+[Wed Jul  9 19:03:56 2025]
+Job 1: Exporting data files for for auspice
+Reason: Missing output files: summary_95/treesort_auspice/treesort_ha_h3nx.json
+
+
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json
+        
+[Wed Jul  9 19:03:57 2025]
+Error in rule export:
+    jobid: 1
+    input: summary_95_CV/summary.nwk, data/meta/h3nx_ha.csv, summary_95_CV/summary_reassortment.json, summary_95/traits/traits_h3nx_ha.json, summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json, summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json, data/config/auspice_config_h3nx.json, data/config/colors_h3nx.tsv, data/config/lat_longs_h3nx.tsv
+    output: summary_95/treesort_auspice/treesort_ha_h3nx.json
+    shell:
+        
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-07-09T190356.321373.snakemake.log

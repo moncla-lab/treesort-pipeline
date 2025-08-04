@@ -1,0 +1,106 @@
+LOCUS       CY185705                1740 bp    cRNA    linear   VRL 09-MAY-2014
+DEFINITION  Influenza A virus (A/blue-winged teal/Alberta/221/1978(H3N8))
+            hemagglutinin (HA) gene, complete cds.
+ACCESSION   CY185705
+VERSION     CY185705.1
+DBLINK      BioProject: PRJNA183620
+KEYWORDS    .
+SOURCE      Influenza A virus (A/blue-winged teal/Alberta/221/1978(H3N8))
+  ORGANISM  Influenza A virus (A/blue-winged teal/Alberta/221/1978(H3N8))
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Insthoviricetes; Articulavirales;
+            Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus
+            influenzae.
+REFERENCE   1  (bases 1 to 1740)
+  AUTHORS   Wentworth,D.E., Dugan,V., Halpin,R.A., Lin,X., Bera,J., Wester,E.,
+            Ghedin,E., Fedorova,N., Tsitrin,T., McLellan,M., Stockwell,T.,
+            Amedeo,P., Appalla,L., Bishop,B., Edworthy,P., Gupta,N., Hoover,J.,
+            Katzel,D., Li,K., Schobel,S., Shrivastava,S., Thovarai,V., Wang,S.,
+            Webster,R.G., Krauss,S., Stallknecht,D., Bao,Y., Sanders,R.,
+            Dernovoy,D., Kiryutin,B., Lipman,D.J. and Tatusova,T.
+  TITLE     The NIAID Influenza Genome Sequencing Project
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1740)
+  CONSRTM   The NIAID Influenza Genome Sequencing Consortium
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2014) on behalf of JCVI/St. Jude Children's
+            Research Hospital and University of Georgia/NCBI, National Center
+            for Biotechnology Information, NIH, Bethesda, MD 20894, USA
+COMMENT     This work was supported by the National Institute of Allergy and
+            Infectious Diseases (NIAID), Genome Sequencing Centers for
+            Infectious Diseases (GSCID) program.
+FEATURES             Location/Qualifiers
+     source          1..1740
+                     /organism="Influenza A virus (A/blue-winged
+                     teal/Alberta/221/1978(H3N8))"
+                     /mol_type="viral cRNA"
+                     /strain="A/blue-winged teal/Alberta/221/1978"
+                     /serotype="H3N8"
+                     /host="blue-winged teal; gender F; age hatch year"
+                     /bio_material="CEIRS#98160#"
+                     /db_xref="taxon:1346462"
+                     /segment="4"
+                     /lab_host="E2 passage(s)"
+                     /country="Canada: Emilien Lake, Alberta"
+                     /collection_date="07-Aug-1978"
+     misc_feature    1..1740
+                     /db_xref="IRD:NIGSP_CEIRS_SJC001_WEB2_00001.HA"
+     gene            18..1718
+                     /gene="HA"
+     CDS             18..1718
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="AHZ42109.1"
+                     /translation="MKTIIVLSYLFCLALSQNYSESNNSTATLCLGHHAVPNGTIVKT
+                     ITDDQIEVTNATELVQSSSTGKICNNPHRILDGRDCTLIDALLGDPHCDVFQDETWDL
+                     YVERSSAFSNCYPYDVPDYASLRSLVASSGTLEFITEGFTWTGVTQNGGSNACKRGPA
+                     SGFFSRLNWLTKSGSAYPVLNVTKPNNDNFDKLYVWGVHHPSTNQEQTNLYVQASGRV
+                     TVSTRRSQQTIIPNIGSRPWVRGQSGRISIYWTIVKPGDVLVINSNGNLIAPRGYFKM
+                     RTGKSSIMRSDAPIDTCISECITPNGSIPNDKPFQNVNKITYGACPKYVKQSTLKLAT
+                     GMRNVPEKQTRGLFGAIAGFIENGWEGMIDGWYGFRHQNSEGTGQAADLKSTQAAIDQ
+                     INGKLNRVIEKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQ
+                     HTIDLTDSEMNKLFEKTRRQLRENAEDMGNGCFKIYHKCDNACIESIRNGTYDHDIYR
+                     DEALNNRFQIKGVELKSGYKDWILWISFAISCFLLCVVLLGFIMWACQRGNIRCNICI
+                     "
+     sig_peptide     18..65
+                     /gene="HA"
+     mat_peptide     66..1052
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1053..1715
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 ggataattct attaatcatg aagaccatca ttgttctaag ctatcttttc tgtctggctc
+       61 tcagccaaaa ctactcagag agcaacaaca gcactgcaac actgtgcttg gggcatcatg
+      121 cggtaccaaa tgggacaata gtgaagacaa ttacggatga ccaaattgag gtgaccaatg
+      181 ccactgagct ggtccagagc tcctcaacag ggaaaatatg caacaaccca catagaatcc
+      241 ttgatggaag ggactgtaca ctgatagatg ccctactggg agacccccac tgtgatgtat
+      301 tccaagatga aacctgggac ctttatgtgg aacgtagcag cgccttcagc aactgctatc
+      361 catatgatgt accagactat gcatcactca ggtctctagt tgcttcctca ggaaccctag
+      421 agttcatcac agaaggattc acatggacag gagtcactca aaatggagga agcaatgcgt
+      481 gcaaaagagg gcctgctagt ggtttcttca gcagactgaa ttggctgact aaatctggaa
+      541 gtgcttaccc agtgttgaat gtgaccaagc caaataatga caactttgac aaattgtatg
+      601 tctggggagt tcaccaccca agcacaaacc aagagcaaac caacctatac gttcaggcat
+      661 caggaagggt aacagtttca actagaagga gccaacaaac cataatcccg aatattggat
+      721 ccaggccttg ggtcaggggc caatcaggaa ggataagcat ctactggaca atagtgaagc
+      781 cgggggatgt actagtaatt aacagtaatg gtaacctgat cgctcctcga gggtatttca
+      841 aaatgcgcac tgggaaaagc tcaataatga gatcagatgc acctattgac acatgcattt
+      901 ctgagtgtat cactcctaat ggaagcatcc ccaatgacaa gccctttcag aatgtaaaca
+      961 agatcactta cggagcatgt cctaagtatg tcaaacagag cactttgaaa ctggcaacag
+     1021 ggatgaggaa cgtgcctgag aaacaaacca ggggtctgtt cggtgcaata gcaggattta
+     1081 tagaaaatgg atgggaagga atgatagacg gctggtatgg tttcagacac cagaactctg
+     1141 agggtacagg acaagctgca gacctaaaaa gcacacaggc agccattgac cagattaatg
+     1201 ggaagttgaa ccgagtaatc gagaagacaa atgagaagtt tcaccagatt gaaaaggaat
+     1261 tctctgaagt agaaggaaga atccaggacc ttgagaaata tgttgaggac actaagatag
+     1321 atctatggtc ttacaatgca gagcttctgg tggccttgga aaaccagcat acaattgatc
+     1381 tgactgattc tgaaatgaac aaactattcg aaaagacgag gcggcaactg agggagaatg
+     1441 ctgaagatat gggcaacggt tgcttcaaaa tataccacaa atgtgacaac gcatgtatag
+     1501 agtcaatcag aaacgggacc tatgatcatg acatatacag agacgaagca ttaaacaacc
+     1561 gatttcaaat caagggtgta gagctaaaat ctgggtacaa agattggatc ttatggattt
+     1621 cctttgccat atcatgcttt ttgctttgtg ttgttctact ggggttcatt atgtgggcct
+     1681 gccaaagagg caacattagg tgcaacattt gcatttgagt atattagtaa ttaaaaacac
+//
+

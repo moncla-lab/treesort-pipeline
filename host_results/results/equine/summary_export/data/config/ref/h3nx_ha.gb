@@ -1,0 +1,96 @@
+LOCUS       CY032293                1722 bp    cRNA    linear   VRL 01-JUN-2008
+DEFINITION  Influenza A virus (A/equine/Sao Paulo/6/1963(H3N8)) segment 4,
+            complete sequence.
+ACCESSION   CY032293
+VERSION     CY032293.1
+KEYWORDS    .
+SOURCE      Influenza A virus (A/equine/Sao Paulo/6/1963(H3N8))
+  ORGANISM  Influenza A virus (A/equine/Sao Paulo/6/1963(H3N8))
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Insthoviricetes; Articulavirales;
+            Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus
+            influenzae.
+REFERENCE   1  (bases 1 to 1722)
+  AUTHORS   Spiro,D., Halpin,R., Boyne,A., Bera,J., Ghedin,E., Hostetler,J.,
+            Fedorova,N., Kim,M., Zaborsky,J., Overton,L., Djuric,K.,
+            Sarmiento,M., Sitz,J., Katzel,D., Webster,R.G., Hoffmann,E.,
+            Krauss,S., Naeve,C., Bolotov,P., Bao,Y., Sanders,R., Dernovoy,D.,
+            Kiryutin,B., Lipman,D.J. and Tatusova,T.
+  TITLE     The NIAID Influenza Genome Sequencing Project
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1722)
+  CONSRTM   The NIAID Influenza Genome Sequencing Consortium
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUN-2008) on behalf of JCVI/St. Jude Children's
+            Research Hospital/NCBI, National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+FEATURES             Location/Qualifiers
+     source          1..1722
+                     /organism="Influenza A virus (A/equine/Sao
+                     Paulo/6/1963(H3N8))"
+                     /mol_type="viral cRNA"
+                     /strain="A/equine/Sao Paulo/6/1963"
+                     /serotype="H3N8"
+                     /host="Equine"
+                     /db_xref="taxon:500659"
+                     /segment="4"
+                     /geo_loc_name="Brazil: Sao Paulo"
+                     /collection_date="1963"
+     gene            8..1705
+                     /gene="HA"
+     CDS             8..1705
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="ACD85264.1"
+                     /translation="MKTTTILILLTHWVHSQNPISDNNTATLCLGHHAVANGTLVKTI
+                     TDDQIEVTNATELVQSTSTGRICNNPYRVLDGRNCTLIDAMLGDPHCDVFQYGNWDLF
+                     IERSSAFSNCYPYDIPDYASLRSLVASSGTLEFMAEGFTWTGVNQNGRSSACRRGSAD
+                     SFFNRLNWLTKSGSSYPTLNVTMPNNDNFDKLYIWGIHHPSTNNEQTKLYVQASGRVT
+                     VSTKRSQQTIIPNIGSRPWVRGQSGRISIYWTIVKPGDILMINSNGNLIAPRGYFKMR
+                     TGKGSIMRSDAPIDTCVSECITPNGSIPNEKPFQNVNKVTYGKCPKYVKQSTLKLATG
+                     MRNVPERRLRGIFGAIAGFIENGWEGMIDGWYGFRYQNSEGTGQAADLKSTQAAIDQI
+                     NGKLNRVIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVAIENQH
+                     TIDLTDAEMNKLFEKTRRQLRENAEDMGNRCFKIYHKCDNTCIESIRNGTYNHDIYRD
+                     EAVNNRFQIKGVELKSGYKDWILWISFAISCFLICVVLLGFIMWACQKGNIRCNICI"
+     sig_peptide     8..55
+                     /gene="HA"
+     mat_peptide     56..1039
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1040..1702
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 gtcaatcatg aagacaacca ctattttgat actactgacc cattgggtcc acagtcaaaa
+       61 cccaatcagt gacaacaaca cagccacact gtgcctggga caccatgcag tagcaaatgg
+      121 aacactggta aaaacaataa ctgatgacca gattgaggtg acaaatgcta ctgaattagt
+      181 tcagagcact tcaacaggga gaatatgcaa caatccatat agggtcctag atggaagaaa
+      241 ctgcacttta atagatgcaa tgctgggaga tccccattgt gatgtttttc agtatgggaa
+      301 ttgggacctc ttcattgaaa gaagcagtgc tttcagcaat tgctacccat atgacatccc
+      361 tgactatgca tctctccggt ctcttgtggc atcttcagga acattagaat tcatggcaga
+      421 gggattcaca tggacaggtg tcaatcaaaa cgggagaagt agcgcctgca gaaggggatc
+      481 agccgatagt ttctttaatc gactgaattg gctaacaaaa tctggaagtt cctatcccac
+      541 attgaatgtg acaatgccta acaatgacaa tttcgataaa ctatacatct gggggatcca
+      601 ccacccgagt acaaataatg agcagacaaa attgtatgtc caagcatcag ggcgagtaac
+      661 agtttcaaca aaaagaagtc aacaaacgat aatccccaac atcggatcca gaccgtgggt
+      721 caggggtcaa tcaggcagga taagcatata ttggactatt gtgaaacctg gggatatcct
+      781 aatgataaac agtaatggca acttaattgc accgcgggga tacttcaaaa tgcggacagg
+      841 gaaaggctct ataatgagat cagatgcacc catagacact tgtgtgtctg aatgtattac
+      901 accaaatgga agcatcccca acgagaaacc atttcaaaat gtgaacaagg ttacatatgg
+      961 aaaatgcccc aagtatgtca aacagagtac tttaaagctg gctaccggga tgaggaatgt
+     1021 accagaaagg cgactcagag gaatctttgg agcaatagcg ggattcatag aaaacggctg
+     1081 ggaaggaatg attgatgggt ggtatggatt ccgatatcag aattcagaag ggacagggca
+     1141 agctgcagat ctaaagagca ctcaagcagc cattgaccag atcaatggga aattgaacag
+     1201 agtgattggg aaaactaatg aaaaatttca tcaaatagag aaagaattct cagaagtaga
+     1261 agggagaatc caagacttgg agaagtacgt agaagacacc aaaatagacc tatggtccta
+     1321 caatgcagag ttactggtag ctatagaaaa tcaacacacg attgacctaa cagatgcaga
+     1381 gatgaataaa ttattcgaga aaaccaggcg ccaattaaga gaaaacgcag aagacatggg
+     1441 gaatagatgc ttcaagattt atcacaaatg tgataataca tgcattgaat caataagaaa
+     1501 tggaacatat aaccatgaca tatacagaga tgaggcagta aacaaccggt ttcaaattaa
+     1561 aggtgttgag ttgaaatcag gctacaaaga ttggatactg tggatttcat tcgccatatc
+     1621 atgcttctta atttgcgttg ttctgttggg tttcattatg tgggcttgcc aaaaaggcaa
+     1681 cattaggtgc aacatttgca tttgagtaga ctgatagtta aa
+//
+

@@ -1,0 +1,121 @@
+
+"""Here, define your wildcards. To include more subtypes or gene segments, simply
+add those to these lists, separated by commas"""
+SUBTYPES = ["h3nx"]
+SEGMENTS = ["ha"]
+
+"""This rule tells Snakemake that at the end of the pipeline, you should have
+generated JSON files in the auspice folder for each subtype and segment."""
+rule all:
+    input:
+        auspice_json = expand("summary_95/treesort_auspice/treesort_{segment}_{subtype}.json", subtype=SUBTYPES, segment=SEGMENTS)
+
+"""Specify all input files here. For this build, you'll start with input sequences
+from the example_data folder, which contain metadata information in the
+sequence header. Specify here files denoting specific strains to include or drop,
+references sequences, and files for auspice visualization (colors)"""
+rule files:
+    params:
+        tree = "data/tree/summary.nwk", 
+        metadata = "data/meta/{subtype}_{segment}.csv",
+        aln = "data/alignments/{subtype}_{segment}.fasta",
+        reference = "data/config/ref/{subtype}_{segment}.gb",
+        node_data = "data/summary_reassortment.json",
+        colors = "data/config/colors_{subtype}.tsv",
+        lat_long = "data/config/lat_longs_{subtype}.tsv",
+        auspice_config = "data/config/auspice_config_{subtype}.json"
+        
+files = rules.files.params
+
+def traits_columns(w):
+    traits = {'h3nx':'host country region subtype order'}
+    return traits[w.subtype]
+    
+rule ancestral:
+    message: "Reconstructing ancestral sequences and mutations"
+    input:
+        tree = files.tree,
+        alignment = files.aln
+    output:
+        node_data = "summary_95/div_tree/nt_muts/nt-muts_{subtype}_{segment}.json"
+    params:
+        inference = "joint"
+    shell:
+        """
+        augur ancestral \
+            --tree {input.tree} \
+            --alignment {input.alignment} \
+            --output-node-data {output.node_data} \
+            --inference {params.inference}\
+            --keep-ambiguous
+        """
+
+rule translate:
+    message: "Translating amino acid sequences"
+    input:
+        tree = files.tree,
+        node_data = rules.ancestral.output.node_data,
+        reference = files.reference
+    output:
+        node_data = "summary_95/div_tree/aa_muts/aa-muts_{subtype}_{segment}.json"
+    shell:
+        """
+        augur translate \
+            --tree {input.tree} \
+            --ancestral-sequences {input.node_data} \
+            --reference-sequence {input.reference} \
+            --output {output.node_data}
+        """
+
+rule traits:
+    message: "Inferring ancestral traits for {params.columns!s}"
+    input:
+        tree = files.tree,
+        metadata = files.metadata
+    output:
+        node_data = "summary_95/traits/traits_{subtype}_{segment}.json",
+    params:
+        columns = traits_columns,
+    shell:
+        """
+        augur traits \
+            --tree {input.tree} \
+            --metadata {input.metadata} \
+            --output {output.node_data} \
+            --columns {params.columns} \
+            --confidence
+        """
+
+"""This rule exports the results of the pipeline into JSON format, which is required
+for visualization in auspice. To make changes to the categories of metadata
+that are colored, or how the data is visualized, alter the auspice_config files"""
+rule export:
+    message: "Exporting data files for for auspice"
+    input:
+        tree = files.tree,
+        metadata = files.metadata,
+        node_data = [files.node_data,rules.traits.output.node_data,rules.ancestral.output.node_data,rules.translate.output.node_data],
+        auspice_config = files.auspice_config,
+	colors = files.colors,
+	lat_long = files.lat_long
+    output:
+        auspice_json = "summary_95/treesort_auspice/treesort_{segment}_{subtype}.json"
+    shell:
+        """
+        augur export v2 \
+            --tree {input.tree} \
+            --metadata {input.metadata} \
+            --node-data {input.node_data}\
+            --auspice-config {input.auspice_config} \
+            --include-root-sequence \
+			--colors {input.colors} \
+			--lat-longs {input.lat_long} \
+            --output {output.auspice_json}
+        """
+
+rule clean:
+    message: "Removing directories: {params}"
+    params:
+        "summary_95"
+    shell:
+        "rm -rfv {params}"

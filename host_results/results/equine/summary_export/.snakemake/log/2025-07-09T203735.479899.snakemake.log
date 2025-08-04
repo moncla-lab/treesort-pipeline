@@ -1,0 +1,82 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job stats:
+job       count
+------  -------
+all           1
+export        1
+total         2
+
+Resources before job selection: {'_cores': 6, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Selected jobs (1)
+Resources after job selection: {'_cores': 5, '_nodes': 9223372036854775806}
+
+[Wed Jul  9 20:37:35 2025]
+Job 1: Exporting data files for for auspice
+Reason: Missing output files: summary_95/treesort_auspice/treesort_ha_h3nx.json
+
+
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json
+        
+Full Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/nextstrain/build/Snakefile", line 217, in __rule_export
+  File "/usr/local/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json' returned non-zero exit status 2.
+
+[Wed Jul  9 20:37:36 2025]
+Error in rule export:
+    jobid: 1
+    input: summary_95_CV/summary.nwk, data/meta/h3nx_ha.csv, summary_95_CV/summary_reassortment.json, summary_95/traits/traits_h3nx_ha.json, summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json, summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json, data/config/auspice_config_h3nx.json, data/config/colors_h3nx.tsv, data/config/lat_longs_h3nx.tsv
+    output: summary_95/treesort_auspice/treesort_ha_h3nx.json
+    shell:
+        
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/nextstrain/build/Snakefile", line 217, in __rule_export
+  File "/usr/local/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json' returned non-zero exit status 2.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/usr/local/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /nextstrain/build/Snakefile, line 104:
+Command 'set -euo pipefail;  
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json' returned non-zero exit status 2.
+  File "/nextstrain/build/Snakefile", line 104, in __rule_export
+
+RuleException:
+CalledProcessError in file /nextstrain/build/Snakefile, line 104:
+Command 'set -euo pipefail;  
+        augur export v2             --tree summary_95_CV/summary.nwk             --metadata data/meta/h3nx_ha.csv             --node-data summary_95_CV/summary_reassortment.json summary_95/traits/traits_h3nx_ha.json summary_95/div_tree/nt_muts/nt-muts_h3nx_ha.json summary_95/div_tree/aa_muts/aa-muts_h3nx_ha.json            --auspice-config data/config/auspice_config_h3nx.json             --include-root-sequence 			--colors data/config/colors_h3nx.tsv 			--lat-longs data/config/lat_longs_h3nx.tsv             --output summary_95/treesort_auspice/treesort_ha_h3nx.json' returned non-zero exit status 2.
+  File "/nextstrain/build/Snakefile", line 104, in __rule_export
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-07-09T203735.479899.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks
