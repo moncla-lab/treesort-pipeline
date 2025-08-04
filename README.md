@@ -33,9 +33,15 @@ Clone this repo:
 
 			git clone https://github.com/moncla-lab/treesort-pipeline.git
 
+Configure bioconda if not done already:
+
+			conda config --add channels bioconda
+			conda config --add channels conda-forge
+			conda config --set channel_priority strict
+
 Create a conda environment:
 
-			conda create -n nextstrain-treesort --override-channels --strict-channel-priority -c conda-forge -c bioconda --yes --file conda-requirements.txt
+			conda create -n nextstrain-treesort --file conda-requirements.txt
 
 Activate the conda environment:
 
