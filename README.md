@@ -25,7 +25,7 @@ The summary tree can be plotted in [Baltic](https://github.com/evogytis/baltic/t
 
 The summary node data is used for ```rule export``` and allows the visualization of reassortment event and reassorting segment confidence at each node & leaf via the [nextstrain auspice dashboard](https://docs.nextstrain.org/projects/auspice/en/stable/).
 
-**For now, you can use the ```rea.ipynb``` and then ```summary.ipynb``` notebooks in ```summary/``` and then run the Snakefile in the ```summary/summary_export``` folder.**
+**For now, you can run the ```rea.ipynb``` and ```summary.ipynb``` notebooks in ```summary/``` and then run the Snakefile in the ```summary/summary_export``` folder.**
 
 ## Installation
 
