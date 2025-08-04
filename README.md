@@ -34,7 +34,7 @@ The summary node data is used for ```rule export``` and allows the visualization
    
    	a. Each sample should include the strain name and collection date. For example, a fasta file header should look like:
 
-   			```>A/blue-winged_teal/Alberta/221/1978|1978-08-07```
+   			>A/blue-winged_teal/Alberta/221/1978|1978-08-07
    	
    	b. The dates should be in YYYY-MM-DD format. Any incomplete dates should have a placeholder instead (ex: instead of 1978-XX-XX, it could be 1978-01-01).
    	
