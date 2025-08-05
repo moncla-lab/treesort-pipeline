@@ -83,7 +83,7 @@ Activate the conda environment:
 	   
 	You can edit the provided descriptor.csv manually or make your own by running ```descriptor.py```:
 	   
-	   		python scripts/descriptor.py \
+		python scripts/descriptor.py \
 			  --backbone BACKBONE_SEGMENT \
 			  --subtype SUBTYPE \ 
 			  --alns PATH_TO_ALIGNMENTS_FOLDER \
