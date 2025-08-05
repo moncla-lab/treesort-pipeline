@@ -58,7 +58,7 @@ Activate the conda environment:
    	
    	b. The dates should be in YYYY-MM-DD format. Any incomplete dates should have a placeholder instead (ex: instead of 1978-XX-XX, it could be 1978-01-01).
    	
-	Note: ```to-add-dates.py``` can be used to format your data in this way.
+	Note: You can run ```scripts/to-add-dates.py``` to format your alignments and metadata in this way.
    
 2. Run [TreeSort](https://github.com/flu-crew/TreeSort/tree/main) locally using your alignment files and divergences trees as inputs in the descriptor file.
    Make sure your backbone tree is rooted (per TreeSort's instructions). The command should look like:
@@ -167,3 +167,69 @@ See [nextstrain documentation](https://docs.nextstrain.org/projects/augur/en/sta
 ### ```rule export```
 
 Visualizes summary tree and node data with [nextstrain augur/auspice](https://docs.nextstrain.org/projects/auspice/en/stable/)
+
+## Scripts
+
+### ```to-add-dates.py```
+
+**To run:**
+
+	python scripts/add_dates.py \
+	  --subtype SUBTYPE \
+	  --aln PATH_TO_ALIGNMENTS \
+	  --backbone BACKBONE_SEGMENT \
+	  --meta PATH_TO_METADATA \
+	  --d tsv|csv
+
+**Arguments:**
+	
+	--subtype: The subtype string used in your filenames (e.g., "h3nx" for files like h3nx_ha.fasta)
+	--aln: Path to the folder containing your alignment files
+	--backbone: The segment that is your backbone (e.g., "ha")
+	--meta: Path to the metadata file corresponding to the backbone segment
+	--d: Format of the metadata file: either "tsv" or "csv" (default: tsv)
+
+ ### ```scripts/strain-dates-csv-maker.py```
+
+**To run:**
+
+	python scripts/strain-dates-csv-maker.py \
+ 	 --aln PATH_TO_ALIGNMENT_FILE
+
+**Arguments:**
+	
+	--aln: Path to the alignment file for your backbone segment (must have headers in the format "strain|YYYY-MM-DD")
+
+### ```descriptor.py```
+
+**To run:**
+
+	python scripts/descriptor.py \
+	  --backbone BACKBONE_SEGMENT \
+	  --subtype SUBTYPE \
+	  --alns PATH_TO_ALIGNMENTS \
+	  --trees PATH_TO_ROOTED_TREES
+
+**Arguments:**
+	
+	--backbone: The segment that will be treated as the backbone (e.g., "ha")
+	--subtype: The subtype string used in your filenames (e.g., "h3nx" for files like h3nx_ha.fasta)
+	--alns: Path to the folder containing your alignment files
+	--trees: Path to the folder containing your rooted tree files (it is assumed here that you used the snakemake to create these trees so it follows that format)
+
+### ```to_nwk.py```
+
+**To run:**
+
+	python scripts/to_nwk.py \
+	  --tree PATH_TO_NEXUS_TREE \
+	  --output OUTPUT_NEWICK_FILE
+
+
+**Arguments:**
+	
+	--tree: Path to the input tree file in Nexus format
+	--output: Desired name of the output Newick (.nwk or .newick) file (e.g., "output.nwk")
+
+
+
