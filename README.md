@@ -191,7 +191,7 @@ Visualizes summary tree and node data with [nextstrain augur/auspice](https://do
 	--meta: Path to the metadata file corresponding to the backbone segment
 	--d: Format of the metadata file: either "tsv" or "csv" (default: tsv)
 
- ### ```scripts/strain-dates-csv-maker.py```
+ ### ```strain-dates-csv-maker.py```
 
 **To run:**
 
