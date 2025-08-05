@@ -79,7 +79,7 @@ Activate the conda environment:
 	* a folder named ```backbone``` with the annotated tree generated in (2) and converted to newick format in (4)
 	* the ```strains_dates.csv``` generated in (3)
 		
-	b. your ```descriptor.csv``` file that points the corrects alignment and divergence tree paths for ```rule treesort```. 
+	b. your ```descriptor.csv``` file that points to the correct alignment and divergence tree paths for ```rule treesort```. 
 	   
 	You can edit the provided descriptor.csv by running ```descriptor.py```:
 	   
