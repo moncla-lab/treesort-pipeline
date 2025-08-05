@@ -69,7 +69,7 @@ Activate the conda environment:
 
 			python strain-dates-csv-maker.py -aln 'path_to_your_backbone_alignment_file' 
 				
-4. Convert the TreeSort ```annotated.tre``` nexus output to a newick format using ```prep.py``` since 
+4. Convert the TreeSort ```annotated.tre``` nexus output to a newick format using ```prep.py``` since that is the required input tree file format for TreeSort.
 
 5. Now you have all the required data to run the pipeline. The folder organization should be as follows:
 	
