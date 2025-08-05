@@ -71,7 +71,7 @@ Activate the conda environment:
 				
 4. Convert the TreeSort ```annotated.tre``` nexus output to a newick format using ```scripts/to_nwk.py``` since that is the required input tree file format for TreeSort.
 
-   			python scripts/to_nwk.py --tree 'path_to_the_treesort_tree'  --output 'output_nwk_tree'
+   			python scripts/to_nwk.py --tree 'annotated.tre'  --output 'output.nwk'
 
 5. Now you have all the required data to run the pipeline. The folder organization should be as follows:
 	
