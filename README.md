@@ -69,7 +69,9 @@ Activate the conda environment:
 
 			python scripts/strain-dates-csv-maker.py --aln 'path_to_your_backbone_alignment_file' 
 				
-4. Convert the TreeSort ```annotated.tre``` nexus output to a newick format using ```prep.py``` since that is the required input tree file format for TreeSort.
+4. Convert the TreeSort ```annotated.tre``` nexus output to a newick format using ```scripts/to_nwk.py``` since that is the required input tree file format for TreeSort.
+
+   			python scripts/to_nwk.py --tree 'path_to_the_treesort_tree'  --output 'output_nwk_tree'
 
 5. Now you have all the required data to run the pipeline. The folder organization should be as follows:
 	
@@ -81,7 +83,7 @@ Activate the conda environment:
 		
 	b. your ```descriptor.csv``` file that points to the correct alignment and divergence tree paths for ```rule treesort```. 
 	   
-	You can edit the provided descriptor.csv manually or make your own by running ```descriptor.py```:
+	You can edit the provided descriptor.csv manually or make your own by running ```scripts/descriptor.py```:
 	   
 		python scripts/descriptor.py \
 			  --backbone BACKBONE_SEGMENT \
