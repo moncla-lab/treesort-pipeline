@@ -65,9 +65,9 @@ Activate the conda environment:
 
 			treesort -i descriptor.csv -o annotated.tre
 				
-3. Run your backbone alignment through ```strain-dates-csv-maker.py``` to create a ```strain_dates.csv``` required by TreeTime for ```rule root``` in the snakemake. 
+3. Run your backbone alignment through ```scripts/strain-dates-csv-maker.py``` to create a ```strain_dates.csv``` required by TreeTime for ```rule root``` in the snakemake. 
 
-			python strain-dates-csv-maker.py -aln 'path_to_your_backbone_alignment_file' 
+			python scripts/strain-dates-csv-maker.py --aln 'path_to_your_backbone_alignment_file' 
 				
 4. Convert the TreeSort ```annotated.tre``` nexus output to a newick format using ```prep.py``` since that is the required input tree file format for TreeSort.
 
@@ -81,10 +81,14 @@ Activate the conda environment:
 		
 	b. your ```descriptor.csv``` file that points to the correct alignment and divergence tree paths for ```rule treesort```. 
 	   
-	You can edit the provided descriptor.csv by running ```descriptor.py```:
+	You can edit the provided descriptor.csv manually or make your own by running ```descriptor.py```:
 	   
-	   		python descriptor.py -backbone "backbone-tree-filename-located-in-the-backbone-folder" -subtype "the-subtype-your-data-belongs-to"
-		
+	   		python scripts/descriptor.py \
+			  --backbone BACKBONE_SEGMENT \
+			  --subtype SUBTYPE \ 
+			  --alns PATH_TO_ALIGNMENTS_FOLDER \
+			  --trees PATH_TO_FOLDER_WITH_ROOTED_TREES
+   
 	c. your ```Snakefile``` where you can tailor the wildcards to fit your data needs.
 
 ## Running the pipeline:
