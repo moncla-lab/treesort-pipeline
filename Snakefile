@@ -2,7 +2,7 @@
 add those to these lists, separated by commas"""
 SUBTYPES = ["h3nx"]
 SEGMENTS = ["pb2","pb1","na","np","pa","ns","mp"]
-REPS = range(1000)
+REPS = range(5)
 
 rule all:
 	input:
