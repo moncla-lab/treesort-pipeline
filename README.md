@@ -35,6 +35,10 @@ Clone this repo:
 
 			git clone https://github.com/moncla-lab/treesort-pipeline.git
 
+Navigate your way into the repo:
+
+  			cd treesort-pipeline
+
 Configure bioconda if not done already:
 
 			conda config --add channels bioconda
