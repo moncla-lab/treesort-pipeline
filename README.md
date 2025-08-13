@@ -112,7 +112,7 @@ Here, ```clock.txt``` records compute time. The ```output.log``` will store the 
 The ```-k``` flag tells snakemake that if there is an error, to keep going if with remaining independent jobs. 
 Since this pipeline is parallelized, the ```-j``` flag denotes how many jobs to run at once. Thus, ```$NUMBER_OF_JOBS``` should be at least 1, and no more than the number of cores on your computer.
 
-** Use the example data **
+**Using the example data:**
 
 This pipeline is ready to be run on the example data provided in ```EXAMPLE_DATA```. This folder contains the alignments for 235 human H3N2 seasonal influenza viruses, a ```strains-dates.csv``` (see **Prerequisites 3**), and the HA backbone newick tree (see **Overview**). The provided ```descriptor.csv``` also points to all the correct paths.
 
