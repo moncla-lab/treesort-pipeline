@@ -1,6 +1,0 @@
-fasttree
-iqtree=2
-dendropy
-snakemake
-augur
-auspice
