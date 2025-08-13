@@ -14,7 +14,7 @@ The ```--no-collapse``` flag is used during ```rule treesort``` to ensure that a
 
 By default, the pipeline runs ```REPS=range(1000)``` replicates, but this can be adjusted in the Snakefile. Due to its computational intensity, we recommend running the pipeline on an HPC system.
 
-**Note:** The provided snakefile and descriptor.csv is configured for the example data in ```EXAMPLE_DATA```. Change this to match your data after running the example.
+**Note:** The provided ```Snakefile``` and ```descriptor.csv``` is configured for the example data in ```EXAMPLE_DATA```. Change this to match your data after running the example.
 
 **Coming soon:**
 
