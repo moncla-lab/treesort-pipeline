@@ -69,7 +69,6 @@ rule treesort:
         # Copy only what treesort needs
         mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/alignments
         mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/backbone
-        mkdir -p results/{wildcards.rep}/results/trees_rooted
         
         # Copy FASTA files only (not logs)
         cp EXAMPLE_DATA/alignments/*.fasta results/{wildcards.rep}/EXAMPLE_DATA/alignments/
