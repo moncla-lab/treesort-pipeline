@@ -1,0 +1,618 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: lev-12793.apn.wlan.private.upenn.edu
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 5
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+root           35
+tree           35
+treesort        5
+total          76
+
+Select jobs to execute...
+Execute 5 jobs...
+[Wed Aug 13 15:59:04 2025]
+Job 18: Building tree
+Reason: Missing output files: results/1/trees_unrooted/h3nx_pb2.nwk
+[Wed Aug 13 15:59:04 2025]
+Job 69: Building tree
+Reason: Missing output files: results/4/trees_unrooted/h3nx_np.nwk
+[Wed Aug 13 15:59:04 2025]
+Job 20: Building tree
+Reason: Missing output files: results/1/trees_unrooted/h3nx_pb1.nwk
+[Wed Aug 13 15:59:04 2025]
+Job 15: Building tree
+Reason: Missing output files: results/0/trees_unrooted/h3nx_mp.nwk
+[Wed Aug 13 15:59:04 2025]
+Job 73: Building tree
+Reason: Missing output files: results/4/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:17 2025]
+Finished jobid: 15 (Rule: tree)
+1 of 76 steps (1%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:17 2025]
+Job 35: Building tree
+Reason: Missing output files: results/2/trees_unrooted/h3nx_pb1.nwk
+[Wed Aug 13 15:59:17 2025]
+Finished jobid: 73 (Rule: tree)
+2 of 76 steps (3%) done
+[Wed Aug 13 15:59:17 2025]
+Finished jobid: 69 (Rule: tree)
+3 of 76 steps (4%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Wed Aug 13 15:59:17 2025]
+Job 3: Building tree
+Reason: Missing output files: results/0/trees_unrooted/h3nx_pb2.nwk
+[Wed Aug 13 15:59:17 2025]
+Job 56: Building tree
+Reason: Missing output files: results/3/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:17 2025]
+Finished jobid: 20 (Rule: tree)
+4 of 76 steps (5%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:17 2025]
+Job 19: Inferring root
+Reason: Missing output files: results/1/trees_rooted/h3nx_pb1_rooted/rerooted.newick; Input files updated by another job: results/1/trees_unrooted/h3nx_pb1.nwk
+[Wed Aug 13 15:59:17 2025]
+Finished jobid: 18 (Rule: tree)
+5 of 76 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:17 2025]
+Job 22: Building tree
+Reason: Missing output files: results/1/trees_unrooted/h3nx_na.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:21 2025]
+Finished jobid: 19 (Rule: root)
+6 of 76 steps (8%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:21 2025]
+Job 72: Inferring root
+Reason: Missing output files: results/4/trees_rooted/h3nx_ns_rooted/rerooted.newick; Input files updated by another job: results/4/trees_unrooted/h3nx_ns.nwk
+[Wed Aug 13 15:59:21 2025]
+Finished jobid: 22 (Rule: tree)
+7 of 76 steps (9%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:21 2025]
+Job 7: Building tree
+Reason: Missing output files: results/0/trees_unrooted/h3nx_na.nwk
+[Wed Aug 13 15:59:21 2025]
+Finished jobid: 56 (Rule: tree)
+8 of 76 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:21 2025]
+Job 48: Building tree
+Reason: Missing output files: results/3/trees_unrooted/h3nx_pb2.nwk
+[Wed Aug 13 15:59:21 2025]
+Finished jobid: 3 (Rule: tree)
+9 of 76 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:21 2025]
+Job 14: Inferring root
+Reason: Missing output files: results/0/trees_rooted/h3nx_mp_rooted/rerooted.newick; Input files updated by another job: results/0/trees_unrooted/h3nx_mp.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:21 2025]
+Finished jobid: 35 (Rule: tree)
+10 of 76 steps (13%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:21 2025]
+Job 60: Building tree
+Reason: Missing output files: results/3/trees_unrooted/h3nx_mp.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:22 2025]
+Finished jobid: 72 (Rule: root)
+11 of 76 steps (14%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:22 2025]
+Job 50: Building tree
+Reason: Missing output files: results/3/trees_unrooted/h3nx_pb1.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:23 2025]
+Finished jobid: 14 (Rule: root)
+12 of 76 steps (16%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:23 2025]
+Job 37: Building tree
+Reason: Missing output files: results/2/trees_unrooted/h3nx_na.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:24 2025]
+Finished jobid: 60 (Rule: tree)
+13 of 76 steps (17%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:24 2025]
+Job 59: Inferring root
+Reason: Missing output files: results/3/trees_rooted/h3nx_mp_rooted/rerooted.newick; Input files updated by another job: results/3/trees_unrooted/h3nx_mp.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:24 2025]
+Finished jobid: 7 (Rule: tree)
+14 of 76 steps (18%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:24 2025]
+Job 34: Inferring root
+Reason: Missing output files: results/2/trees_rooted/h3nx_pb1_rooted/rerooted.newick; Input files updated by another job: results/2/trees_unrooted/h3nx_pb1.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:25 2025]
+Finished jobid: 48 (Rule: tree)
+15 of 76 steps (20%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:25 2025]
+Job 47: Inferring root
+Reason: Missing output files: results/3/trees_rooted/h3nx_pb2_rooted/rerooted.newick; Input files updated by another job: results/3/trees_unrooted/h3nx_pb2.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:26 2025]
+Finished jobid: 59 (Rule: root)
+16 of 76 steps (21%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:26 2025]
+Job 24: Building tree
+Reason: Missing output files: results/1/trees_unrooted/h3nx_np.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:26 2025]
+Finished jobid: 34 (Rule: root)
+17 of 76 steps (22%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:26 2025]
+Job 75: Building tree
+Reason: Missing output files: results/4/trees_unrooted/h3nx_mp.nwk
+[Wed Aug 13 15:59:26 2025]
+Finished jobid: 50 (Rule: tree)
+18 of 76 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:26 2025]
+Job 21: Inferring root
+Reason: Missing output files: results/1/trees_rooted/h3nx_na_rooted/rerooted.newick; Input files updated by another job: results/1/trees_unrooted/h3nx_na.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:26 2025]
+Finished jobid: 37 (Rule: tree)
+19 of 76 steps (25%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:26 2025]
+Job 9: Building tree
+Reason: Missing output files: results/0/trees_unrooted/h3nx_np.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:27 2025]
+Finished jobid: 47 (Rule: root)
+20 of 76 steps (26%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:27 2025]
+Job 63: Building tree
+Reason: Missing output files: results/4/trees_unrooted/h3nx_pb2.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:28 2025]
+Finished jobid: 21 (Rule: root)
+21 of 76 steps (28%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:28 2025]
+Job 55: Inferring root
+Reason: Missing output files: results/3/trees_rooted/h3nx_pa_rooted/rerooted.newick; Input files updated by another job: results/3/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:30 2025]
+Finished jobid: 75 (Rule: tree)
+22 of 76 steps (29%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:30 2025]
+Job 30: Building tree
+Reason: Missing output files: results/1/trees_unrooted/h3nx_mp.nwk
+[Wed Aug 13 15:59:30 2025]
+Finished jobid: 24 (Rule: tree)
+23 of 76 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:30 2025]
+Job 17: Inferring root
+Reason: Missing output files: results/1/trees_rooted/h3nx_pb2_rooted/rerooted.newick; Input files updated by another job: results/1/trees_unrooted/h3nx_pb2.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:30 2025]
+Finished jobid: 9 (Rule: tree)
+24 of 76 steps (32%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:30 2025]
+Job 71: Building tree
+Reason: Missing output files: results/4/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:30 2025]
+Finished jobid: 55 (Rule: root)
+25 of 76 steps (33%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:30 2025]
+Job 5: Building tree
+Reason: Missing output files: results/0/trees_unrooted/h3nx_pb1.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:31 2025]
+Finished jobid: 63 (Rule: tree)
+26 of 76 steps (34%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:31 2025]
+Job 68: Inferring root
+Reason: Missing output files: results/4/trees_rooted/h3nx_np_rooted/rerooted.newick; Input files updated by another job: results/4/trees_unrooted/h3nx_np.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:32 2025]
+Finished jobid: 17 (Rule: root)
+27 of 76 steps (36%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:32 2025]
+Job 36: Inferring root
+Reason: Missing output files: results/2/trees_rooted/h3nx_na_rooted/rerooted.newick; Input files updated by another job: results/2/trees_unrooted/h3nx_na.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:32 2025]
+Finished jobid: 68 (Rule: root)
+28 of 76 steps (37%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:32 2025]
+Job 26: Building tree
+Reason: Missing output files: results/1/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:33 2025]
+Finished jobid: 30 (Rule: tree)
+29 of 76 steps (38%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:33 2025]
+Job 39: Building tree
+Reason: Missing output files: results/2/trees_unrooted/h3nx_np.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:33 2025]
+Finished jobid: 36 (Rule: root)
+30 of 76 steps (39%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:33 2025]
+Job 23: Inferring root
+Reason: Missing output files: results/1/trees_rooted/h3nx_np_rooted/rerooted.newick; Input files updated by another job: results/1/trees_unrooted/h3nx_np.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:34 2025]
+Finished jobid: 71 (Rule: tree)
+31 of 76 steps (41%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:34 2025]
+Job 49: Inferring root
+Reason: Missing output files: results/3/trees_rooted/h3nx_pb1_rooted/rerooted.newick; Input files updated by another job: results/3/trees_unrooted/h3nx_pb1.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:34 2025]
+Finished jobid: 5 (Rule: tree)
+32 of 76 steps (42%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:34 2025]
+Job 52: Building tree
+Reason: Missing output files: results/3/trees_unrooted/h3nx_na.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:35 2025]
+Finished jobid: 23 (Rule: root)
+33 of 76 steps (43%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:35 2025]
+Job 11: Building tree
+Reason: Missing output files: results/0/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:36 2025]
+Finished jobid: 49 (Rule: root)
+34 of 76 steps (45%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:36 2025]
+Job 29: Inferring root
+Reason: Missing output files: results/1/trees_rooted/h3nx_mp_rooted/rerooted.newick; Input files updated by another job: results/1/trees_unrooted/h3nx_mp.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:36 2025]
+Finished jobid: 26 (Rule: tree)
+35 of 76 steps (46%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:36 2025]
+Job 67: Building tree
+Reason: Missing output files: results/4/trees_unrooted/h3nx_na.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:37 2025]
+Finished jobid: 39 (Rule: tree)
+36 of 76 steps (47%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:37 2025]
+Job 13: Building tree
+Reason: Missing output files: results/0/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:37 2025]
+Finished jobid: 29 (Rule: root)
+37 of 76 steps (49%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:37 2025]
+Job 58: Building tree
+Reason: Missing output files: results/3/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:38 2025]
+Finished jobid: 52 (Rule: tree)
+38 of 76 steps (50%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:38 2025]
+Job 25: Inferring root
+Reason: Missing output files: results/1/trees_rooted/h3nx_pa_rooted/rerooted.newick; Input files updated by another job: results/1/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:39 2025]
+Finished jobid: 11 (Rule: tree)
+39 of 76 steps (51%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:39 2025]
+Job 10: Inferring root
+Reason: Missing output files: results/0/trees_rooted/h3nx_pa_rooted/rerooted.newick; Input files updated by another job: results/0/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:40 2025]
+Finished jobid: 25 (Rule: root)
+40 of 76 steps (53%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:40 2025]
+Job 2: Inferring root
+Reason: Missing output files: results/0/trees_rooted/h3nx_pb2_rooted/rerooted.newick; Input files updated by another job: results/0/trees_unrooted/h3nx_pb2.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:40 2025]
+Finished jobid: 13 (Rule: tree)
+41 of 76 steps (54%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:40 2025]
+Job 6: Inferring root
+Reason: Missing output files: results/0/trees_rooted/h3nx_na_rooted/rerooted.newick; Input files updated by another job: results/0/trees_unrooted/h3nx_na.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:40 2025]
+Finished jobid: 67 (Rule: tree)
+42 of 76 steps (55%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:40 2025]
+Job 28: Building tree
+Reason: Missing output files: results/1/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:41 2025]
+Finished jobid: 58 (Rule: tree)
+43 of 76 steps (57%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:41 2025]
+Job 74: Inferring root
+Reason: Missing output files: results/4/trees_rooted/h3nx_mp_rooted/rerooted.newick; Input files updated by another job: results/4/trees_unrooted/h3nx_mp.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:41 2025]
+Finished jobid: 10 (Rule: root)
+44 of 76 steps (58%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:41 2025]
+Job 65: Building tree
+Reason: Missing output files: results/4/trees_unrooted/h3nx_pb1.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:42 2025]
+Finished jobid: 2 (Rule: root)
+45 of 76 steps (59%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:42 2025]
+Job 43: Building tree
+Reason: Missing output files: results/2/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:42 2025]
+Finished jobid: 6 (Rule: root)
+46 of 76 steps (61%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:42 2025]
+Job 57: Inferring root
+Reason: Missing output files: results/3/trees_rooted/h3nx_ns_rooted/rerooted.newick; Input files updated by another job: results/3/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:43 2025]
+Finished jobid: 74 (Rule: root)
+47 of 76 steps (62%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:43 2025]
+Job 45: Building tree
+Reason: Missing output files: results/2/trees_unrooted/h3nx_mp.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:43 2025]
+Finished jobid: 28 (Rule: tree)
+48 of 76 steps (63%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:43 2025]
+Job 4: Inferring root
+Reason: Missing output files: results/0/trees_rooted/h3nx_pb1_rooted/rerooted.newick; Input files updated by another job: results/0/trees_unrooted/h3nx_pb1.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:44 2025]
+Finished jobid: 57 (Rule: root)
+49 of 76 steps (64%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:44 2025]
+Job 62: Inferring root
+Reason: Missing output files: results/4/trees_rooted/h3nx_pb2_rooted/rerooted.newick; Input files updated by another job: results/4/trees_unrooted/h3nx_pb2.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:45 2025]
+Finished jobid: 43 (Rule: tree)
+50 of 76 steps (66%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:45 2025]
+Job 42: Inferring root
+Reason: Missing output files: results/2/trees_rooted/h3nx_ns_rooted/rerooted.newick; Input files updated by another job: results/2/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:45 2025]
+Finished jobid: 65 (Rule: tree)
+51 of 76 steps (67%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:45 2025]
+Job 64: Inferring root
+Reason: Missing output files: results/4/trees_rooted/h3nx_pb1_rooted/rerooted.newick; Input files updated by another job: results/4/trees_unrooted/h3nx_pb1.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:45 2025]
+Finished jobid: 4 (Rule: root)
+52 of 76 steps (68%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:45 2025]
+Job 8: Inferring root
+Reason: Missing output files: results/0/trees_rooted/h3nx_np_rooted/rerooted.newick; Input files updated by another job: results/0/trees_unrooted/h3nx_np.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:45 2025]
+Finished jobid: 62 (Rule: root)
+53 of 76 steps (70%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:45 2025]
+Job 27: Inferring root
+Reason: Missing output files: results/1/trees_rooted/h3nx_ns_rooted/rerooted.newick; Input files updated by another job: results/1/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:46 2025]
+Finished jobid: 45 (Rule: tree)
+54 of 76 steps (71%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:46 2025]
+Job 44: Inferring root
+Reason: Missing output files: results/2/trees_rooted/h3nx_mp_rooted/rerooted.newick; Input files updated by another job: results/2/trees_unrooted/h3nx_mp.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:47 2025]
+Finished jobid: 42 (Rule: root)
+55 of 76 steps (72%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:47 2025]
+Job 38: Inferring root
+Reason: Missing output files: results/2/trees_rooted/h3nx_np_rooted/rerooted.newick; Input files updated by another job: results/2/trees_unrooted/h3nx_np.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:47 2025]
+Finished jobid: 8 (Rule: root)
+56 of 76 steps (74%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:47 2025]
+Job 41: Building tree
+Reason: Missing output files: results/2/trees_unrooted/h3nx_pa.nwk
+[Wed Aug 13 15:59:47 2025]
+Finished jobid: 64 (Rule: root)
+57 of 76 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:47 2025]
+Job 70: Inferring root
+Reason: Missing output files: results/4/trees_rooted/h3nx_pa_rooted/rerooted.newick; Input files updated by another job: results/4/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:47 2025]
+Finished jobid: 27 (Rule: root)
+58 of 76 steps (76%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:47 2025]
+Job 16: running treesort to infer reassortment events
+Reason: Missing output files: results/1/annotated.tre; Input files updated by another job: results/1/trees_rooted/h3nx_np_rooted/rerooted.newick, results/1/trees_rooted/h3nx_na_rooted/rerooted.newick, results/1/trees_rooted/h3nx_pa_rooted/rerooted.newick, results/1/trees_rooted/h3nx_pb1_rooted/rerooted.newick, results/1/trees_rooted/h3nx_pb2_rooted/rerooted.newick, results/1/trees_rooted/h3nx_mp_rooted/rerooted.newick, results/1/trees_rooted/h3nx_ns_rooted/rerooted.newick
+Select jobs to execute...
+[Wed Aug 13 15:59:48 2025]
+Finished jobid: 44 (Rule: root)
+59 of 76 steps (78%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:48 2025]
+Job 12: Inferring root
+Reason: Missing output files: results/0/trees_rooted/h3nx_ns_rooted/rerooted.newick; Input files updated by another job: results/0/trees_unrooted/h3nx_ns.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:49 2025]
+Finished jobid: 38 (Rule: root)
+60 of 76 steps (79%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:49 2025]
+Job 54: Building tree
+Reason: Missing output files: results/3/trees_unrooted/h3nx_np.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:49 2025]
+Finished jobid: 70 (Rule: root)
+61 of 76 steps (80%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:49 2025]
+Job 51: Inferring root
+Reason: Missing output files: results/3/trees_rooted/h3nx_na_rooted/rerooted.newick; Input files updated by another job: results/3/trees_unrooted/h3nx_na.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:49 2025]
+Finished jobid: 12 (Rule: root)
+62 of 76 steps (82%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:49 2025]
+Job 1: running treesort to infer reassortment events
+Reason: Missing output files: results/0/annotated.tre; Input files updated by another job: results/0/trees_rooted/h3nx_mp_rooted/rerooted.newick, results/0/trees_rooted/h3nx_pb2_rooted/rerooted.newick, results/0/trees_rooted/h3nx_ns_rooted/rerooted.newick, results/0/trees_rooted/h3nx_pb1_rooted/rerooted.newick, results/0/trees_rooted/h3nx_np_rooted/rerooted.newick, results/0/trees_rooted/h3nx_pa_rooted/rerooted.newick, results/0/trees_rooted/h3nx_na_rooted/rerooted.newick
+Select jobs to execute...
+[Wed Aug 13 15:59:51 2025]
+Finished jobid: 41 (Rule: tree)
+63 of 76 steps (83%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:51 2025]
+Job 66: Inferring root
+Reason: Missing output files: results/4/trees_rooted/h3nx_na_rooted/rerooted.newick; Input files updated by another job: results/4/trees_unrooted/h3nx_na.nwk
+[Wed Aug 13 15:59:51 2025]
+Finished jobid: 51 (Rule: root)
+64 of 76 steps (84%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:51 2025]
+Job 33: Building tree
+Reason: Missing output files: results/2/trees_unrooted/h3nx_pb2.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:52 2025]
+Finished jobid: 54 (Rule: tree)
+65 of 76 steps (86%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:52 2025]
+Job 40: Inferring root
+Reason: Missing output files: results/2/trees_rooted/h3nx_pa_rooted/rerooted.newick; Input files updated by another job: results/2/trees_unrooted/h3nx_pa.nwk
+Select jobs to execute...
+[Wed Aug 13 15:59:53 2025]
+Finished jobid: 66 (Rule: root)
+66 of 76 steps (87%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:53 2025]
+Job 61: running treesort to infer reassortment events
+Reason: Missing output files: results/4/annotated.tre; Input files updated by another job: results/4/trees_rooted/h3nx_pa_rooted/rerooted.newick, results/4/trees_rooted/h3nx_pb1_rooted/rerooted.newick, results/4/trees_rooted/h3nx_ns_rooted/rerooted.newick, results/4/trees_rooted/h3nx_na_rooted/rerooted.newick, results/4/trees_rooted/h3nx_np_rooted/rerooted.newick, results/4/trees_rooted/h3nx_mp_rooted/rerooted.newick, results/4/trees_rooted/h3nx_pb2_rooted/rerooted.newick
+Select jobs to execute...
+[Wed Aug 13 15:59:54 2025]
+Finished jobid: 40 (Rule: root)
+67 of 76 steps (88%) done
+Execute 1 jobs...
+[Wed Aug 13 15:59:54 2025]
+Job 53: Inferring root
+Reason: Missing output files: results/3/trees_rooted/h3nx_np_rooted/rerooted.newick; Input files updated by another job: results/3/trees_unrooted/h3nx_np.nwk
+[Wed Aug 13 15:59:55 2025]
+Finished jobid: 33 (Rule: tree)
+68 of 76 steps (89%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:55 2025]
+Job 32: Inferring root
+Reason: Missing output files: results/2/trees_rooted/h3nx_pb2_rooted/rerooted.newick; Input files updated by another job: results/2/trees_unrooted/h3nx_pb2.nwk
+[Wed Aug 13 15:59:56 2025]
+Finished jobid: 53 (Rule: root)
+69 of 76 steps (91%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:56 2025]
+Job 46: running treesort to infer reassortment events
+Reason: Missing output files: results/3/annotated.tre; Input files updated by another job: results/3/trees_rooted/h3nx_pb1_rooted/rerooted.newick, results/3/trees_rooted/h3nx_na_rooted/rerooted.newick, results/3/trees_rooted/h3nx_mp_rooted/rerooted.newick, results/3/trees_rooted/h3nx_ns_rooted/rerooted.newick, results/3/trees_rooted/h3nx_pb2_rooted/rerooted.newick, results/3/trees_rooted/h3nx_pa_rooted/rerooted.newick, results/3/trees_rooted/h3nx_np_rooted/rerooted.newick
+[Wed Aug 13 15:59:57 2025]
+Finished jobid: 32 (Rule: root)
+70 of 76 steps (92%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 15:59:57 2025]
+Job 31: running treesort to infer reassortment events
+Reason: Missing output files: results/2/annotated.tre; Input files updated by another job: results/2/trees_rooted/h3nx_na_rooted/rerooted.newick, results/2/trees_rooted/h3nx_mp_rooted/rerooted.newick, results/2/trees_rooted/h3nx_pa_rooted/rerooted.newick, results/2/trees_rooted/h3nx_pb1_rooted/rerooted.newick, results/2/trees_rooted/h3nx_np_rooted/rerooted.newick, results/2/trees_rooted/h3nx_ns_rooted/rerooted.newick, results/2/trees_rooted/h3nx_pb2_rooted/rerooted.newick
+[Wed Aug 13 16:00:54 2025]
+Finished jobid: 16 (Rule: treesort)
+71 of 76 steps (93%) done
+[Wed Aug 13 16:00:57 2025]
+Finished jobid: 1 (Rule: treesort)
+72 of 76 steps (95%) done
+[Wed Aug 13 16:01:00 2025]
+Finished jobid: 61 (Rule: treesort)
+73 of 76 steps (96%) done
+[Wed Aug 13 16:01:03 2025]
+Finished jobid: 46 (Rule: treesort)
+74 of 76 steps (97%) done
+[Wed Aug 13 16:01:04 2025]
+Finished jobid: 31 (Rule: treesort)
+75 of 76 steps (99%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Aug 13 16:01:04 2025]
+localrule all:
+    input: results/0/annotated.tre, results/1/annotated.tre, results/2/annotated.tre, results/3/annotated.tre, results/4/annotated.tre
+    jobid: 0
+    reason: Input files updated by another job: results/4/annotated.tre, results/3/annotated.tre, results/2/annotated.tre, results/1/annotated.tre, results/0/annotated.tre
+    resources: tmpdir=/var/folders/b4/087mzk6d6sj828w5t9xtml640000gr/T
+[Wed Aug 13 16:01:04 2025]
+Finished jobid: 0 (Rule: all)
+76 of 76 steps (100%) done
+Complete log(s): /Users/monclalab1/Documents/git/treesort-pipeline/.snakemake/log/2025-08-13T155903.010814.snakemake.log

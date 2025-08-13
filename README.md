@@ -12,7 +12,7 @@ TreeSort once to generate the binarized backbone tree annotated with reassortmen
 While this backbone tree input does not change, new divergence trees are generated for the challenge segments for each replicate run.
 The ```--no-collapse``` flag is used during ```rule treesort``` to ensure that all annotated TreeSort tree outputs retain the same topology as the backbone.
 
-By default, the pipeline runs ```REPS=range(1000)``` replicates, but this can be adjusted in the Snakefile. Due to its computational intensity, we recommend running the pipeline on an HPC system.
+The current Snakefile is set to produce 5 replicate treesort runs (```REPS=range(5)```), but this can be increased to fit your data's needs. Due to its computational intensity, we recommend running >10 reps on an HPC system.
 
 **Note:** The provided ```Snakefile``` and ```descriptor.csv``` is configured for the example data in ```EXAMPLE_DATA```. Change this to match your data after running the example.
 
@@ -35,23 +35,17 @@ Clone this repo:
 
 			git clone https://github.com/moncla-lab/treesort-pipeline.git
 
-Navigate your way into the repo:
+Navigate your way into the pipeline repo:
 
   			cd treesort-pipeline
 
-Configure bioconda if not done already:
+Create a conda environment with the provided configuration file:
 
-			conda config --add channels bioconda
-			conda config --add channels conda-forge
-			conda config --set channel_priority strict
-
-Create a conda environment:
-
-			conda create -n nextstrain-treesort --file conda-requirements.txt
+			conda env create -f env.yml
 
 Activate the conda environment:
 
-   			conda activate nextstrain-treesort
+   			conda activate treesort-pipeline
 
 
 ## Prerequisites 
