@@ -105,9 +105,9 @@ Activate the conda environment:
 
 **3. Run the pipeline:**
 
-			date > clock.txt; snakemake -k -j $NUMBER-OF-JOBS all; date >> clock.txt
+			date > clock.txt; snakemake -k -j $NUMBER-OF-JOBS all >> output.log; date >> clock.txt
 	
-Here, ```clock.txt``` records compute time. 
+Here, ```clock.txt``` records compute time. The ```output.log``` will store the outputs of the pipeline for debugging if needed.
 The ```-k``` flag tells snakemake that if there is an error, to keep going if with remaining independent jobs. 
 Since this pipeline is parallelized, the ```-j``` flag denotes how many jobs to run at once. Thus, ```$NUMBER_OF_JOBS``` should be at least 1, and no more than the number of cores on your computer.
 		
