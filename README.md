@@ -98,7 +98,7 @@ Activate the conda environment:
 
 **1. Activate the conda environment:**
 			
-			conda activate nextstrain-treesort
+			conda activate treesort-pipeline
 			
 **2. Check a dry run first:**
 
