@@ -11,8 +11,8 @@ rule all:
 """Specify all input files here.  """
 rule files:
     params:
-        aln = "data/alignments/{subtype}_{segment}.fasta",
-        dates = "data/strain_dates.csv",
+        aln = "EXAMPLE_DATA/alignments/{subtype}_{segment}.fasta",
+        dates = "EXAMPLE_DATA/strain_dates.csv",
         treesort_descriptor = "descriptor.csv"
 
 files = rules.files.params
@@ -67,24 +67,24 @@ rule treesort:
     shell:
     	"""
         # Copy only what treesort needs
-        mkdir -p results/{wildcards.rep}/data/alignments
-        mkdir -p results/{wildcards.rep}/data/backbone
+        mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/alignments
+        mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/backbone
         mkdir -p results/{wildcards.rep}/results/trees_rooted
         
         # Copy FASTA files only (not logs)
-        cp data/alignments/*.fasta results/{wildcards.rep}/data/alignments/
+        cp EXAMPLE_DATA/alignments/*.fasta results/{wildcards.rep}/EXAMPLE_DATA/alignments/
         
         # Copy descriptor
         cp {input.descriptor} results/{wildcards.rep}/
 
         # Copy backbone tree
-        cp data/backbone/output.nwk results/{wildcards.rep}/data/backbone
+        cp EXAMPLE_DATA/backbone/backbone.nwk results/{wildcards.rep}/EXAMPLE_DATA/backbone
         
         # Run treesort in isolated environment
         cd results/{wildcards.rep}
         treesort -i descriptor.csv -o annotated.tre --no-collapse
         
         # Copy result back and cleanup
-        rm -rf results/{wildcards.rep}/data results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
+        rm -rf results/{wildcards.rep}/EXAMPLE_DATA results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
         rm -rf results/{wildcards.rep}/treesort-descriptor-*/descriptor.csv.concatenated.fasta
 		"""	
