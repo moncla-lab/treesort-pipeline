@@ -14,10 +14,6 @@ The ```--no-collapse``` flag is used during ```rule treesort``` to ensure that a
 
 The current Snakefile is set to produce 5 replicate treesort runs (```REPS=range(5)```), but this can be increased to fit your data's needs. Due to its computational intensity, we recommend running >10 reps on an HPC system.
 
-**Note:** The provided ```Snakefile``` and ```descriptor.csv``` is configured for the example data in ```EXAMPLE_DATA```. Change this to match your data after running the example.
-
-**Coming soon:**
-
 Once TreeSort has been run for all replicates, ```rule summary``` will generate:
 
 * A summary node data JSON.
@@ -27,7 +23,7 @@ The summary tree can be plotted in [Baltic](https://github.com/evogytis/baltic/t
 
 The summary node data is used for ```rule export``` and allows the visualization of reassortment event and reassorting segment confidence at each node & leaf via the [nextstrain auspice dashboard](https://docs.nextstrain.org/projects/auspice/en/stable/).
 
-**For now, you can run the ```summary/rea.ipynb``` and ```summary/summary.ipynb``` notebooks and then run the Snakefile in the ```summary/summary_export/``` folder.**
+**Note:** The provided ```Snakefile``` and ```descriptor.csv``` is configured for the example data in ```EXAMPLE_DATA```. Change this to match your data after running the example.
 
 ## Installation
 
@@ -146,7 +142,7 @@ Infers a root for each of the challenge segment divergence trees using TreeTime.
 		
 ### ```rule treesort```:
 
-Runs TreeSort at each replicate using the alignments and the rooted trees 
+Runs TreeSort at each replicate using the alignments and the rooted trees.
 
 **Input**:
 
@@ -157,15 +153,47 @@ Runs TreeSort at each replicate using the alignments and the rooted trees
 
 + ```tree```: backbone tree annotated with reassortments outputted by TreeSort
 
-## ** COMING SOON:**
+### ```rule prep```:
+
+Converts the replicate treesort trees into Newick format for use in ```rule rea```.
+This rule calls ```prep.py``` which is described in more detail in ```Scripts```.
+
+**Input**:
+
++ ```tree```: outputted replicate treesort tree from ```rule treesort```
+
+**Ouptut**:
+
++ ```outdir```: replicate treesort tree converted to newick format and readable by [Baltic](https://github.com/evogytis/baltic/tree/master) used in ```rule rea```
+
+### ```rule rea```:
+
+Generates reassortment node data for each replicate treesort tree for use in ```rule summary```. Randomly assigns uncertain reassortment events to one sibling brach in the tree.
+This rule calls ```rea.py``` which is described in more detail in ```Scripts```.
+
+**Input**:
+
++ ```tree```: replicate treesort tree in newick format from ```rule prep```
+
+**Ouptut**:
+
++ ```json```: reassortment node data for each replicate treesort tree for use in ```rule summary```
 
 ### ```rule summary```:
 
-Generates a summary tree and node data used for cladeset mapping & augur export
+Aggregates treesort replicate data generated in ```rule rea``` to produce a consensus tree and node data with confidence values used for cladeset mapping & augur export.
+This rule calls ```summary.py``` which is described in more detail in ```Scripts```.
 
-### ```rule cladeset-mapping```
+**Input**:
 
-Resolves the TreeSort tree to match the topology of the unaltered rooted backbone tree
++ ```jsons```: reassortment node data jsons for each replicate treesort tree provided by ```rule rea```
++ ```backbone```: backbone divergence tree provided in ```rule files```
+
+**Ouptut**:
+
++ ```nwk_tree```: backbone tree annotated with frequently inferred reassortments (default threshold: inferred in ≥95% of the runs) in Newick format, used by downstream rules.
++ ```nexus_tree```: backbone tree annotated with frequently inferred reassortments (default threshold: inferred in ≥95% of the runs) in Nexus format
++ ```node_data```: node-data containing 1) reassortments that pass the majority threshold and 2) less frequent events recorded with confidence values
 
 ### ```rule ancestral/translate/traits```
 
@@ -173,7 +201,12 @@ See [nextstrain documentation](https://docs.nextstrain.org/projects/augur/en/sta
 
 ### ```rule export```
 
-Visualizes summary tree and node data with [nextstrain augur/auspice](https://docs.nextstrain.org/projects/auspice/en/stable/)
+Visualizes summary tree and node data with [nextstrain augur/auspice](https://docs.nextstrain.org/projects/auspice/en/stable/).
+This allows you to drag and drop the auspice json (which after running the pipeline can be found in ```results/summary/treesort_auspice/treesort.json```) at [auspice.us](https://auspice.us) to visualize the consensus tree generated in ```rule summary```.
+
+### COMING SOON: ```rule cladeset-mapping```
+
+Resolves the TreeSort tree to match the topology of the unaltered rooted backbone tree.
 
 ## Scripts
 
@@ -231,12 +264,82 @@ Visualizes summary tree and node data with [nextstrain augur/auspice](https://do
 	python scripts/to_nwk.py \
 	  --tree PATH_TO_NEXUS_TREE \
 	  --output OUTPUT_NEWICK_FILE
-
-
+   
 **Arguments:**
 	
 	--tree: Path to the input tree file in Nexus format
 	--output: Desired name of the output Newick (.nwk or .newick) file (e.g., "output.nwk")
 
+### ```prep.py```
 
+**Description:** 
 
+Called in ```rule prep```.
+
+Prepares the annotated Treesort output tree so it can be parsed by Baltic as used in ```rule rea```.  
+This involves:  
+1. Converts treesort Nexus tree output to Newick.  
+2. Replaces commas with `-` in reassorted segment annotations.  
+3. Removes quotation marks around `TS_NODE_####` labels.  
+4. Replaces `?` with `_` for uncertain reassortment events.  
+
+**To run:**  
+
+	python scripts/prep.py \
+	  --tree PATH_TO_TREESORT_TREE \
+	  --outdir OUTPUT_NEWICK_FILE
+
+**Arguments:**
+
+	--tree : path to the annotated reassortment tree in Nexus format (output from rule treesort)
+	--outdir : path for the Baltic-readable tree in Newick format (used in rule rea)
+
+### ```rea.py```
+
+**Description:**  
+Processes annotated Treesort output trees with uncertain reassortment events so they can be later summarized across runs.  
+This involves:  
+1. Identifies sibling branches with uncertain reassortment events and randomly assigns uncertain segments to one child branch while removing them from the other.  
+2. Generates a ```rea.json``` node data file annotating reassortment status, reassorted segments, and divergence values for each node and leaf.  
+
+```reassortment_counter()``` was adapted from Jordan Ort's implementation using the phylo.bio package and translated for use with Baltic.  
+
+**To run:**  
+
+	python scripts/resolve_reassortment.py \
+	  --tree PATH_TO_BALTIC_TREE \
+	  --outdir OUTPUT_JSON_FILE
+
+**Arguments:**
+
+	--tree : path to the Baltic-readable tree in Newick format
+	--outdir : path to the reassortment node data for use in rule summary
+
+### ```summary.py```
+
+**Description:**  
+Generates a consensus summary newick tree and its associated node data featuring majority-inferred reassortment events across multiple Treesort replicates.  
+This script:  
+1. Reads in each replicate's reassortment node data produced in ```rule rea```.  
+2. Computes consensus reassortment calls (including reassorting segments) for each node based on a confidence threshold (default: 0.95).  
+4. Outputs a node data file with reassortment confidences and divergence values for use in downstream ```rule export```.  
+5. Produces a summary backbone tree annotated with high-confidence reassortments in both Newick and Nexus formats.  
+
+**To run:**  
+
+	python scripts/summary.py \
+	  --jsons LIST_OF_REASSORTMENT_JSONS \
+	  --backbone BACKBONE_TREE \
+	  --threshold 0.95 \ #default
+	  --summary_nwk OUTPUT_SUMMARY_TREE.nwk \
+	  --summary_nexus OUTPUT_SUMMARY_TREE.nexus \
+	  --node_data OUTPUT_NODE_DATA.json
+
+**Arguments:**
+
+	--jsons : List of reassortment JSON files (from multiple Treesort replicates).
+	--backbone : Backbone tree (Newick format) on which reassortments are placed.
+	--threshold : Confidence threshold (default: 0.95) for annotating reassortment events and segments.
+	--summary_nwk : Path to the output consensus tree in Newick format.
+	--summary_nexus : Path to the output consensus tree in Nexus format.
+	--node_data : Path to the output JSON file containing consensus reassortment data with confidences and entropy values.
