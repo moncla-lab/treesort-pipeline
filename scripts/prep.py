@@ -1,6 +1,19 @@
 import re
 import argparse
 
+''' 
+this function preps the treesort output to be readable by baltic.
+output_filename: it needs to write a tree in order for baltic to read it in
+
+1. converts nexus format to nwk
+2. replaces commas with "-" (where the reassorted segments are inferred)
+3. remove the single quotation marks around TS_NODE_####
+4. replaces ? with _ (where there is an undetermined reassortment event)
+
+this outputted tree is then inputted for rule rea
+   
+'''
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--tree', type=str, required=True, help='annotated reassortment treesort tree')
 parser.add_argument('--outdir', type=str, required=True, help='name of baltic readable tree')

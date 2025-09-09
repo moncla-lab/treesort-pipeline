@@ -2,18 +2,27 @@
 add those to these lists, separated by commas"""
 SUBTYPES = ["h3nx"]
 SEGMENTS = ["pb2","pb1","na","np","pa","ns","mp"]
-REPS = range(5)
+REPS = range(3)
 
 rule all:
 	input:
-		treesort = expand("results/{rep}/annotated.tre", subtype=SUBTYPES, segment=SEGMENTS, rep= REPS)
+		"results/summary/treesort_auspice/treesort.json"
+    
 
 """Specify all input files here.  """
 rule files:
     params:
         aln = "EXAMPLE_DATA/alignments/{subtype}_{segment}.fasta",
         dates = "EXAMPLE_DATA/strain_dates.csv",
-        treesort_descriptor = "descriptor.csv"
+        treesort_descriptor = "descriptor.csv",
+        backbone_tree = "EXAMPLE_DATA/backbone/backbone.nwk",
+        backbone_aln = "EXAMPLE_DATA/alignments/h3nx_ha.fasta",
+        metadata = "EXAMPLE_DATA/metadata.csv",
+        reference = "EXAMPLE_DATA/config/ref/h3nx_ha.gb",
+        colors = "EXAMPLE_DATA/config/colors_h3nx.tsv",
+        lat_long = "EXAMPLE_DATA/config/lat_longs_h3nx.tsv",
+        auspice_config = "EXAMPLE_DATA/config/auspice_config_h3nx.json"
+        
 
 files = rules.files.params
 
@@ -86,4 +95,119 @@ rule treesort:
         # Copy result back and cleanup
         rm -rf results/{wildcards.rep}/EXAMPLE_DATA results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
         rm -rf results/{wildcards.rep}/treesort-descriptor-*/descriptor.csv.concatenated.fasta
-		"""	
+		"""
+		
+rule prep:
+	message: "converting annotated treesort tree into a newick to be read in by rule rea"
+	input:
+		tree = rules.treesort.output.tree
+	output:
+		outdir = "results/{rep}/output.nwk"
+	shell:
+		"python scripts/prep.py --tree {input.tree} --outdir {output.outdir}"
+		
+rule rea:
+    message: "creating a reassortment summary json for each tree"
+    input:
+    	tree = rules.prep.output.outdir
+    output:
+    	json = "results/{rep}/rea.json"
+    shell:
+    	"python scripts/rea.py --tree {input.tree} --outdir {output.json}"
+    	
+rule summary:
+	message: "creating a summary tree and node data with high confidence reassortments"
+	input:
+		jsons = expand("results/{rep}/rea.json", rep=REPS),
+		backbone = files.backbone_tree
+	output:
+		nwk_tree = "results/summary/summary.nwk",
+		nexus_tree = "results/summary/summary.nexus",
+		node_data = "results/summary/summary.json"
+	shell:
+		"python scripts/summary.py --jsons {input.jsons} --backbone {input.backbone} --threshold 0.95 --summary_nwk {output.nwk_tree} --summary_nexus {output.nexus_tree} --node_data {output.node_data}"
+    
+rule ancestral:
+	message: "Reconstructing ancestral sequences and mutations"
+	input:
+		nwk_tree = rules.summary.output.nwk_tree,
+		node_data = rules.summary.output.node_data,
+		tree = rules.summary.output.nwk_tree,
+		alignment = files.backbone_aln
+	output:
+		node_data = "results/summary/div_tree/nt_muts/nt-muts.json"
+	params:
+		inference = "joint"
+	shell:
+		"""
+		augur ancestral \
+			--tree {input.tree} \
+			--alignment {input.alignment} \
+			--output-node-data {output.node_data} \
+			--inference {params.inference}\
+			--keep-ambiguous
+		"""
+
+rule translate:
+	message: "Translating amino acid sequences"
+	input:
+		tree = rules.summary.output.nwk_tree,
+		node_data = rules.ancestral.output.node_data,
+		reference = files.reference
+	output:
+		node_data = "results/summary/div_tree/aa_muts/aa-muts.json"
+	shell:
+		"""
+		augur translate \
+			--tree {input.tree} \
+			--ancestral-sequences {input.node_data} \
+			--reference-sequence {input.reference} \
+			--output {output.node_data}
+		"""
+
+rule traits:
+	message: "Inferring ancestral traits for {params.columns!s}"
+	input:
+		tree = rules.summary.output.nwk_tree,
+		metadata = files.metadata
+	output:
+		node_data = "results/summary/traits/traits.json"
+	params:
+		columns = 'host country region subtype order'
+	shell:
+		"""
+		augur traits \
+			--tree {input.tree} \
+			--metadata {input.metadata} \
+			--output {output.node_data} \
+			--columns {params.columns} \
+			--confidence
+		"""
+
+"""This rule exports the results of the pipeline into JSON format, which is required
+for visualization in auspice. To make changes to the categories of metadata
+that are colored, or how the data is visualized, alter the auspice_config files"""
+rule export:
+	message: "Exporting data files for for auspice"
+	input:
+		tree = rules.summary.output.nwk_tree,
+		metadata = files.metadata,
+		node_data = [rules.summary.output.node_data,rules.traits.output.node_data,rules.ancestral.output.node_data,rules.translate.output.node_data],
+		auspice_config = files.auspice_config,
+		colors = files.colors,
+		lat_long = files.lat_long
+	output:
+		auspice_json = "results/summary/treesort_auspice/treesort.json"
+	shell:
+		"""
+		augur export v2 \
+			--tree {input.tree} \
+			--metadata {input.metadata} \
+			--node-data {input.node_data}\
+			--auspice-config {input.auspice_config} \
+			--include-root-sequence \
+			--colors {input.colors} \
+			--lat-longs {input.lat_long} \
+			--output {output.auspice_json}
+		"""
+
