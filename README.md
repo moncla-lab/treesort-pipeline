@@ -296,6 +296,8 @@ This involves:
 
 ### ```rea.py```
 
+Called in ```rule rea```.
+
 **Description:**  
 Processes annotated Treesort output trees with uncertain reassortment events so they can be later summarized across runs.  
 This involves:  
@@ -316,6 +318,8 @@ This involves:
 	--outdir : path to the reassortment node data for use in rule summary
 
 ### ```summary.py```
+
+Called in ```rule summary```.
 
 **Description:**  
 Generates a consensus summary newick tree and its associated node data featuring majority-inferred reassortment events across multiple Treesort replicates.  
