@@ -76,6 +76,8 @@ Activate the conda environment:
 		
 	* a folder with your alignments
 	* a folder named ```backbone``` with the annotated tree generated in (2) and converted to newick format in (4)
+    * a ```metadata.csv``` with the ancestral traits you want inferred by discrete trait analysis in [```rule traits```](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/traits.html)
+    * a folder named ```config``` which includes a reference file in the subfolder ```ref```, a ```colors.tsv```, a ```lat_longs.tsv```, and an ```auspice_config.json```
 	* the ```strains_dates.csv``` generated in (3)
 		
 	b. your ```descriptor.csv``` file that points to the correct alignment and divergence tree paths for ```rule treesort```. 
@@ -110,7 +112,7 @@ Since this pipeline is parallelized, the ```-j``` flag denotes how many jobs to 
 
 **Using the example data:**
 
-This pipeline is ready to be run on the example data provided in ```EXAMPLE_DATA```. This folder contains the alignments for 235 human H3N2 seasonal influenza viruses, a ```strains-dates.csv``` (see **Prerequisites 3**), and the HA backbone newick tree (see **Overview**). The provided ```descriptor.csv``` also points to all the correct paths.
+This pipeline is ready to be run on the example data provided in ```EXAMPLE_DATA```. This folder contains the alignments for 235 human H3N2 seasonal influenza viruses, a ```strains-dates.csv``` (see **Prerequisites 3**), and the HA backbone newick tree (see **Overview**). It also includes the metadata, reference file, and other needed config files. The provided ```descriptor.csv``` also points to all the correct paths.
 
 ## Usage
 
