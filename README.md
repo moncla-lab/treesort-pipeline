@@ -277,7 +277,8 @@ Resolves the TreeSort tree to match the topology of the unaltered rooted backbon
 Called in ```rule prep```.
 
 Prepares the annotated Treesort output tree so it can be parsed by Baltic as used in ```rule rea```.  
-This involves:  
+
+This script:  
 1. Converts treesort Nexus tree output to Newick.  
 2. Replaces commas with `-` in reassorted segment annotations.  
 3. Removes quotation marks around `TS_NODE_####` labels.  
@@ -300,7 +301,8 @@ Called in ```rule rea```.
 
 **Description:**  
 Processes annotated Treesort output trees with uncertain reassortment events so they can be later summarized across runs.  
-This involves:  
+
+This script:  
 1. Identifies sibling branches with uncertain reassortment events and randomly assigns uncertain segments to one child branch while removing them from the other.  
 2. Generates a ```rea.json``` node data file annotating reassortment status, reassorted segments, and divergence values for each node and leaf.  
 
@@ -323,6 +325,7 @@ Called in ```rule summary```.
 
 **Description:**  
 Generates a consensus summary newick tree and its associated node data featuring majority-inferred reassortment events across multiple Treesort replicates.  
+
 This script:  
 1. Reads in each replicate's reassortment node data produced in ```rule rea```.  
 2. Computes consensus reassortment calls (including reassorting segments) for each node based on a confidence threshold (default: 0.95).  
