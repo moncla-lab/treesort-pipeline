@@ -16,6 +16,7 @@ rule files:
         dates = "EXAMPLE_DATA/strain_dates.csv",
         treesort_descriptor = "descriptor.csv",
         backbone_tree = "EXAMPLE_DATA/backbone/backbone.nwk",
+        target_tree = "EXAMPLE_DATA/backbone/original.nwk",
         backbone_aln = "EXAMPLE_DATA/alignments/h3nx_ha.fasta",
         metadata = "EXAMPLE_DATA/metadata.csv",
         reference = "EXAMPLE_DATA/config/ref/h3nx_ha.gb",
@@ -126,7 +127,21 @@ rule summary:
 		node_data = "results/summary/summary.json"
 	shell:
 		"python scripts/summary.py --jsons {input.jsons} --backbone {input.backbone} --threshold 0.95 --summary_nwk {output.nwk_tree} --summary_nexus {output.nexus_tree} --node_data {output.node_data}"
-    
+
+# stephen shank wrote mapper.py
+rule cladeset_map:
+	message: "mapping reassortments back to the original topology"
+	input:
+		node_data = rules.summary.output.node_data,
+		source = files.backbone_tree,
+		target = files.target_tree
+	output:
+		export_tree = "results/summary/cladeset/treesort.nwk",
+		node_data = "results/summary/cladeset/node.json",
+		debug_path = "results/summary/cladeset/debug.txt"
+	shell:
+		"python scripts/mapper.py --summary_json {input.node_data} --source_tree {input.source} --target_tree {input.target} --output_labeled_tree {output.export_tree} --output_node_data {output.node_data} --debug > {output.debug_path}"
+
 rule ancestral:
 	message: "Reconstructing ancestral sequences and mutations"
 	input:
@@ -135,7 +150,7 @@ rule ancestral:
 		tree = rules.summary.output.nwk_tree,
 		alignment = files.backbone_aln
 	output:
-		node_data = "results/summary/div_tree/nt_muts/nt-muts.json"
+		node_data = "results/summary/cladeset/div_tree/nt_muts/nt-muts.json"
 	params:
 		inference = "joint"
 	shell:
@@ -155,7 +170,7 @@ rule translate:
 		node_data = rules.ancestral.output.node_data,
 		reference = files.reference
 	output:
-		node_data = "results/summary/div_tree/aa_muts/aa-muts.json"
+		node_data = "results/summary/cladeset/div_tree/aa_muts/aa-muts.json"
 	shell:
 		"""
 		augur translate \
@@ -165,7 +180,26 @@ rule translate:
 			--output {output.node_data}
 		"""
 
-rule traits:
+rule traits_cladeset:
+	message: "Inferring ancestral traits for {params.columns!s}"
+	input:
+		tree = rules.cladeset_map.output.export_tree,
+		metadata = files.metadata
+	output:
+		node_data = "results/summary/cladeset/traits/traits.json"
+	params:
+		columns = 'host country region subtype order'
+	shell:
+		"""
+		augur traits \
+			--tree {input.tree} \
+			--metadata {input.metadata} \
+			--output {output.node_data} \
+			--columns {params.columns} \
+			--confidence
+		"""
+		
+rule traits_treesort:
 	message: "Inferring ancestral traits for {params.columns!s}"
 	input:
 		tree = rules.summary.output.nwk_tree,
@@ -190,9 +224,9 @@ that are colored, or how the data is visualized, alter the auspice_config files"
 rule export:
 	message: "Exporting data files for for auspice"
 	input:
-		tree = rules.summary.output.nwk_tree,
+		tree = rules.cladeset_map.output.export_tree,
 		metadata = files.metadata,
-		node_data = [rules.summary.output.node_data,rules.traits.output.node_data,rules.ancestral.output.node_data,rules.translate.output.node_data],
+		node_data = [rules.cladeset_map.output.node_data,rules.traits_cladeset.output.node_data,rules.ancestral.output.node_data,rules.translate.output.node_data],
 		auspice_config = files.auspice_config,
 		colors = files.colors,
 		lat_long = files.lat_long
