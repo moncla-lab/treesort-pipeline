@@ -6,96 +6,98 @@ REPS = range(3)
 
 rule all:
 	input:
-		"results/summary/treesort_auspice/treesort.json"
-    
+		"results/summary/treesort_auspice/treesort.json",
+		"results/summary/log.csv"
+	
 
 """Specify all input files here.  """
 rule files:
-    params:
-        aln = "EXAMPLE_DATA/alignments/{subtype}_{segment}.fasta",
-        dates = "EXAMPLE_DATA/strain_dates.csv",
-        treesort_descriptor = "descriptor.csv",
-        backbone_tree = "EXAMPLE_DATA/backbone/backbone.nwk",
-        target_tree = "EXAMPLE_DATA/backbone/original.nwk",
-        backbone_aln = "EXAMPLE_DATA/alignments/h3nx_ha.fasta",
-        metadata = "EXAMPLE_DATA/metadata.csv",
-        reference = "EXAMPLE_DATA/config/ref/h3nx_ha.gb",
-        colors = "EXAMPLE_DATA/config/colors_h3nx.tsv",
-        lat_long = "EXAMPLE_DATA/config/lat_longs_h3nx.tsv",
-        auspice_config = "EXAMPLE_DATA/config/auspice_config_h3nx.json"
-        
+	params:
+		backbone = "ha",
+		aln = "EXAMPLE_DATA/alignments/{subtype}_{segment}.fasta",
+		dates = "EXAMPLE_DATA/strain_dates.csv",
+		treesort_descriptor = "descriptor.csv",
+		backbone_tree = "EXAMPLE_DATA/backbone/backbone.nwk",
+		target_tree = "EXAMPLE_DATA/backbone/original.nwk",
+		backbone_aln = "EXAMPLE_DATA/alignments/h3nx_ha.fasta",
+		metadata = "EXAMPLE_DATA/metadata.csv",
+		reference = "EXAMPLE_DATA/config/ref/h3nx_ha.gb",
+		colors = "EXAMPLE_DATA/config/colors_h3nx.tsv",
+		lat_long = "EXAMPLE_DATA/config/lat_longs_h3nx.tsv",
+		auspice_config = "EXAMPLE_DATA/config/auspice_config_h3nx.json"
+		
 
 files = rules.files.params
 
 rule tree:
-    message: "Building tree"
-    input:
-        alignment = files.aln
-    output:
-        tree = "results/{rep}/trees_unrooted/{subtype}_{segment}.nwk"
-    params:
-        method = "iqtree"
-    shadow:
-        "minimal"
-    shell:
-        """
-        augur tree \
-            --alignment {input.alignment} \
-            --output {output.tree} \
-            --method {params.method} \
-            --nthreads 1
-        """
-        
+	message: "Building tree"
+	input:
+		alignment = files.aln
+	output:
+		tree = "results/{rep}/trees_unrooted/{subtype}_{segment}.nwk"
+	params:
+		method = "iqtree"
+	shadow:
+		"minimal"
+	shell:
+		"""
+		augur tree \
+			--alignment {input.alignment} \
+			--output {output.tree} \
+			--method {params.method} \
+			--nthreads 1
+		"""
+		
 rule root:
-    message: "Inferring root"
-    input:
-        tree = rules.tree.output.tree,
-        alignment = files.aln,
-        dates = files.dates
-    output:
-        tree = "results/{rep}/trees_rooted/{subtype}_{segment}_rooted/rerooted.newick",
-    shell:
-    	"""
+	message: "Inferring root"
+	input:
+		tree = rules.tree.output.tree,
+		alignment = files.aln,
+		dates = files.dates
+	output:
+		tree = "results/{rep}/trees_rooted/{subtype}_{segment}_rooted/rerooted.newick"
+	shell:
+		"""
 		treetime clock \
 			--tree {input.tree} \
 			--dates {input.dates} \
 			--aln {input.alignment} \
 			--outdir "results/{wildcards.rep}/trees_rooted/{wildcards.subtype}_{wildcards.segment}_rooted"
-        """
-       
+		"""
+	   
 rule treesort:
-    message: "running treesort to infer reassortment events"
-    input:
-        descriptor = files.treesort_descriptor,
-        trees = expand(
-            "results/{{rep}}/trees_rooted/{subtype}_{segment}_rooted/rerooted.newick",
-            subtype=SUBTYPES,
-            segment=SEGMENTS
-        )
-    output:
-    	  tree = "results/{rep}/annotated.tre"
-    shell:
-    	"""
-        # Copy only what treesort needs
-        mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/alignments
-        mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/backbone
-        
-        # Copy FASTA files only (not logs)
-        cp EXAMPLE_DATA/alignments/*.fasta results/{wildcards.rep}/EXAMPLE_DATA/alignments/
-        
-        # Copy descriptor
-        cp {input.descriptor} results/{wildcards.rep}/
+	message: "running treesort to infer reassortment events"
+	input:
+		descriptor = files.treesort_descriptor,
+		trees = expand(
+			"results/{{rep}}/trees_rooted/{subtype}_{segment}_rooted/rerooted.newick",
+			subtype=SUBTYPES,
+			segment=SEGMENTS
+		)
+	output:
+		  tree = "results/{rep}/annotated.tre"
+	shell:
+		"""
+		# Copy only what treesort needs
+		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/alignments
+		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/backbone
+		
+		# Copy FASTA files only (not logs)
+		cp EXAMPLE_DATA/alignments/*.fasta results/{wildcards.rep}/EXAMPLE_DATA/alignments/
+		
+		# Copy descriptor
+		cp {input.descriptor} results/{wildcards.rep}/
 
-        # Copy backbone tree
-        cp EXAMPLE_DATA/backbone/backbone.nwk results/{wildcards.rep}/EXAMPLE_DATA/backbone
-        
-        # Run treesort in isolated environment
-        cd results/{wildcards.rep}
-        treesort -i descriptor.csv -o annotated.tre --no-collapse
-        
-        # Copy result back and cleanup
-        rm -rf results/{wildcards.rep}/EXAMPLE_DATA results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
-        rm -rf results/{wildcards.rep}/treesort-descriptor-*/descriptor.csv.concatenated.fasta
+		# Copy backbone tree
+		cp EXAMPLE_DATA/backbone/backbone.nwk results/{wildcards.rep}/EXAMPLE_DATA/backbone
+		
+		# Run treesort in isolated environment
+		cd results/{wildcards.rep}
+		treesort -i descriptor.csv -o annotated.tre --no-collapse
+		
+		# Copy result back and cleanup
+		rm -rf results/{wildcards.rep}/EXAMPLE_DATA results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
+		rm -rf results/{wildcards.rep}/treesort-descriptor-*/descriptor.csv.concatenated.fasta
 		"""
 		
 rule prep:
@@ -108,14 +110,14 @@ rule prep:
 		"python scripts/prep.py --tree {input.tree} --outdir {output.outdir}"
 		
 rule rea:
-    message: "creating a reassortment summary json for each tree"
-    input:
-    	tree = rules.prep.output.outdir
-    output:
-    	json = "results/{rep}/rea.json"
-    shell:
-    	"python scripts/rea.py --tree {input.tree} --outdir {output.json}"
-    	
+	message: "creating a reassortment summary json for each tree"
+	input:
+		tree = rules.prep.output.outdir
+	output:
+		json = "results/{rep}/rea.json",
+	shell:
+		"python scripts/rea.py --tree {input.tree} --outdir {output.json}"
+		
 rule summary:
 	message: "creating a summary tree and node data with high confidence reassortments"
 	input:
@@ -141,6 +143,17 @@ rule cladeset_map:
 		debug_path = "results/summary/cladeset/debug.txt"
 	shell:
 		"python scripts/mapper.py --summary_json {input.node_data} --source_tree {input.source} --target_tree {input.target} --output_labeled_tree {output.export_tree} --output_node_data {output.node_data} --debug > {output.debug_path}"
+
+rule log:
+	message: "creating a log file of reassortment rates and segment info"
+	input:
+		trees = expand("results/{rep}/output.nwk", rep=REPS),
+		summary_tree = rules.cladeset_map.output.export_tree,
+		aln = files.backbone_aln
+	output:
+		log_csv = "results/summary/log.csv"
+	shell:
+		"python scripts/rea_rate.py --backbone {files.backbone} --trees {input.trees} --summary_tree {input.summary_tree} --backbone_aln {input.aln} --log_file {output.log_csv}"
 
 rule ancestral:
 	message: "Reconstructing ancestral sequences and mutations"
