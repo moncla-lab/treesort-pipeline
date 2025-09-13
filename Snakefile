@@ -147,6 +147,7 @@ rule cladeset_map:
 rule log:
 	message: "creating a log file of reassortment rates and segment info"
 	input:
+		jsons = expand("results/{rep}/rea.json", rep=REPS),
 		trees = expand("results/{rep}/output.nwk", rep=REPS),
 		summary_tree = rules.cladeset_map.output.export_tree,
 		aln = files.backbone_aln
@@ -158,9 +159,7 @@ rule log:
 rule ancestral:
 	message: "Reconstructing ancestral sequences and mutations"
 	input:
-		nwk_tree = rules.summary.output.nwk_tree,
-		node_data = rules.summary.output.node_data,
-		tree = rules.summary.output.nwk_tree,
+		tree = rules.cladeset_map.output.export_tree,
 		alignment = files.backbone_aln
 	output:
 		node_data = "results/summary/cladeset/div_tree/nt_muts/nt-muts.json"
@@ -179,7 +178,7 @@ rule ancestral:
 rule translate:
 	message: "Translating amino acid sequences"
 	input:
-		tree = rules.summary.output.nwk_tree,
+		tree = rules.cladeset_map.output.export_tree,
 		node_data = rules.ancestral.output.node_data,
 		reference = files.reference
 	output:
