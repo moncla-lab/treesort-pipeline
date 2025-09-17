@@ -14,6 +14,7 @@ parser.add_argument('--summary_nwk', type=str, required=True, help='summary nwk 
 parser.add_argument('--summary_nexus', type=str, required=True, help='summary nexus tree')
 parser.add_argument('--node_data', type=str, required=True, help='node data for rule export')
 
+
 args = parser.parse_args()
 
 def summary_json(jsons, threshold, node_data):
@@ -157,9 +158,9 @@ def summary_tree(summary_json, backbone, nwk_path, nexus_path):
 	
 		label = str(node.taxon).replace('Taxon(', '').strip(')"\'') if node.is_leaf() else node.label
 	
-		if label in summary_data:
+		if label in summary_data["nodes"]:
 	
-			info = summary_data[label]
+			info = summary_data["nodes"][label]
 			node.annotations.clear()
 			
 			is_reassorted = 1 if info["reassorted"] == "True" else 0
