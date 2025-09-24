@@ -1,0 +1,161 @@
+{
+  "branch_attrs": {
+    "labels": {
+      "text": "Reassorted Segments"
+    }
+  },
+  "nodes": {
+    "NODE_0000014": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS, PA",
+      "segments_confidence": {
+        "PA": 1.0,
+        "NS": 0.97,
+        "MP": 1.0,
+        "NA": 0.509
+      }
+    },
+    "NODE_0000033": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/Hong_Kong/JY2/1968|1968-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/Victoria/JY2/1968|1968-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000083": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0
+      }
+    },
+    "A/Amsterdam/1609/1977|1977-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0000167": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/South_Korea/8668/2019|2019-01-12": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "A/Rheinland-Pfalz/USAFSAM-14133/2023|2023-01-29": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 0.179
+      }
+    },
+    "A/Italy/7156/2018|2018-02-20": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    }
+  },
+  "branches": {
+    "NODE_0000014": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NS, PA)"
+      }
+    },
+    "NODE_0000033": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/Hong_Kong/JY2/1968|1968-01-01": {
+      "labels": {
+        "Reassorted Segments": "6 (MP, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "A/Victoria/JY2/1968|1968-01-01": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000083": {
+      "labels": {
+        "Reassorted Segments": "6 (NA, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "A/Amsterdam/1609/1977|1977-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0000167": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/South_Korea/8668/2019|2019-01-12": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/Rheinland-Pfalz/USAFSAM-14133/2023|2023-01-29": {
+      "labels": {
+        "Reassorted Segments": "3 (NS, PA, PB2)"
+      }
+    },
+    "A/Italy/7156/2018|2018-02-20": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    }
+  }
+}

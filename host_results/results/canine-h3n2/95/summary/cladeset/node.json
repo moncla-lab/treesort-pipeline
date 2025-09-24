@@ -1,0 +1,119 @@
+{
+  "branch_attrs": {
+    "labels": {
+      "text": "Reassorted Segments"
+    }
+  },
+  "nodes": {
+    "A/canine/Guangdong/2/2007|2007-10-18": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "NP": 0.002
+      }
+    },
+    "A/canine/Beijing/20150124-300/2015|2015-01-24": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/canine/Beijing/20150118-256/2015|2015-01-18": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/canine/Singapore/SG_NParks_CIV_M10305/2018|2018-06-01": {
+      "Reassorted": true,
+      "confidence": "0.997",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0000281": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0
+      }
+    },
+    "NODE_0000006": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0000007": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA",
+      "segments_confidence": {
+        "PA": 1.0,
+        "NS": 1.0
+      }
+    },
+    "A/canine/Korea/VC123578/2012|2012-03-13": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0
+      }
+    }
+  },
+  "branches": {
+    "A/canine/Guangdong/2/2007|2007-10-18": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/canine/Beijing/20150124-300/2015|2015-01-24": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/canine/Beijing/20150118-256/2015|2015-01-18": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/canine/Singapore/SG_NParks_CIV_M10305/2018|2018-06-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0000281": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "NODE_0000006": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0000007": {
+      "labels": {
+        "Reassorted Segments": "2 (NS, PA)"
+      }
+    },
+    "A/canine/Korea/VC123578/2012|2012-03-13": {
+      "labels": {
+        "Reassorted Segments": "3 (NP, PB1, PB2)"
+      }
+    }
+  }
+}

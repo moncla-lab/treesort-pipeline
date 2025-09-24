@@ -1,0 +1,29 @@
+Map from character to field name
+A:	Anseriformes
+B:	Avian
+C:	Galliformes
+D:	Neoave
+E:	?
+
+
+Substitution rate (mu): 4.404621
+
+Equilibrium frequencies (pi_i):
+  A: 0.3321
+  B: 0.2633
+  C: 0.1848
+  D: 0.2199
+
+Symmetrized rates from j->i (W_ij):
+	A	B	C	D
+  A	0	1.4429	0.7718	2.7944
+  B	1.4429	0	0.5472	1.2824
+  C	0.7718	0.5472	0	0.5321
+  D	2.7944	1.2824	0.5321	0
+
+Actual rates from j->i (Q_ij):
+	A	B	C	D
+  A	0	0.4791	0.2563	0.9279
+  B	0.3798	0	0.144	0.3376
+  C	0.1426	0.1011	0	0.0983
+  D	0.6145	0.282	0.117	0

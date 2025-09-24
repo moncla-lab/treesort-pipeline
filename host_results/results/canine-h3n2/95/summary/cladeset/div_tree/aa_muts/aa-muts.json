@@ -1,0 +1,5053 @@
+{
+  "annotations": {
+    "HA": {
+      "end": 1701,
+      "seqid": "data/config/ref/h3nx_ha.gb",
+      "start": 1,
+      "strand": "+",
+      "type": "CDS"
+    },
+    "nuc": {
+      "end": 1701,
+      "seqid": "data/config/ref/h3nx_ha.gb",
+      "start": 1,
+      "strand": "+",
+      "type": "source"
+    }
+  },
+  "generated_by": {
+    "program": "augur",
+    "version": "31.3.0"
+  },
+  "nodes": {
+    "A/Canine/California/LACPHL-INF00004/2021|2021-08-06": {
+      "aa_muts": {
+        "HA": [
+          "T203I"
+        ]
+      }
+    },
+    "A/Canine/California/LACPHL-INF00006/2021|2021-08-06": {
+      "aa_muts": {
+        "HA": [
+          "R345X",
+          "G346X",
+          "L347X",
+          "F348X",
+          "G349X",
+          "A350X",
+          "I351K"
+        ]
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/000915/2018|2018-01-03": {
+      "aa_muts": {
+        "HA": [
+          "R224K",
+          "K254E",
+          "N306T"
+        ]
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/006974/2018|2018-01-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/007780/2018|2018-01-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/007781/2018|2018-01-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/118191/2017|2017-10-31": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/150620/2018|2018-08-21": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/152386/2018|2018-08-23": {
+      "aa_muts": {
+        "HA": [
+          "A320V"
+        ]
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/188203/2017|2017-10-31": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/188226/2017|2017-10-31": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/188297/2017|2017-10-31": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/188305/2017|2017-10-31": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/Canis_lupus_familiaris/USA/218592/2017|2017-12-30": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Alabama/CVM-194456-1/2022|2022-08-24": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/1016/2018|2018-10-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/1028/2010|2010-02-02": {
+      "aa_muts": {
+        "HA": [
+          "E66K",
+          "N117D",
+          "S303N"
+        ]
+      }
+    },
+    "A/canine/Beijing/1102/2018|2018-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/1103/2018|2018-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/1115/2019|2019-12-01": {
+      "aa_muts": {
+        "HA": [
+          "S8N",
+          "E135K"
+        ]
+      }
+    },
+    "A/canine/Beijing/1167/2019|2019-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/1183/2019|2019-05-01": {
+      "aa_muts": {
+        "HA": [
+          "E135D"
+        ]
+      }
+    },
+    "A/canine/Beijing/1364/2019|2019-08-01": {
+      "aa_muts": {
+        "HA": [
+          "A288V"
+        ]
+      }
+    },
+    "A/canine/Beijing/1372/2019|2019-08-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/1389/2019|2019-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/18/2019|2019-03-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20121215-34/2012|2012-12-15": {
+      "aa_muts": {
+        "HA": [
+          "N328T",
+          "G481S"
+        ]
+      }
+    },
+    "A/canine/Beijing/20121230-62/2012|2012-12-30": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20131112-279/2013|2013-11-12": {
+      "aa_muts": {
+        "HA": [
+          "F348L"
+        ]
+      }
+    },
+    "A/canine/Beijing/20131203-341/2013|2013-12-03": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20131203-342/2013|2013-12-03": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20131204-349/2013|2013-12-04": {
+      "aa_muts": {
+        "HA": [
+          "K315R",
+          "V445I"
+        ]
+      }
+    },
+    "A/canine/Beijing/20131207-365/2013|2013-12-07": {
+      "aa_muts": {
+        "HA": [
+          "V339A"
+        ]
+      }
+    },
+    "A/canine/Beijing/20140103-90/2014|2014-01-03": {
+      "aa_muts": {
+        "HA": [
+          "P237L"
+        ]
+      }
+    },
+    "A/canine/Beijing/20140110-2/2014|2014-01-10": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20150118-256/2015|2015-01-18": {
+      "aa_muts": {
+        "HA": [
+          "T452I"
+        ]
+      }
+    },
+    "A/canine/Beijing/20150120-265/2015|2015-01-20": {
+      "aa_muts": {
+        "HA": [
+          "V339A"
+        ]
+      }
+    },
+    "A/canine/Beijing/20150122-284/2015|2015-01-22": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20150124-300/2015|2015-01-24": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20161216-8/2016|2016-12-16": {
+      "aa_muts": {
+        "HA": [
+          "S263R",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Beijing/20161228-9/2016|2016-12-28": {
+      "aa_muts": {
+        "HA": [
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170314-73/2017|2017-03-14": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170417-81/2017|2017-04-17": {
+      "aa_muts": {
+        "HA": [
+          "S263R"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170417-83/2017|2017-04-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170424-102/2017|2017-04-24": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170501-108/2017|2017-05-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170510-118/2017|2017-05-10": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170512-120/2017|2017-05-12": {
+      "aa_muts": {
+        "HA": [
+          "R508S"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170512-121/2017|2017-05-12": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170512-122/2017|2017-05-12": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170512-133/2017|2017-05-12": {
+      "aa_muts": {
+        "HA": [
+          "A320V"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170512-137/2017|2017-05-12": {
+      "aa_muts": {
+        "HA": [
+          "P159S",
+          "L425F"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170527-146/2017|2017-05-27": {
+      "aa_muts": {
+        "HA": [
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170528-147/2017|2017-05-28": {
+      "aa_muts": {
+        "HA": [
+          "Q556A",
+          "R557K",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170528-148/2017|2017-05-28": {
+      "aa_muts": {
+        "HA": [
+          "V546G",
+          "M552I"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170604-164/2017|2017-06-04": {
+      "aa_muts": {
+        "HA": [
+          "D191G"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170610-172/2017|2017-06-10": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170610-173/2017|2017-06-10": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170610-174/2017|2017-06-10": {
+      "aa_muts": {
+        "HA": [
+          "W553G"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170612-183/2017|2017-06-12": {
+      "aa_muts": {
+        "HA": [
+          "T99I",
+          "W553G"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170614-185/2017|2017-06-14": {
+      "aa_muts": {
+        "HA": [
+          "T3N"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170615-195/2017|2017-06-15": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170616-200/2017|2017-06-16": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170616-202/2017|2017-06-16": {
+      "aa_muts": {
+        "HA": [
+          "G368S"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170618-206/2017|2017-06-18": {
+      "aa_muts": {
+        "HA": [
+          "L542V"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170709-15/2017|2017-07-09": {
+      "aa_muts": {
+        "HA": [
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170711-16/2017|2017-07-11": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/20170712-18/2017|2017-07-12": {
+      "aa_muts": {
+        "HA": [
+          "V128F",
+          "D204N"
+        ]
+      }
+    },
+    "A/canine/Beijing/20170720-30/2017|2017-07-20": {
+      "aa_muts": {
+        "HA": [
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Beijing/253/2009|2009-12-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/295/2009|2009-12-14": {
+      "aa_muts": {
+        "HA": [
+          "N149S",
+          "G234R"
+        ]
+      }
+    },
+    "A/canine/Beijing/305/2009|2009-12-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/308/2017|2017-09-01": {
+      "aa_muts": {
+        "HA": [
+          "M460T"
+        ]
+      }
+    },
+    "A/canine/Beijing/309/2017|2017-09-01": {
+      "aa_muts": {
+        "HA": [
+          "I212V"
+        ]
+      }
+    },
+    "A/canine/Beijing/359/2009|2009-12-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/362/2009|2009-12-17": {
+      "aa_muts": {
+        "HA": [
+          "Q343R",
+          "F348S"
+        ]
+      }
+    },
+    "A/canine/Beijing/364/2009|2009-12-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/418/2010|2010-01-08": {
+      "aa_muts": {
+        "HA": [
+          "T81A"
+        ]
+      }
+    },
+    "A/canine/Beijing/420/2010|2010-01-08": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/509/2017|2017-12-01": {
+      "aa_muts": {
+        "HA": [
+          "I283M"
+        ]
+      }
+    },
+    "A/canine/Beijing/511/2010|2010-01-03": {
+      "aa_muts": {
+        "HA": [
+          "T81A",
+          "S303N"
+        ]
+      }
+    },
+    "A/canine/Beijing/547/2018|2018-01-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/618/2018|2018-02-01": {
+      "aa_muts": {
+        "HA": [
+          "R217I"
+        ]
+      }
+    },
+    "A/canine/Beijing/CAU-118/2018|2018-01-01": {
+      "aa_muts": {
+        "HA": [
+          "F348L",
+          "T452I"
+        ]
+      }
+    },
+    "A/canine/Beijing/CAU-501/2001|2001-05-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/CAU-510/2010|2010-05-01": {
+      "aa_muts": {
+        "HA": [
+          "E473X"
+        ]
+      }
+    },
+    "A/canine/Beijing/CAU-511/2011|2011-05-01": {
+      "aa_muts": {
+        "HA": [
+          "S130L"
+        ]
+      }
+    },
+    "A/canine/Beijing/CAU-JC2538/2010|2010-08-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Beijing/CAU-JC2550/2010|2010-08-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/043670/2017|2017-03-24": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/20170411-20/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/84315/2017|2017-05-18": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/BRW002/2018|2018-01-06": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/BRW003/2018|2018-01-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-17384101/2019|2019-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-1738411/2019|2019-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-32151101/2021|2021-10-14": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-3215141/2021|2021-10-14": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-3235751/2021|2021-10-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-3275921/2021|2021-10-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-32918141/2021|2021-10-21": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-3299021/2021|2021-10-23": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-33954291/2021|2021-10-29": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/CVM-3466381/2021|2021-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M19-17384-1-1/2019|2019-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M19-17384-10-1/2019|2019-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M21-32151-10-1/2021|2021-10-14": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M21-32151-4-1/2021|2021-10-14": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M21-32357-5-1/2021|2021-10-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M21-32759-2-1/2021|2021-10-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M21-32918-14-1/2021|2021-10-21": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M21-32990-2-1/2021|2021-10-23": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M21-33954-29-1/2021|2021-10-29": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/California/M21-34663-8-1/2021|2021-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/ChangChun/01/2023|2023-12-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/11071/2019|2019-02-11": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/15001/2019|2019-02-02": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/15027/2019|2019-03-02": {
+      "aa_muts": {
+        "HA": [
+          "N54D",
+          "G140D"
+        ]
+      }
+    },
+    "A/canine/China/15066/2019|2019-03-02": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/15068/2019|2019-03-02": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/6068/2018|2018-11-26": {
+      "aa_muts": {
+        "HA": [
+          "D287G"
+        ]
+      }
+    },
+    "A/canine/China/A4/2021|2021-05-02": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/HN3/2018|2018-05-22": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/HN6/2018|2018-06-03": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/JLM1/2015|2015-11-25": {
+      "aa_muts": {
+        "HA": [
+          "G39A",
+          "I41L",
+          "E51Q"
+        ]
+      }
+    },
+    "A/canine/China/JLM2/2015|2015-11-25": {
+      "aa_muts": {
+        "HA": [
+          "G32A",
+          "A35T",
+          "R469K"
+        ]
+      }
+    },
+    "A/canine/China/LG1/2015|2015-12-16": {
+      "aa_muts": {
+        "HA": [
+          "N22I",
+          "E23A",
+          "N24D",
+          "W359S",
+          "E360I",
+          "Q379H",
+          "A380R"
+        ]
+      }
+    },
+    "A/canine/China/LG2/2015|2015-12-16": {
+      "aa_muts": {
+        "HA": [
+          "T64R",
+          "C68Y",
+          "F408S",
+          "H409Q"
+        ]
+      }
+    },
+    "A/canine/China/QiaoKe01/2017|2017-05-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/China/Shanghai-0315-2019/2019|2019-03-08": {
+      "aa_muts": {
+        "HA": [
+          "Q327R",
+          "S328N",
+          "R508K"
+        ]
+      }
+    },
+    "A/canine/Florida/090919/2017|2017-05-26": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/20170606-11/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/20170606-17/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/20170606-18/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/20170606-2/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/20170606-7/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/20170606-8/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/20170606-9/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/269770/2015|2015-11-01": {
+      "aa_muts": {
+        "HA": [
+          "R561G"
+        ]
+      }
+    },
+    "A/canine/Florida/88807.2/2017|2017-05-25": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/CAIS-B1/2021|2021-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/CAIS-F1/2021|2021-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/CAIS-H1/2021|2021-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/CVM-B1/2021|2021-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/CVM-F1/2021|2021-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Florida/CVM-H1/2021|2021-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Fujian/11/2018|2018-11-01": {
+      "aa_muts": {
+        "HA": [
+          "P305L"
+        ]
+      }
+    },
+    "A/canine/Fujian/1108/2018|2018-12-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Fujian/1109/2018|2018-12-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Fujian/601/2018|2018-01-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Georgia/101875/2015|2015-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Georgia/104940/2015|2015-07-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Georgia/20170606-19/2017|2017-05-25": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Georgia/42632/2015|2015-06-12": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Georgia/89750.1/2017|2017-05-26": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Georgia/95391/2015|2015-07-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangdong/01/2013|2013-04-01": {
+      "aa_muts": {
+        "HA": [
+          "R308S",
+          "K466R"
+        ]
+      }
+    },
+    "A/canine/Guangdong/01/2014|2014-02-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangdong/02/2013|2013-04-01": {
+      "aa_muts": {
+        "HA": [
+          "K308N"
+        ]
+      }
+    },
+    "A/canine/Guangdong/02/2014|2014-02-01": {
+      "aa_muts": {
+        "HA": [
+          "V42A",
+          "I195T",
+          "K466R"
+        ]
+      }
+    },
+    "A/canine/Guangdong/03/2013|2013-11-01": {
+      "aa_muts": {
+        "HA": [
+          "V42G",
+          "I45T"
+        ]
+      }
+    },
+    "A/canine/Guangdong/04/2013|2013-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangdong/05/2011|2011-02-01": {
+      "aa_muts": {
+        "HA": [
+          "L31Q",
+          "P37L",
+          "I566F"
+        ]
+      }
+    },
+    "A/canine/Guangdong/1/2006|2006-06-01": {
+      "aa_muts": {
+        "HA": [
+          "R399K",
+          "R469K",
+          "D509N"
+        ]
+      }
+    },
+    "A/canine/Guangdong/1/2007|2007-04-18": {
+      "aa_muts": {
+        "HA": [
+          "S130X",
+          "V339I"
+        ]
+      }
+    },
+    "A/canine/Guangdong/1/2011|2011-02-01": {
+      "aa_muts": {
+        "HA": [
+          "Y249C"
+        ]
+      }
+    },
+    "A/canine/Guangdong/1/2018|2018-05-14": {
+      "aa_muts": {
+        "HA": [
+          "G481S"
+        ]
+      }
+    },
+    "A/canine/Guangdong/12/2012|2012-09-15": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangdong/2/2006|2006-08-01": {
+      "aa_muts": {
+        "HA": [
+          "A109T",
+          "R277S",
+          "R469K"
+        ]
+      }
+    },
+    "A/canine/Guangdong/2/2007|2007-10-18": {
+      "aa_muts": {
+        "HA": [
+          "N451H"
+        ]
+      }
+    },
+    "A/canine/Guangdong/2/2011|2011-02-01": {
+      "aa_muts": {
+        "HA": [
+          "A35V",
+          "T467A"
+        ]
+      }
+    },
+    "A/canine/Guangdong/2/2018|2018-05-16": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangdong/23/2012|2012-09-18": {
+      "aa_muts": {
+        "HA": [
+          "T317I"
+        ]
+      }
+    },
+    "A/canine/Guangdong/3/2011|2011-03-01": {
+      "aa_muts": {
+        "HA": [
+          "N306I",
+          "V325A",
+          "V339I",
+          "R342K"
+        ]
+      }
+    },
+    "A/canine/Guangdong/3/2018|2018-05-17": {
+      "aa_muts": {
+        "HA": [
+          "R399K",
+          "R427K"
+        ]
+      }
+    },
+    "A/canine/Guangdong/DY1/2019|2019-06-23": {
+      "aa_muts": {
+        "HA": [
+          "L383P",
+          "D509N",
+          "R515Q"
+        ]
+      }
+    },
+    "A/canine/Guangdong/GY01/2018|2018-05-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/11/2019|2019-01-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/1180/2019|2019-05-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/15/2019|2019-07-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/16/2019|2019-07-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/17/2019|2019-02-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/20/2019|2019-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/25/2019|2019-07-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/35/2019|2019-07-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/37/2019|2019-07-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/38/2019|2019-07-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Guangzhou/603/2018|2018-02-01": {
+      "aa_muts": {
+        "HA": [
+          "D529G"
+        ]
+      }
+    },
+    "A/canine/Guangzhou/8/2018|2018-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Hainan/615/2018|2018-02-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Hainan/79/2019|2019-07-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Hainan/CAU-W17/2015|2015-05-01": {
+      "aa_muts": {
+        "HA": [
+          "T138I"
+        ]
+      }
+    },
+    "A/canine/Hainan/F4/2018|2018-12-01": {
+      "aa_muts": {
+        "HA": [
+          "A446T"
+        ]
+      }
+    },
+    "A/canine/Hainan/W3/2019|2019-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Hainan/W5/2019|2019-06-01": {
+      "aa_muts": {
+        "HA": [
+          "M552L"
+        ]
+      }
+    },
+    "A/canine/Hainan/W8/2019|2019-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Heilongjiang/1/2018|2018-10-15": {
+      "aa_muts": {
+        "HA": [
+          "P159S",
+          "G174R",
+          "R469K"
+        ]
+      }
+    },
+    "A/canine/Heilongjiang/1/2019|2019-01-23": {
+      "aa_muts": {
+        "HA": [
+          "W250C",
+          "G395E"
+        ]
+      }
+    },
+    "A/canine/Heilongjiang/2/2019|2019-05-04": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Heilongjiang/3/2019|2019-11-21": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Heilongjiang/L1/2013|2013-03-10": {
+      "aa_muts": {
+        "HA": [
+          "A129T"
+        ]
+      }
+    },
+    "A/canine/Henan/L02/2018|2018-03-01": {
+      "aa_muts": {
+        "HA": [
+          "R166T",
+          "F190I"
+        ]
+      }
+    },
+    "A/canine/Henan/L03/2018|2018-05-01": {
+      "aa_muts": {
+        "HA": [
+          "I202S"
+        ]
+      }
+    },
+    "A/canine/Henan/L06/2018|2018-05-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/077752/2016|2016-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/077753/2016|2016-11-01": {
+      "aa_muts": {
+        "HA": [
+          "I351K"
+        ]
+      }
+    },
+    "A/canine/Illinois/0843093/2015|2015-03-30": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/091375-16-1-1/2016|2016-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/12191/2015|2015-04-15": {
+      "aa_muts": {
+        "HA": [
+          "S62P",
+          "I351L"
+        ]
+      }
+    },
+    "A/canine/Illinois/145135-16-3-1/2016|2016-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/1619144/2015|2015-04-14": {
+      "aa_muts": {
+        "HA": [
+          "E234G",
+          "D490N"
+        ]
+      }
+    },
+    "A/canine/Illinois/187427-16-7/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": [
+          "K66R"
+        ]
+      }
+    },
+    "A/canine/Illinois/20170110-1A4/2016|2016-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/20170110-1G12/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/20170110-1G4/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": [
+          "I351K"
+        ]
+      }
+    },
+    "A/canine/Illinois/20170110-2F1/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": [
+          "N188D",
+          "V220A"
+        ]
+      }
+    },
+    "A/canine/Illinois/20170110-2G1/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/21-015197-001/2021|2021-05-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/21-015197-005/2021|2021-05-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/278597/2016|2016-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/283066/2015|2015-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/2883703/2015|2015-05-07": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/328292/2015|2015-11-01": {
+      "aa_muts": {
+        "HA": [
+          "P322H",
+          "I351K"
+        ]
+      }
+    },
+    "A/canine/Illinois/41915/2015|2015-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/A37/2017|2017-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/I0182389/2015|2015-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M16-16391-2-1/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M16-25374-14-1/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M16-25374-19-1/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M16-30480-3-1/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M17-05782-1-1/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M17-05782-11-1/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M17-05782-4-1/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M17-05782-7-1/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Illinois/M17-05782-8-1/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Indiana/003018/2016|2016-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Indiana/093165-16-1-1/2016|2016-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Indiana/1177-17-1/2017|2017-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Indiana/130636/2017|2017-07-29": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Indiana/132276-16-1-2/2016|2016-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Indiana/17031-16-2/2016|2016-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Indiana/2093681/2015|2015-09-01": {
+      "aa_muts": {
+        "HA": [
+          "P289S"
+        ]
+      }
+    },
+    "A/canine/Indiana/96198/2015|2015-07-02": {
+      "aa_muts": {
+        "HA": [
+          "M41I",
+          "N108K",
+          "F110Y",
+          "I351K"
+        ]
+      }
+    },
+    "A/canine/Indiana/M16-09378-32-1/2016|2016-04-05": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Jiangsu/01/2009|2009-12-01": {
+      "aa_muts": {
+        "HA": [
+          "F354S",
+          "T452I"
+        ]
+      }
+    },
+    "A/canine/Jiangsu/02/2010|2010-03-01": {
+      "aa_muts": {
+        "HA": [
+          "I10V",
+          "E448K"
+        ]
+      }
+    },
+    "A/canine/Jiangsu/03/2010|2010-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Jiangsu/04/2010|2010-05-01": {
+      "aa_muts": {
+        "HA": [
+          "R469G"
+        ]
+      }
+    },
+    "A/canine/Jiangsu/05/2010|2010-05-01": {
+      "aa_muts": {
+        "HA": [
+          "I127V"
+        ]
+      }
+    },
+    "A/canine/Jiangsu/06/2010|2010-06-01": {
+      "aa_muts": {
+        "HA": [
+          "A129T",
+          "Q226K",
+          "F348L"
+        ]
+      }
+    },
+    "A/canine/Jilin/01/2023|2023-12-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Kentucky/128656/2017|2017-07-26": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Kentucky/174490/2017|2017-10-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Kentucky/20170606-23/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Kentucky/20170606-6/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/01/2007|2007-05-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/0589318/2015|2015-03-05": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/AS-01/2009|2009-09-18": {
+      "aa_muts": {
+        "HA": [
+          "T147I",
+          "T219A"
+        ]
+      }
+    },
+    "A/canine/Korea/AS-03/2012|2012-05-10": {
+      "aa_muts": {
+        "HA": [
+          "N405T",
+          "E412Q"
+        ]
+      }
+    },
+    "A/canine/Korea/AS-04/2012|2012-06-11": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/AS-05/2012|2012-07-14": {
+      "aa_muts": {
+        "HA": [
+          "R469G"
+        ]
+      }
+    },
+    "A/canine/Korea/AS-06/2012|2012-08-24": {
+      "aa_muts": {
+        "HA": [
+          "V313I",
+          "L455S"
+        ]
+      }
+    },
+    "A/canine/Korea/AS-08/2012|2012-09-17": {
+      "aa_muts": {
+        "HA": [
+          "Y486H"
+        ]
+      }
+    },
+    "A/canine/Korea/AS-09/2012|2012-10-15": {
+      "aa_muts": {
+        "HA": [
+          "R337W"
+        ]
+      }
+    },
+    "A/canine/Korea/AS-11/2013|2013-06-08": {
+      "aa_muts": {
+        "HA": [
+          "C12Y",
+          "R399K",
+          "A492T"
+        ]
+      }
+    },
+    "A/canine/Korea/AS-14/2013|2013-08-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/AS-15/2013|2013-09-11": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/BD-1/2013|2013-05-30": {
+      "aa_muts": {
+        "HA": [
+          "G65R",
+          "T452I"
+        ]
+      }
+    },
+    "A/canine/Korea/CY009/2010|2010-10-01": {
+      "aa_muts": {
+        "HA": [
+          "S123P"
+        ]
+      }
+    },
+    "A/canine/Korea/CY053/2014|2014-03-02": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/DG1/2014|2014-02-13": {
+      "aa_muts": {
+        "HA": [
+          "A26V",
+          "A122V",
+          "V363I",
+          "I531V"
+        ]
+      }
+    },
+    "A/canine/Korea/GCVP01/2007|2007-01-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/KRIBB01/2011|2011-11-01": {
+      "aa_muts": {
+        "HA": [
+          "D47S",
+          "G234E",
+          "I290V"
+        ]
+      }
+    },
+    "A/canine/Korea/LBM412/2008|2008-10-01": {
+      "aa_muts": {
+        "HA": [
+          "M1X",
+          "K2X",
+          "T3X",
+          "V4X",
+          "I5X",
+          "A6X",
+          "L7X",
+          "S8X",
+          "Y9X",
+          "I10X",
+          "F11X",
+          "C12X",
+          "L13X",
+          "A14X",
+          "F15X",
+          "G16X",
+          "R157K",
+          "L471X",
+          "R472X",
+          "E473X",
+          "N474X",
+          "A475X",
+          "E476X",
+          "D477X",
+          "M478X",
+          "G479X",
+          "N480X",
+          "G481X",
+          "C482X",
+          "F483X",
+          "K484X",
+          "I485X",
+          "Y486X",
+          "H487X",
+          "K488X",
+          "C489X",
+          "D490X",
+          "N491X",
+          "A492X",
+          "C493X",
+          "I494X",
+          "E495X",
+          "S496X",
+          "I497X",
+          "R498X",
+          "N499X",
+          "G500X",
+          "T501X",
+          "Y502X",
+          "D503X",
+          "H504X",
+          "N505X",
+          "I506X",
+          "Y507X",
+          "R508X",
+          "D509X",
+          "E510X",
+          "A511X",
+          "V512X",
+          "N513X",
+          "N514X",
+          "R515X",
+          "F516X",
+          "Q517X",
+          "I518X",
+          "K519X",
+          "G520X",
+          "V521X",
+          "E522X",
+          "L523X",
+          "K524X",
+          "S525X",
+          "G526X",
+          "Y527X",
+          "K528X",
+          "D529X",
+          "W530X",
+          "I531X",
+          "L532X",
+          "W533X",
+          "I534X",
+          "S535X",
+          "F536X",
+          "A537X",
+          "I538X",
+          "S539X",
+          "C540X",
+          "F541X",
+          "L542X",
+          "L543X",
+          "C544X",
+          "V545X",
+          "V546X",
+          "L547X",
+          "L548X",
+          "G549X",
+          "F550X",
+          "I551X",
+          "M552X",
+          "W553X",
+          "A554X",
+          "C555X",
+          "Q556X",
+          "R557X",
+          "G558X",
+          "N559X",
+          "I560X",
+          "R561X",
+          "C562X",
+          "N563X",
+          "I564X",
+          "C565X",
+          "I566X",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Korea/MV1/2012|2012-11-07": {
+      "aa_muts": {
+        "HA": [
+          "N232Y",
+          "W530C"
+        ]
+      }
+    },
+    "A/canine/Korea/S1/2012|2012-11-05": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/SH1/2014|2014-09-01": {
+      "aa_muts": {
+        "HA": [
+          "G65R",
+          "R399K"
+        ]
+      }
+    },
+    "A/canine/Korea/SH2/2016|2016-07-22": {
+      "aa_muts": {
+        "HA": [
+          "N25Y",
+          "G234E"
+        ]
+      }
+    },
+    "A/canine/Korea/SH3/2016|2016-07-22": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/SH4/2016|2016-07-22": {
+      "aa_muts": {
+        "HA": [
+          "D424X",
+          "T452X"
+        ]
+      }
+    },
+    "A/canine/Korea/SH5/2015|2015-11-20": {
+      "aa_muts": {
+        "HA": [
+          "T452I"
+        ]
+      }
+    },
+    "A/canine/Korea/SH6/2017|2017-11-07": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/VC123578/2012|2012-03-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Korea/VC378/2012|2012-03-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Liaoning/10/2018|2018-11-01": {
+      "aa_muts": {
+        "HA": [
+          "D47G"
+        ]
+      }
+    },
+    "A/canine/Liaoning/1388/2019|2019-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Liaoning/1578/2010|2010-04-06": {
+      "aa_muts": {
+        "HA": [
+          "G145E",
+          "M336T"
+        ]
+      }
+    },
+    "A/canine/Liaoning/1585/2010|2010-04-06": {
+      "aa_muts": {
+        "HA": [
+          "N314D",
+          "E495K"
+        ]
+      }
+    },
+    "A/canine/Liaoning/27/2012|2012-04-11": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Liaoning/282/2017|2017-08-01": {
+      "aa_muts": {
+        "HA": [
+          "R223K"
+        ]
+      }
+    },
+    "A/canine/Liaoning/284/2017|2017-08-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Liaoning/530/2018|2018-01-01": {
+      "aa_muts": {
+        "HA": [
+          "K2R",
+          "G16C",
+          "R508I",
+          "D509N",
+          "V546I"
+        ]
+      }
+    },
+    "A/canine/Liaoning/H6/2012|2012-05-19": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Minnesota/012684/2023|2023-04-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Minnesota/139684/2017|2017-08-10": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Minnesota/23-012684-001/2023|2023-04-17": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Nanjing/20170328-7/2017|2017-03-28": {
+      "aa_muts": {
+        "HA": [
+          "N18S",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Nanjing/20170419-12/2017|2017-04-19": {
+      "aa_muts": {
+        "HA": [
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Nanjing/20170515-25/2017|2017-05-15": {
+      "aa_muts": {
+        "HA": [
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Nanjing/20170607-40/2017|2017-06-07": {
+      "aa_muts": {
+        "HA": [
+          "N18S",
+          "I551F",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Nanjing/20170620-47/2017|2017-06-20": {
+      "aa_muts": {
+        "HA": [
+          "N149Y",
+          "P159S",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Nanjing/20170704-53/2017|2017-07-04": {
+      "aa_muts": {
+        "HA": [
+          "C544S",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Nanjing/404/2017|2017-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Nanjing/543/2018|2018-01-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Nevada/BRW015/2018|2018-02-07": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Nevada/BRW018/2018|2018-03-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/New_Jersey/CRP036/2018|2018-05-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/New_York/CRP034/2018|2018-05-07": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/NorthCarolina/20170606-28/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/North_Carolina/090487/2017|2017-05-26": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/North_Carolina/103297/2015|2015-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/North_Carolina/109904/2015|2015-07-29": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ohio/174509/2017|2017-10-08": {
+      "aa_muts": {
+        "HA": [
+          "D424G"
+        ]
+      }
+    },
+    "A/canine/Ohio/188191/2017|2017-10-31": {
+      "aa_muts": {
+        "HA": [
+          "S62X",
+          "I351X"
+        ]
+      }
+    },
+    "A/canine/Ohio/A82/2017|2017-10-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ohio/A91/2017|2017-10-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ohio/A97/2017|2017-10-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Oklahoma/011242/2023|2023-04-05": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Oklahoma/23-011242-001/2023|2023-04-05": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-001-4/2018|2018-01-05": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-064-1/2018|2018-10-15": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-069-1/2018|2018-10-22": {
+      "aa_muts": {
+        "HA": [
+          "D257N"
+        ]
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-069-10/2018|2018-10-18": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-069-6/2018|2018-10-22": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-069-9/2018|2018-10-24": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-1/2018|2018-01-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-10/2018|2018-03-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-11/2018|2018-03-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-12/2018|2018-03-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-13/2018|2018-03-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-14/2018|2018-03-14": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-15/2018|2018-03-14": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-16/2018|2018-03-26": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-2/2018|2018-01-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-3/2018|2018-01-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-4/2018|2018-01-26": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-5/2018|2018-02-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-7/2018|2018-03-02": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-8/2018|2018-03-02": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Ontario/NCFAD-2018-070-9/2018|2018-03-02": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Pennsylvania/0261885/2015|2015-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Pennsylvania/037756-1/2023|2023-02-22": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Pennsylvania/20170411-5/2017|2017-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Pennsylvania/985419/2023|2023-02-07": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Pennsylvania/CVM-037756-1/2023|2023-02-22": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Pennsylvania/CVM-985419/2023|2023-02-07": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Shanghai/1204/2019|2019-05-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Shanghai/159/2017|2017-10-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Shanghai/20170622-7/2017|2017-06-22": {
+      "aa_muts": {
+        "HA": [
+          "E417D",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Shanghai/20170713-18/2017|2017-07-13": {
+      "aa_muts": {
+        "HA": [
+          "S202G",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Shanghai/20170721-36/2017|2017-07-21": {
+      "aa_muts": {
+        "HA": [
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Shanghai/354/2017|2017-10-01": {
+      "aa_muts": {
+        "HA": [
+          "R468K",
+          "L543A",
+          "C544W",
+          "V546A"
+        ]
+      }
+    },
+    "A/canine/Shanghai/755/2018|2018-05-01": {
+      "aa_muts": {
+        "HA": [
+          "D287N",
+          "D457G"
+        ]
+      }
+    },
+    "A/canine/Shanxi/1286/2019|2019-07-01": {
+      "aa_muts": {
+        "HA": [
+          "L425F"
+        ]
+      }
+    },
+    "A/canine/Shanxi/361/2017|2017-10-01": {
+      "aa_muts": {
+        "HA": [
+          "G420E"
+        ]
+      }
+    },
+    "A/canine/Shanxi/676/2018|2018-04-01": {
+      "aa_muts": {
+        "HA": [
+          "G395R"
+        ]
+      }
+    },
+    "A/canine/Singapore/SG_NParks_CIV_M10305/2018|2018-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Singapore/SG_NParks_CIV_M4705/2018|2018-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/South_Carolina/132956/2017|2017-08-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/South_Korea/0173915/2015|2015-11-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/South_Korea/20170110-1F1/2016|2016-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Tennessee/231361-1/2022|2022-10-10": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Tennessee/CVM-231361-1/2022|2022-10-10": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/042018-2/2023|2023-02-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/042018-3/2023|2023-02-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/21-011409-001/2021|2021-04-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/2100186/2015|2015-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/343907/2015|2015-12-22": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-0204151/2023|2023-01-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-0204171/2023|2023-01-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-042018-3/2023|2023-02-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-0420182/2023|2023-02-28": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-04914241/2023|2023-02-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-04914311/2023|2023-02-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-06880321/2023|2023-03-08": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-0688041/2023|2023-03-07": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-0688071/2023|2023-03-08": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-09336121/2023|2023-03-24": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-09336221/2023|2023-03-25": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-0933631/2023|2023-03-23": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-0933641/2023|2023-03-23": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-09336441/2023|2023-03-27": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-09336521/2023|2023-03-26": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/CVM-3578541/2022|2022-11-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M22-35785-4-1/2022|2022-11-09": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-02041-5-1/2023|2023-01-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-02041-7-1/2023|2023-01-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-04914-24-1/2023|2023-02-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-04914-31-1/2023|2023-02-20": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-06880-32-1/2023|2023-03-08": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-06880-4-1/2023|2023-03-07": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-06880-7-1/2023|2023-03-08": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-09336-12-1/2023|2023-03-24": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-09336-22-1/2023|2023-03-25": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-09336-3-1/2023|2023-03-23": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-09336-4-1/2023|2023-03-23": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-09336-44-1/2023|2023-03-27": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Texas/M23-09336-52-1/2023|2023-03-26": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Thailand/CU-DC5299/2012|2012-01-15": {
+      "aa_muts": {
+        "HA": [
+          "M1X",
+          "K2X",
+          "T3X",
+          "V4X",
+          "I5X",
+          "A6X",
+          "L7X",
+          "S8X",
+          "G174R",
+          "I566X",
+          "*567X"
+        ]
+      }
+    },
+    "A/canine/Tianjin/368/2017|2017-11-01": {
+      "aa_muts": {
+        "HA": [
+          "I127X",
+          "S202N"
+        ]
+      }
+    },
+    "A/canine/Tianjin/570/2018|2018-01-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Tianjin/643/2018|2018-03-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Tianjin/83/2018|2018-09-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Tianjin/84/2018|2018-09-01": {
+      "aa_muts": {
+        "HA": [
+          "D490G"
+        ]
+      }
+    },
+    "A/canine/Tianjin/85/2018|2018-09-01": {
+      "aa_muts": {
+        "HA": [
+          "Y428C"
+        ]
+      }
+    },
+    "A/canine/Tianjin/89/2019|2019-10-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Virginia/002912-1/2023|2023-01-04": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Virginia/CVM-0029121/2023|2023-01-04": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/West_Virginia/120508-1/2023|2023-05-19": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/West_Virginia/CVM-120508-1/2023|2023-05-19": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Wisconsin/19137/2016|2016-02-08": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Xian/20170601-157/2017|2017-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Xian/20170601-159/2017|2017-06-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "A/canine/Zhejiang/1/2010|2010-09-30": {
+      "aa_muts": {
+        "HA": [
+          "S63P",
+          "V400M"
+        ]
+      }
+    },
+    "A/dog/Indiana/M16-09378-32-1/2016|2016-04-05": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "C12|2023-02-01": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "C13|2023-03-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "C15|2023-03-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "C17|2023-02-06": {
+      "aa_muts": {
+        "HA": [
+          "I351X"
+        ]
+      }
+    },
+    "C1|2023-02-02": {
+      "aa_muts": {
+        "HA": [
+          "V4X"
+        ]
+      }
+    },
+    "C2|2022-11-24": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "C4|2023-02-15": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "C5|2023-03-13": {
+      "aa_muts": {
+        "HA": [
+          "D47N"
+        ]
+      }
+    },
+    "C6|2023-02-03": {
+      "aa_muts": {
+        "HA": [
+          "I351X"
+        ]
+      }
+    },
+    "C7|2023-04-13": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000000": {
+      "aa_muts": {
+        "HA": [
+          "V127I"
+        ]
+      }
+    },
+    "NODE_0000001": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000002": {
+      "aa_muts": {
+        "HA": [
+          "T228A"
+        ]
+      }
+    },
+    "NODE_0000003": {
+      "aa_muts": {
+        "HA": [
+          "K342R",
+          "K427R"
+        ]
+      }
+    },
+    "NODE_0000004": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000005": {
+      "aa_muts": {
+        "HA": [
+          "A144T",
+          "E307D",
+          "N451K"
+        ]
+      }
+    },
+    "NODE_0000006": {
+      "aa_muts": {
+        "HA": [
+          "T452I"
+        ]
+      }
+    },
+    "NODE_0000007": {
+      "aa_muts": {
+        "HA": [
+          "P237L"
+        ]
+      }
+    },
+    "NODE_0000008": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000009": {
+      "aa_muts": {
+        "HA": [
+          "R277H"
+        ]
+      }
+    },
+    "NODE_0000010": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000011": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000012": {
+      "aa_muts": {
+        "HA": [
+          "R427K"
+        ]
+      }
+    },
+    "NODE_0000013": {
+      "aa_muts": {
+        "HA": [
+          "I252T"
+        ]
+      }
+    },
+    "NODE_0000014": {
+      "aa_muts": {
+        "HA": [
+          "R223G"
+        ]
+      }
+    },
+    "NODE_0000015": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000016": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000017": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000018": {
+      "aa_muts": {
+        "HA": [
+          "L75F",
+          "M276I"
+        ]
+      }
+    },
+    "NODE_0000019": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000020": {
+      "aa_muts": {
+        "HA": [
+          "K427R"
+        ]
+      }
+    },
+    "NODE_0000021": {
+      "aa_muts": {
+        "HA": [
+          "G234E"
+        ]
+      }
+    },
+    "NODE_0000022": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000023": {
+      "aa_muts": {
+        "HA": [
+          "K308R"
+        ]
+      }
+    },
+    "NODE_0000024": {
+      "aa_muts": {
+        "HA": [
+          "H91Y"
+        ]
+      }
+    },
+    "NODE_0000025": {
+      "aa_muts": {
+        "HA": [
+          "N514S"
+        ]
+      }
+    },
+    "NODE_0000026": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000027": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000028": {
+      "aa_muts": {
+        "HA": [
+          "P37S",
+          "R166K",
+          "K280E",
+          "T467A"
+        ]
+      }
+    },
+    "NODE_0000029": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000030": {
+      "aa_muts": {
+        "HA": [
+          "R469G"
+        ]
+      }
+    },
+    "NODE_0000031": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000032": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000033": {
+      "aa_muts": {
+        "HA": [
+          "I551V"
+        ]
+      }
+    },
+    "NODE_0000034": {
+      "aa_muts": {
+        "HA": [
+          "T56I",
+          "G174R"
+        ]
+      }
+    },
+    "NODE_0000035": {
+      "aa_muts": {
+        "HA": [
+          "A160D",
+          "F274L",
+          "I294T",
+          "V363I",
+          "K466R"
+        ]
+      }
+    },
+    "NODE_0000036": {
+      "aa_muts": {
+        "HA": [
+          "E98G",
+          "A122T",
+          "G162S"
+        ]
+      }
+    },
+    "NODE_0000037": {
+      "aa_muts": {
+        "HA": [
+          "K172E",
+          "G558X",
+          "N559-",
+          "I560-",
+          "R561-",
+          "C562X",
+          "*567X"
+        ]
+      }
+    },
+    "NODE_0000038": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000039": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000040": {
+      "aa_muts": {
+        "HA": [
+          "A144T",
+          "L383F"
+        ]
+      }
+    },
+    "NODE_0000041": {
+      "aa_muts": {
+        "HA": [
+          "R157K",
+          "D291Y"
+        ]
+      }
+    },
+    "NODE_0000042": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000043": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000044": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000045": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000046": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000047": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000048": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000049": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000050": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000051": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000052": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000053": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000054": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000055": {
+      "aa_muts": {
+        "HA": [
+          "K66E",
+          "D117N",
+          "N328T"
+        ]
+      }
+    },
+    "NODE_0000056": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000057": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000058": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000059": {
+      "aa_muts": {
+        "HA": [
+          "T452I",
+          "K462R"
+        ]
+      }
+    },
+    "NODE_0000060": {
+      "aa_muts": {
+        "HA": [
+          "T81A",
+          "T328N",
+          "N499H"
+        ]
+      }
+    },
+    "NODE_0000061": {
+      "aa_muts": {
+        "HA": [
+          "T328N"
+        ]
+      }
+    },
+    "NODE_0000062": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000063": {
+      "aa_muts": {
+        "HA": [
+          "F415S",
+          "R469W"
+        ]
+      }
+    },
+    "NODE_0000064": {
+      "aa_muts": {
+        "HA": [
+          "I41M",
+          "V258I"
+        ]
+      }
+    },
+    "NODE_0000065": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000066": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000067": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000068": {
+      "aa_muts": {
+        "HA": [
+          "N22S",
+          "R157K"
+        ]
+      }
+    },
+    "NODE_0000069": {
+      "aa_muts": {
+        "HA": [
+          "V325I"
+        ]
+      }
+    },
+    "NODE_0000070": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000071": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000072": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000073": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000074": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000075": {
+      "aa_muts": {
+        "HA": [
+          "N18S",
+          "D79N",
+          "R223K",
+          "V313I"
+        ]
+      }
+    },
+    "NODE_0000076": {
+      "aa_muts": {
+        "HA": [
+          "D477N"
+        ]
+      }
+    },
+    "NODE_0000077": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000078": {
+      "aa_muts": {
+        "HA": [
+          "P20L"
+        ]
+      }
+    },
+    "NODE_0000079": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000080": {
+      "aa_muts": {
+        "HA": [
+          "G162S"
+        ]
+      }
+    },
+    "NODE_0000081": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000082": {
+      "aa_muts": {
+        "HA": [
+          "R224K",
+          "K254R"
+        ]
+      }
+    },
+    "NODE_0000083": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000084": {
+      "aa_muts": {
+        "HA": [
+          "L20P"
+        ]
+      }
+    },
+    "NODE_0000085": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000086": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000087": {
+      "aa_muts": {
+        "HA": [
+          "S235T"
+        ]
+      }
+    },
+    "NODE_0000088": {
+      "aa_muts": {
+        "HA": [
+          "Y116H"
+        ]
+      }
+    },
+    "NODE_0000089": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000090": {
+      "aa_muts": {
+        "HA": [
+          "M41I"
+        ]
+      }
+    },
+    "NODE_0000091": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000092": {
+      "aa_muts": {
+        "HA": [
+          "Y177H"
+        ]
+      }
+    },
+    "NODE_0000093": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000094": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000095": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000096": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000097": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000098": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000099": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000100": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000101": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000102": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000103": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000104": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000105": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000106": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000107": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000108": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000109": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000110": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000111": {
+      "aa_muts": {
+        "HA": [
+          "G234E"
+        ]
+      }
+    },
+    "NODE_0000112": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000113": {
+      "aa_muts": {
+        "HA": [
+          "I351K"
+        ]
+      }
+    },
+    "NODE_0000114": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000115": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000116": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000117": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000118": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000119": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000120": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000121": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000122": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000123": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000124": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000125": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000126": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000127": {
+      "aa_muts": {
+        "HA": [
+          "L20P",
+          "H91Q",
+          "V94G",
+          "E98K",
+          "T99K"
+        ]
+      }
+    },
+    "NODE_0000128": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000129": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000130": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000131": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000132": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000133": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000134": {
+      "aa_muts": {
+        "HA": [
+          "V220I"
+        ]
+      }
+    },
+    "NODE_0000135": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000136": {
+      "aa_muts": {
+        "HA": [
+          "N204D",
+          "V434I"
+        ]
+      }
+    },
+    "NODE_0000137": {
+      "aa_muts": {
+        "HA": [
+          "S62F",
+          "T64I",
+          "R224G"
+        ]
+      }
+    },
+    "NODE_0000138": {
+      "aa_muts": {
+        "HA": [
+          "S111G"
+        ]
+      }
+    },
+    "NODE_0000139": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000140": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000141": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000142": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000143": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000144": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000145": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000146": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000147": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000148": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000149": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000150": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000151": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000152": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000153": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000154": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000155": {
+      "aa_muts": {
+        "HA": [
+          "R157K",
+          "A214V"
+        ]
+      }
+    },
+    "NODE_0000156": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000157": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000158": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000159": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000160": {
+      "aa_muts": {
+        "HA": [
+          "I551F"
+        ]
+      }
+    },
+    "NODE_0000161": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000162": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000163": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000164": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000165": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000166": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000167": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000168": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000169": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000170": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000171": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000172": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000173": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000174": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000175": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000176": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000177": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000178": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000179": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000180": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000181": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000182": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000183": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000184": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000185": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000186": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000187": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000188": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000189": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000190": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000191": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000192": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000193": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000194": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000195": {
+      "aa_muts": {
+        "HA": [
+          "C113S",
+          "K413Q"
+        ]
+      }
+    },
+    "NODE_0000196": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000197": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000198": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000199": {
+      "aa_muts": {
+        "HA": [
+          "V128F"
+        ]
+      }
+    },
+    "NODE_0000200": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000201": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000202": {
+      "aa_muts": {
+        "HA": [
+          "A446T",
+          "G520S"
+        ]
+      }
+    },
+    "NODE_0000203": {
+      "aa_muts": {
+        "HA": [
+          "N18S"
+        ]
+      }
+    },
+    "NODE_0000204": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000205": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000206": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000207": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000208": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000209": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000210": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000211": {
+      "aa_muts": {
+        "HA": [
+          "G234E",
+          "D477V"
+        ]
+      }
+    },
+    "NODE_0000212": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000213": {
+      "aa_muts": {
+        "HA": [
+          "S202I"
+        ]
+      }
+    },
+    "NODE_0000214": {
+      "aa_muts": {
+        "HA": [
+          "K2E",
+          "L7F"
+        ]
+      }
+    },
+    "NODE_0000215": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000216": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000217": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000218": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000219": {
+      "aa_muts": {
+        "HA": [
+          "E296K"
+        ]
+      }
+    },
+    "NODE_0000220": {
+      "aa_muts": {
+        "HA": [
+          "R399K"
+        ]
+      }
+    },
+    "NODE_0000221": {
+      "aa_muts": {
+        "HA": [
+          "E296K"
+        ]
+      }
+    },
+    "NODE_0000222": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000223": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000224": {
+      "aa_muts": {
+        "HA": [
+          "A492T"
+        ]
+      }
+    },
+    "NODE_0000225": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000226": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000227": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000228": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000229": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000230": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000231": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000232": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000233": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000234": {
+      "aa_muts": {
+        "HA": [
+          "M184I"
+        ]
+      }
+    },
+    "NODE_0000235": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000236": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000237": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000238": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000239": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000240": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000241": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000242": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000243": {
+      "aa_muts": {
+        "HA": [
+          "A288V"
+        ]
+      }
+    },
+    "NODE_0000244": {
+      "aa_muts": {
+        "HA": [
+          "V128I"
+        ]
+      }
+    },
+    "NODE_0000245": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000246": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000247": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000248": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000249": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000250": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000251": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000252": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000253": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000254": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000255": {
+      "aa_muts": {
+        "HA": [
+          "A122T",
+          "M276I"
+        ]
+      }
+    },
+    "NODE_0000256": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000257": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000258": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000259": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000260": {
+      "aa_muts": {
+        "HA": [
+          "V128I",
+          "N328S"
+        ]
+      }
+    },
+    "NODE_0000261": {
+      "aa_muts": {
+        "HA": [
+          "N505S"
+        ]
+      }
+    },
+    "NODE_0000262": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000263": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000264": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000265": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000266": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000267": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000268": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000269": {
+      "aa_muts": {
+        "HA": [
+          "A160T"
+        ]
+      }
+    },
+    "NODE_0000270": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000271": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000272": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000273": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000274": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000275": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000276": {
+      "aa_muts": {
+        "HA": [
+          "Y116C",
+          "F348L",
+          "A446V"
+        ]
+      }
+    },
+    "NODE_0000277": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000278": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000279": {
+      "aa_muts": {
+        "HA": [
+          "N187S",
+          "P289S"
+        ]
+      }
+    },
+    "NODE_0000280": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000281": {
+      "aa_muts": {
+        "HA": [
+          "V445I"
+        ]
+      }
+    },
+    "NODE_0000282": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000283": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000284": {
+      "aa_muts": {
+        "HA": [
+          "D79N",
+          "A160D",
+          "G174R",
+          "V182M",
+          "M276I"
+        ]
+      }
+    },
+    "NODE_0000285": {
+      "aa_muts": {
+        "HA": [
+          "N264D"
+        ]
+      }
+    },
+    "NODE_0000286": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000287": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000288": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000289": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000290": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000291": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000292": {
+      "aa_muts": {
+        "HA": [
+          "V512M"
+        ]
+      }
+    },
+    "NODE_0000293": {
+      "aa_muts": {
+        "HA": [
+          "N18K",
+          "E23K"
+        ]
+      }
+    },
+    "NODE_0000294": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000295": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000296": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000297": {
+      "aa_muts": {
+        "HA": [
+          "V239I"
+        ]
+      }
+    },
+    "NODE_0000298": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000299": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000300": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000301": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000302": {
+      "aa_muts": {
+        "HA": [
+          "Q148R"
+        ]
+      }
+    },
+    "NODE_0000303": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000304": {
+      "aa_muts": {
+        "HA": [
+          "S107R"
+        ]
+      }
+    },
+    "NODE_0000305": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000306": {
+      "aa_muts": {
+        "HA": [
+          "T3I",
+          "G16S",
+          "V94I",
+          "S328N"
+        ]
+      }
+    },
+    "NODE_0000307": {
+      "aa_muts": {
+        "HA": [
+          "N175D"
+        ]
+      }
+    },
+    "NODE_0000308": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000309": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000310": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000311": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000312": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000313": {
+      "aa_muts": {
+        "HA": [
+          "M552L"
+        ]
+      }
+    },
+    "NODE_0000314": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000315": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000316": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000317": {
+      "aa_muts": {
+        "HA": [
+          "M478I"
+        ]
+      }
+    },
+    "NODE_0000318": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000319": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000320": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000321": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000322": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000323": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000324": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000325": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000326": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000327": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000328": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000329": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000330": {
+      "aa_muts": {
+        "HA": [
+          "R427K"
+        ]
+      }
+    },
+    "NODE_0000331": {
+      "aa_muts": {
+        "HA": [
+          "V4A",
+          "T28K",
+          "V218I",
+          "R224G",
+          "V313I",
+          "V445I",
+          "A492T",
+          "V545A"
+        ]
+      }
+    },
+    "NODE_0000332": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000333": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000334": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000335": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000336": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000337": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000338": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000339": {
+      "aa_muts": {
+        "HA": [
+          "A55T"
+        ]
+      }
+    },
+    "NODE_0000340": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000341": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000342": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000343": {
+      "aa_muts": {
+        "HA": [
+          "E23K"
+        ]
+      }
+    },
+    "NODE_0000344": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000345": {
+      "aa_muts": {
+        "HA": [
+          "K315R"
+        ]
+      }
+    },
+    "NODE_0000346": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000347": {
+      "aa_muts": {
+        "HA": [
+          "S107G"
+        ]
+      }
+    },
+    "NODE_0000348": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000349": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000350": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000351": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000352": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000353": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000354": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000355": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000356": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000357": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000358": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000359": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000360": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000361": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000362": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000363": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000364": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000365": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000366": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000367": {
+      "aa_muts": {
+        "HA": [
+          "N187T",
+          "K519R"
+        ]
+      }
+    },
+    "NODE_0000368": {
+      "aa_muts": {
+        "HA": [
+          "I261M"
+        ]
+      }
+    },
+    "NODE_0000369": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000370": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000371": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000372": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000373": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000374": {
+      "aa_muts": {
+        "HA": [
+          "S458L"
+        ]
+      }
+    },
+    "NODE_0000375": {
+      "aa_muts": {
+        "HA": [
+          "G520S"
+        ]
+      }
+    },
+    "NODE_0000376": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000377": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000378": {
+      "aa_muts": {
+        "HA": [
+          "I290V",
+          "K384R"
+        ]
+      }
+    },
+    "NODE_0000379": {
+      "aa_muts": {
+        "HA": [
+          "R285K"
+        ]
+      }
+    },
+    "NODE_0000380": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000381": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000382": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000383": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000384": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000385": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000386": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000387": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000388": {
+      "aa_muts": {
+        "HA": [
+          "V239I"
+        ]
+      }
+    },
+    "NODE_0000389": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000390": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000391": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000392": {
+      "aa_muts": {
+        "HA": [
+          "K172E"
+        ]
+      }
+    },
+    "NODE_0000393": {
+      "aa_muts": {
+        "HA": [
+          "A380S"
+        ]
+      }
+    },
+    "NODE_0000394": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000395": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000396": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000397": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000398": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000399": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000400": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000401": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000402": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000403": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000404": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000405": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000406": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000407": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000408": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000409": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000410": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000411": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000412": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000413": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000414": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000415": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000416": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000417": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000418": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000419": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000420": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000421": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000422": {
+      "aa_muts": {
+        "HA": []
+      }
+    },
+    "NODE_0000423": {
+      "aa_muts": {
+        "HA": []
+      },
+      "aa_sequences": {
+        "HA": "MKTVIALSYIFCLAFGQNLPGNENNAATLCLGHHAVPNGTIVKTITDDQIEVTNATELVQNSSTGKICNNPHKILDGRDCTLIDALLGDPHCDVFQNETWDLFVERSNAFSNCYPYDVPDYASLRSVVASSGTLEFITEGFTWAGVTQNGGSGACKRGPANGFFSRLNWLTKSGNTYPVLNVTMPNNNNFDKLYIWGVHHPSTNQEQTSLYIQASGRVTVSTRRSQQTIIPNIGSRPLVRGQSGRISVYWTIVKPGDVLVINSNGNLIAPRGYFKMRIGKSSIMRSDAPIDTCISECITPNGSIPNEKPFQNVNKITYGACPKYVKQNTLKLATGMRNVPEKQTRGLFGAIAGFIENGWEGMVDGWYGFRHQNSEGTGQAADLKSTQAAIDQINGKLNRVIEKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKVDLWSYNAELLVALENQNTIDLTDSEMNKLFEKTRRQLRENAEDMGNGCFKIYHKCDNACIESIRNGTYDHNIYRDEAVNNRFQIKGVELKSGYKDWILWISFAISCFLLCVVLLGFIMWACQRGNIRCNICI*"
+      }
+    }
+  },
+  "reference": {
+    "HA": "MKTVIALSYIFCLAFGQNLPGNENNAATLCLGHHAVPNGTIVKTITDDQIEVTNATELVQNSSTGKICNNPHKILDGRDCTLIDALLGDPHCDVFQNETWDLFVERSNAFSNCYPYDVPDYASLRSVVASSGTLEFITEGFTWAGVTQNGGSGACKRGPANGFFSRLNWLTKSGNTYPVLNVTMPNNNNFDKLYIWGVHHPSTNQEQTSLYIQASGRVTVSTRRSQQTIIPNIGSRPLVRGQSGRISVYWTIVKPGDVLVINSNGNLIAPRGYFKMRIGKSSIMRSDAPIDTCISECITPNGSIPNEKPFQNVNKITYGACPKYVKQNTLKLATGMRNVPEKQTRGLFGAIAGFIENGWEGMVDGWYGFRHQNSEGTGQAADLKSTQAAIDQINGKLNRVIEKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKVDLWSYNAELLVALENQNTIDLTDSEMNKLFEKTRRQLRENAEDMGNGCFKIYHKCDNACIESIRNGTYDHNIYRDEAVNNRFQIKGVELKSGYKDWILWISFAISCFLLCVVLLGFIMWACQRGNIRCNICI*"
+  }
+}

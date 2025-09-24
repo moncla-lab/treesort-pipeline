@@ -1,0 +1,4620 @@
+{
+  "branch_attrs": {
+    "labels": {
+      "text": "Reassorted Segments"
+    }
+  },
+  "nodes": {
+    "NODE_0000009": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Udon_Thani/NIAH464/2004|2004-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 1.0,
+        "PB1": 0.062
+      }
+    },
+    "A/swine/Italy/66945/2006|2006-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Brilon/4685/2005|2005-11-25": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Spain/42386/2002|2002-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1",
+      "segments_confidence": {
+        "PB2": 0.093,
+        "PB1": 1.0,
+        "PA": 0.848
+      }
+    },
+    "A/swine/Luenne/4529/2005|2005-10-06": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Feldbach/4589/2005|2005-10-20": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP, NS",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NP": 1.0,
+        "NS": 1.0
+      }
+    },
+    "NODE_0000068": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 0.771,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000070": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "NS": 1.0,
+        "MP": 1.0,
+        "PB1": 0.31,
+        "PA": 0.266
+      }
+    },
+    "A/swine/Harmstrub/5445/2006|2006-08-03": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/Herford/5932/2007|2007-02-19": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NS": 0.093
+      }
+    },
+    "A/swine/Nordhuemmling/4917/2006|2006-01-27": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "A/swine/Vreden/5982/2007|2007-03-08": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "NODE_0000093": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 1.0,
+        "PA": 0.002
+      }
+    },
+    "NODE_0000041": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000047": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP",
+      "segments_confidence": {
+        "NP": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Melle/IDT5706/2006|2006-11-16": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NS",
+      "segments_confidence": {
+        "NA": 0.867,
+        "NS": 0.87
+      }
+    },
+    "A/swine/Appel/3339/2004|2004-07-05": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Hoerstel/3763/2004|2004-12-06": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 1.0
+      }
+    },
+    "A/swine/Hassendorf/2929/2004|2004-01-26": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP, NS, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "NP": 0.989,
+        "NS": 0.985
+      }
+    },
+    "A/swine/Kevelaer/2892/2004|2004-01-06": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 1.0
+      }
+    },
+    "A/swine/Hilter/5143/2006|2006-04-10": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "PB1": 0.027
+      }
+    },
+    "A/swine/Sassenberg/3762/2004|2004-12-17": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, PA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "PA": 1.0,
+        "PB1": 0.093
+      }
+    },
+    "NODE_0000142": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "A/swine/Germany/Ottendorf-IDT11910/2010|2010-04-29": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000146": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "PB1": 0.349,
+        "PB2": 0.225,
+        "PA": 0.183
+      }
+    },
+    "NODE_0000157": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0000155": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Rheine/7912a/2008|2008-11-04": {
+      "Reassorted": true,
+      "confidence": "0.990",
+      "reassortment_events": "PA, PB1",
+      "segments_confidence": {
+        "PB1": 0.90606,
+        "PA": 0.91818,
+        "PB2": 0.02424
+      }
+    },
+    "A/swine/Stresow/7919a/2008|2008-11-03": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, NP, NS, PA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NP": 1.0,
+        "NS": 0.941,
+        "MP": 1.0,
+        "PA": 0.75,
+        "PB2": 0.743
+      }
+    },
+    "A/swine/Holtrup/6358/2007|2007-08-09": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "MP": 1.0,
+        "PB1": 0.009
+      }
+    },
+    "NODE_0000169": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Germany/R83/2011|2011-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "A/swine/Spain/12/2010|2010-03-01": {
+      "Reassorted": true,
+      "confidence": "0.999",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "NODE_0000208": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "NS": 0.001
+      }
+    },
+    "A/swine/Belgium/Valdegem-581/2010|2010-11-26": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "PB2": 0.294,
+        "NS": 1.0,
+        "PB1": 0.067
+      }
+    },
+    "A/swine/Germany/Stadtloder-IDT11945/2010|2010-05-10": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS, PA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000188": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0,
+        "MP": 1.0,
+        "PB1": 0.086,
+        "NS": 0.001
+      }
+    },
+    "NODE_0000190": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA, PB2",
+      "segments_confidence": {
+        "NS": 1.0,
+        "PB2": 0.952,
+        "PA": 0.821
+      }
+    },
+    "NODE_0000191": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 0.002
+      }
+    },
+    "A/swine/Italy/171855/2011|2011-09-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0,
+        "NS": 1.0
+      }
+    },
+    "A/swine/Spain/16677/2011|2011-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "PB1": 0.056
+      }
+    },
+    "A/swine/Borgentreich/8083/2008|2008-11-24": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "NODE_0000225": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 1.0
+      }
+    },
+    "NODE_0000227": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "PB1": 0.029
+      }
+    },
+    "NODE_0000230": {
+      "Reassorted": true,
+      "confidence": "0.999",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "PB2": 0.26827,
+        "NS": 1.0,
+        "PB1": 0.08909,
+        "PA": 0.08609,
+        "MP": 0.08008
+      }
+    },
+    "A/swine/Italy/134414/2014|2014-09-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "A/swine/Italy/341031-3/2014|2014-09-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS, PA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Italy/248147-8/2015|2015-09-01": {
+      "Reassorted": true,
+      "confidence": "0.998",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 0.99599,
+        "PB1": 0.41683,
+        "PA": 0.31263,
+        "MP": 0.05311,
+        "NP": 0.1022
+      }
+    },
+    "NODE_0000251": {
+      "Reassorted": true,
+      "confidence": "0.963",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Italy/323027/2017|2017-06-28": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 0.001
+      }
+    },
+    "A/swine/Italy/257055/2018|2018-11-07": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 0.997,
+        "PB1": 0.421,
+        "PA": 0.418,
+        "PB2": 0.438,
+        "NP": 0.448
+      }
+    },
+    "NODE_0000270": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "NP": 0.552,
+        "PB2": 0.562,
+        "PB1": 0.579,
+        "PA": 0.582,
+        "NS": 0.003
+      }
+    },
+    "NODE_0000260": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000307": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0000323": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0000347": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0,
+        "MP": 1.0,
+        "PB1": 0.08,
+        "NP": 0.092,
+        "NS": 0.004
+      }
+    },
+    "A/swine/Italy/64500/2019|2019-02-21": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000361": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 1.0
+      }
+    },
+    "A/swine/Italy/124375/2020|2020-05-07": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP",
+      "segments_confidence": {
+        "NP": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000364": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000365": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "PB2": 0.003
+      }
+    },
+    "A/swine/Belgium/Gent-82/2020|2020-02-07": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Warendorf/18914/2013|2013-10-16": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0000305": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "NP": 0.366
+      }
+    },
+    "A/swine/Haltern/14710/2012|2012-02-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 0.726,
+        "PA": 0.58,
+        "PB2": 0.599,
+        "NS": 0.58,
+        "PB1": 0.559
+      }
+    },
+    "A/swine/Ruethen/14808/2012|2012-02-13": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 0.441,
+        "NS": 0.42,
+        "PA": 0.42,
+        "PB2": 0.401,
+        "NP": 0.232
+      }
+    },
+    "NODE_0000310": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "PA": 0.087,
+        "PB1": 0.024,
+        "PB2": 0.025
+      }
+    },
+    "NODE_0000317": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Bad_Wuennenberg/17298/2013|2013-02-12": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/Rhede/20749/2014|2014-10-13": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "A/swine/Germany/R655/2012|2012-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "NODE_0000284": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0
+      }
+    },
+    "A/swine/Wuerusreuth/IDT10990/2009|2009-11-17": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP, PA, PB2",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 0.938,
+        "PB2": 0.912
+      }
+    },
+    "A/swine/Vreden/7613-1/2008|2008-09-30": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0000217": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 0.531,
+        "MP": 0.598
+      }
+    },
+    "A/swine/Billerbeck/14098/2011|2011-10-19": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "PB2": 0.201,
+        "NP": 1.0
+      }
+    },
+    "A/swine/Ascheberg/13209/2011|2011-03-28": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Spain/54008/2004|2004-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 0.863,
+        "PB2": 0.001
+      }
+    },
+    "NODE_0000371": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0,
+        "MP": 0.985,
+        "PB1": 0.083,
+        "NP": 0.173,
+        "NS": 0.004
+      }
+    },
+    "NODE_0000373": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Guangdong/968/2006|2006-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Guangdong/811/2006|2006-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000384": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Guangdong/L23/2010|2010-02-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0
+      }
+    },
+    "A/swine/Heilongjiang/1/05|2005-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/HuNan/01/2008|2008-03-10": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000393": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 1.0
+      }
+    },
+    "NODE_0000394": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Obihiro/10/1985|1985-01-01": {
+      "Reassorted": true,
+      "confidence": "0.999",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "NP": 0.14414
+      }
+    },
+    "A/swine/Heilongjiang/10/2007|2007-08-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PA",
+      "segments_confidence": {
+        "NP": 1.0,
+        "PA": 1.0
+      }
+    },
+    "NODE_0000415": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "NP": 0.296,
+        "NS": 0.303,
+        "PB2": 0.321,
+        "MP": 0.308,
+        "PA": 0.304,
+        "PB1": 0.317
+      }
+    },
+    "A/swine/Minnesota/A01785592/2018|2018-08-07": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA",
+      "segments_confidence": {
+        "PA": 1.0,
+        "NS": 1.0,
+        "NP": 0.426,
+        "PB2": 0.394,
+        "MP": 0.373
+      }
+    },
+    "A/swine/Iowa/A02478877/2019|2019-11-12": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0,
+        "NS": 0.547,
+        "MP": 0.561
+      }
+    },
+    "A/swine/Texas/A02245653/2020|2020-05-21": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0,
+        "MP": 0.439,
+        "NS": 0.453
+      }
+    },
+    "A/swine/Ohio/OH21-12902/2021|2021-05-28": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "PA": 0.696,
+        "MP": 0.692,
+        "PB2": 0.679,
+        "PB1": 0.683,
+        "NS": 0.697,
+        "NP": 0.704
+      }
+    },
+    "A/swine/Tennessee/A02157798/2018|2018-04-12": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 1.0,
+        "MP": 0.523,
+        "PB2": 0.495,
+        "NP": 0.538
+      }
+    },
+    "A/swine/Oklahoma/A02524467/2020|2020-07-02": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "NP": 0.373,
+        "PA": 0.421,
+        "NS": 0.375,
+        "MP": 0.62,
+        "PB2": 0.409
+      }
+    },
+    "A/Swine/Nebraska/209/98|1998-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/Mexico/9634750/2013|2013-02-24": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Ontario/00130/97|1997-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000436": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000452": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000455": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0,
+        "PB1": 0.012
+      }
+    },
+    "A/swine/Jilin/37/2008|2008-10-30": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Guangdong/02/2005|2005-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Guangdong/166/06|2006-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0000468": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP, NS, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "NP": 1.0,
+        "NS": 1.0
+      }
+    },
+    "NODE_0000469": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA",
+      "segments_confidence": {
+        "PA": 1.0,
+        "MP": 1.0,
+        "PB2": 0.697,
+        "NA": 0.678,
+        "PB1": 0.669,
+        "NS": 0.646
+      }
+    },
+    "A/swine/Shandong/133/2007|2007-01-01": {
+      "Reassorted": true,
+      "confidence": "0.978",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 0.55726,
+        "PB2": 0.52454,
+        "NS": 0.53476,
+        "PB1": 0.01022
+      }
+    },
+    "NODE_0000466": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 0.072
+      }
+    },
+    "A/swine/Sichuan/01/2006|2006-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "PA": 0.628
+      }
+    },
+    "A/swine/Guangdong/L5/2010|2010-02-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA",
+      "segments_confidence": {
+        "PA": 0.928,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000473": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NS": 1.0
+      }
+    },
+    "A/swine/Guangdong/Z5/2003|2003-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0000483": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 1.0,
+        "MP": 0.957,
+        "PA": 0.118
+      }
+    },
+    "NODE_0000502": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0,
+        "PB1": 0.588
+      }
+    },
+    "NODE_0000529": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0,
+        "PB1": 0.045
+      }
+    },
+    "NODE_0000532": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000534": {
+      "Reassorted": true,
+      "confidence": "0.998",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000542": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, NP, NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0,
+        "PB1": 0.06
+      }
+    },
+    "NODE_0000554": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 0.957,
+        "PA": 0.544,
+        "PB1": 0.537,
+        "NS": 0.532,
+        "NA": 0.547,
+        "NP": 0.553,
+        "PB2": 0.526
+      }
+    },
+    "NODE_0000559": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "NP": 0.447,
+        "NA": 0.453,
+        "PB2": 0.474,
+        "PB1": 0.463,
+        "NS": 0.468,
+        "PA": 0.456
+      }
+    },
+    "NODE_0000618": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PA, PB1",
+      "segments_confidence": {
+        "PB2": 0.128,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "MP": 0.471
+      }
+    },
+    "NODE_0000622": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NS": 0.002
+      }
+    },
+    "A/swine/Iowa/A02136685/2017|2017-11-17": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0000624": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS, PA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0,
+        "NP": 0.006
+      }
+    },
+    "A/swine/Indiana/A01797992/2019|2019-04-24": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "PB1": 0.056,
+        "PA": 0.12
+      }
+    },
+    "NODE_0000674": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NA": 1.0,
+        "MP": 1.0,
+        "PA": 0.654
+      }
+    },
+    "NODE_0000631": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0
+      }
+    },
+    "NODE_0000633": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/North_Carolina/A02478551/2019|2019-06-24": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Iowa/A02862419/2024|2024-03-15": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Illinois/A02862053/2023|2023-11-17": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 0.999
+      }
+    },
+    "NODE_0000708": {
+      "Reassorted": true,
+      "confidence": "0.996",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Indiana/A02862011/2023|2023-11-08": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PB2": 0.208,
+        "PA": 1.0,
+        "NA": 0.072
+      }
+    },
+    "NODE_0000728": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0,
+        "PB1": 0.08,
+        "MP": 0.001
+      }
+    },
+    "A/swine/Ohio/A02861975/2023|2023-11-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NS",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NS": 1.0,
+        "PB2": 0.121,
+        "PB1": 0.022
+      }
+    },
+    "A/swine/North_Carolina/A02862290/2024|2024-02-08": {
+      "Reassorted": true,
+      "confidence": "0.980",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 0.99796,
+        "PB2": 0.07347
+      }
+    },
+    "A/swine/Indiana/22TOSU1728/2022|2022-07-14": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Minnesota/A02978617/2023|2023-11-13": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0,
+        "PB1": 0.086,
+        "PA": 0.014
+      }
+    },
+    "A/swine/Iowa/22TOSU3985/2022|2022-08-15": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "A/swine/Iowa/A02139353/2018|2018-01-04": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PA",
+      "segments_confidence": {
+        "PB2": 0.251,
+        "NP": 1.0,
+        "PA": 0.877,
+        "NA": 0.05,
+        "PB1": 0.138
+      }
+    },
+    "A/swine/Illinois/A02524521/2020|2020-07-29": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "PB1": 0.034,
+        "PA": 0.048
+      }
+    },
+    "NODE_0000603": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 0.748,
+        "PB1": 0.003,
+        "PB2": 0.004
+      }
+    },
+    "NODE_0000604": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, PA",
+      "segments_confidence": {
+        "NA": 0.966,
+        "PA": 1.0,
+        "PB2": 0.686,
+        "PB1": 0.053
+      }
+    },
+    "NODE_0000577": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA, PB1",
+      "segments_confidence": {
+        "PB2": 0.046,
+        "PB1": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "NP": 0.104,
+        "MP": 0.003
+      }
+    },
+    "A/swine/Indiana/16TOSU7610/2016|2016-07-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000591": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "MP": 1.0,
+        "PA": 0.661
+      }
+    },
+    "NODE_0000594": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Iowa/A02861998/2023|2023-11-06": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NA": 0.456,
+        "PA": 0.147,
+        "NS": 0.031
+      }
+    },
+    "A/swine/Oklahoma/A02479121/2020|2020-03-06": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0000562": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Iowa/A01732489/2016|2016-02-25": {
+      "Reassorted": true,
+      "confidence": "0.961",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 0.89386,
+        "MP": 0.4693,
+        "NA": 0.43184
+      }
+    },
+    "A/swine/Iowa/A02636132/2021|2021-09-10": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0000569": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PB1",
+      "segments_confidence": {
+        "PB1": 0.962,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Iowa/A02479022/2020|2020-01-22": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, PA",
+      "segments_confidence": {
+        "PB2": 0.193,
+        "NA": 1.0,
+        "PA": 1.0,
+        "PB1": 0.038
+      }
+    },
+    "NODE_0000557": {
+      "Reassorted": true,
+      "confidence": "0.980",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 0.92449,
+        "NS": 0.37959,
+        "NA": 0.38776,
+        "PB1": 0.04082
+      }
+    },
+    "A/swine/Missouri/A01782798/2016|2016-10-28": {
+      "Reassorted": true,
+      "confidence": "0.999",
+      "reassortment_events": "NP, PA",
+      "segments_confidence": {
+        "NP": 0.92292,
+        "PA": 0.99099,
+        "PB2": 0.1001,
+        "NA": 0.38639,
+        "PB1": 0.04805
+      }
+    },
+    "NODE_0000547": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 0.992
+      }
+    },
+    "NODE_0000549": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000731": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 0.907,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000746": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0
+      }
+    },
+    "A/wild_boar/Spain/45560-1/2021|2021-12-11": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 0.859,
+        "NA": 0.339
+      }
+    },
+    "A/swine/Spain/46314-2/2020|2020-04-30": {
+      "Reassorted": true,
+      "confidence": "0.988",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000751": {
+      "Reassorted": true,
+      "confidence": "0.970",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "MP": 0.56495,
+        "NA": 0.59175,
+        "NS": 0.56495,
+        "PB1": 0.01753
+      }
+    },
+    "NODE_0000756": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/Swine/Cambodia/TangKrang/060301/2011/H3N2|2011-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP, NS",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NP": 1.0,
+        "NS": 1.0
+      }
+    },
+    "A/swine/Hong_Kong/3516/2012|2012-09-20": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "NODE_0000804": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NP",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NP": 1.0
+      }
+    },
+    "A/swine/Hanoi/6_545/2016|2016-06-30": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000846": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0000861": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/China/JG13/2019|2019-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "MP": 0.904,
+        "PA": 0.34,
+        "PB1": 0.093
+      }
+    },
+    "NODE_0001017": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "PB1": 0.086,
+        "NP": 0.101,
+        "PB2": 0.014
+      }
+    },
+    "A/swine/Hong_Kong/3635/2016|2016-09-07": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Hong_Kong/2308/2014|2014-06-05": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001065": {
+      "Reassorted": true,
+      "confidence": "0.983",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Hong_Kong/NS4306/2012|2012-11-15": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "A/swine/Hong_Kong/4893/2012|2012-12-20": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "PB1": 0.075,
+        "PB2": 0.02
+      }
+    },
+    "A/swine/Hong_Kong/4944/2015|2015-11-19": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0000875": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "NP": 0.2
+      }
+    },
+    "NODE_0000895": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0
+      }
+    },
+    "NODE_0001089": {
+      "Reassorted": true,
+      "confidence": "0.956",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001091": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS, PA",
+      "segments_confidence": {
+        "PB2": 0.228,
+        "NP": 0.992,
+        "PA": 0.766,
+        "NS": 1.0
+      }
+    },
+    "NODE_0001107": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0
+      }
+    },
+    "NODE_0001113": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Chachoengsao/NIAH105583-052-62/2012|2012-02-02": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0001112": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "NODE_0001165": {
+      "Reassorted": true,
+      "confidence": "0.958",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 0.88205,
+        "PB2": 0.61169,
+        "PA": 0.57411
+      }
+    },
+    "NODE_0001168": {
+      "Reassorted": true,
+      "confidence": "0.986",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 0.96957,
+        "PA": 0.39351,
+        "PB2": 0.41988,
+        "PB1": 0.1572
+      }
+    },
+    "NODE_0001176": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 0.968
+      }
+    },
+    "NODE_0001204": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Minnesota/00395/2004|2004-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/IN/PU542/04|2004-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "PB1": 0.004
+      }
+    },
+    "A/swine/Nebraska/A02034991/2015|2015-07-30": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001297": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/MI/PU243/04|2004-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Quebec/1708732/2015|2015-02-12": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "PA": 0.379,
+        "NP": 0.097
+      }
+    },
+    "NODE_0001536": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001541": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001543": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001561": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001583": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "PA": 1.0
+      }
+    },
+    "NODE_0001587": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "PA": 0.994
+      }
+    },
+    "NODE_0001584": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 0.974,
+        "PA": 1.0
+      }
+    },
+    "NODE_0001586": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 1.0,
+        "MP": 1.0,
+        "PB1": 0.026
+      }
+    },
+    "NODE_0001551": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 0.984,
+        "NP": 0.998,
+        "PA": 1.0
+      }
+    },
+    "NODE_0001365": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "NP": 0.913
+      }
+    },
+    "A/swine/Quebec/1561816/2014|2014-01-20": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "NA": 0.229
+      }
+    },
+    "A/swine/Quebec/1626561/2014|2014-07-02": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NA": 0.771,
+        "PA": 1.0
+      }
+    },
+    "A/swine/Quebec/1698182/2014|2014-01-21": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, PA",
+      "segments_confidence": {
+        "NP": 0.973,
+        "PA": 0.967,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Saskatchewan/SD0096/2015|2015-04-03": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001395": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "PA": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0001397": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "PB2": 0.001
+      }
+    },
+    "NODE_0001404": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "MP": 1.0,
+        "PA": 0.443
+      }
+    },
+    "A/swine/Mexico/7932475/2010|2010-11-28": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001413": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "NODE_0001788": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PB2",
+      "segments_confidence": {
+        "NS": 0.996,
+        "PB2": 0.889
+      }
+    },
+    "A/swine/Texas/A01049914/2011|2011-04-28": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "A/swine/Nebraska/A01116984/2011|2011-11-03": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 0.825,
+        "PB1": 0.081,
+        "NS": 0.049
+      }
+    },
+    "NODE_0001799": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PA": 1.0,
+        "NP": 0.104
+      }
+    },
+    "NODE_0001803": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "NODE_0001818": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Kansas/A01377243/2014|2014-03-07": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "PB2": 0.212,
+        "NP": 1.0
+      }
+    },
+    "NODE_0001825": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Ohio/11SW344/2011|2011-09-30": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 0.201
+      }
+    },
+    "NODE_0001835": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0
+      }
+    },
+    "NODE_0001841": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NA": 1.0
+      }
+    },
+    "NODE_0001871": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 0.157
+      }
+    },
+    "NODE_0001872": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/Indiana/13TOSU1050/2013|2013-07-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "NODE_0001896": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "NODE_0001892": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "NODE_0001897": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0001879": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0
+      }
+    },
+    "A/swine/Ohio/12TOSU318/2012|2012-08-03": {
+      "Reassorted": true,
+      "confidence": "0.951",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 0.80021,
+        "PB1": 0.49737,
+        "NP": 0.50158
+      }
+    },
+    "A/swine/California/A00968949/2014|2014-07-02": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0,
+        "NP": 0.523,
+        "NS": 0.239,
+        "PB1": 0.527
+      }
+    },
+    "NODE_0001901": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 0.093,
+        "NS": 0.333
+      }
+    },
+    "A/swine/Iowa/A02479075/2020|2020-02-19": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Illinois/A01565507/2014|2014-09-16": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, PA",
+      "segments_confidence": {
+        "NA": 1.0,
+        "PA": 1.0,
+        "PB1": 0.186
+      }
+    },
+    "A/swine/North_Carolina/A01270394/2012|2012-05-31": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "A/swine/Iowa/A01795793/2015|2015-11-05": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "NS": 1.0
+      }
+    },
+    "NODE_0001850": {
+      "Reassorted": true,
+      "confidence": "0.997",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 0.41424
+      }
+    },
+    "NODE_0001853": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0001858": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/North_Carolina/A01555111/2014|2014-12-05": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "A/swine/North_Dakota/A01782435/2016|2016-10-18": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0001932": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PA",
+      "segments_confidence": {
+        "PA": 1.0,
+        "NS": 1.0,
+        "NA": 0.504,
+        "PB2": 0.522,
+        "PB1": 0.055,
+        "NP": 0.27
+      }
+    },
+    "NODE_0001942": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0,
+        "PA": 0.046,
+        "PB2": 0.028,
+        "PB1": 0.016
+      }
+    },
+    "NODE_0001944": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0
+      }
+    },
+    "NODE_0001957": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PA": 1.0
+      }
+    },
+    "A/swine/Ohio/23TOSU4179/2023|2023-08-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001961": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/Minnesota/A02978561/2023|2023-09-20": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "NODE_0001968": {
+      "Reassorted": true,
+      "confidence": "0.996",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Iowa/C39563/2022|2022-04-22": {
+      "Reassorted": true,
+      "confidence": "0.999",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    },
+    "NODE_0001994": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NS": 1.0,
+        "PA": 0.62
+      }
+    },
+    "NODE_0001920": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Korea/S2001/2015|2015-07-02": {
+      "Reassorted": true,
+      "confidence": "0.999",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "NP": 0.13313
+      }
+    },
+    "A/swine/Korea/KSB/2012|2012-03-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "NODE_0001922": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "MP": 1.0,
+        "NP": 0.522
+      }
+    },
+    "A/swine/Korea/CY02-09/2012|2012-02-07": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, NS, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NA": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "NP": 0.558
+      }
+    },
+    "A/swine/Korea/CY03-12/2012|2012-03-06": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0
+      }
+    },
+    "A/swine/Iowa/A01202659/2011|2011-10-06": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Ohio/13TOSU2130/2013|2013-08-01": {
+      "Reassorted": true,
+      "confidence": "0.992",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0,
+        "PB1": 0.00101
+      }
+    },
+    "A/swine/Iowa/MT_12_07_4290/2012|2012-08-31": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "NODE_0001658": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 0.964,
+        "MP": 1.0,
+        "PB1": 0.194,
+        "NS": 0.028
+      }
+    },
+    "A/swine/Arkansas/A01840240/2014|2014-12-22": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "A/swine/Ohio/14TOSU21808/2014|2014-01-01": {
+      "Reassorted": true,
+      "confidence": "0.997",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "A/swine/Ohio/14TOSU0566/2014|2014-01-01": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0
+      }
+    },
+    "A/swine/Kentucky/15TOSU18783/2015|2015-08-30": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 0.955
+      }
+    },
+    "A/swine/Kentucky/15TOSU2007/2015|2015-11-08": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "NODE_0001673": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PB1, PB2",
+      "segments_confidence": {
+        "PB1": 0.985,
+        "NP": 1.0,
+        "NS": 1.0,
+        "MP": 1.0,
+        "PA": 0.595,
+        "PB2": 0.861
+      }
+    },
+    "A/swine/Minnesota/A01201424/2010|2010-11-09": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "PA": 0.439
+      }
+    },
+    "A/swine/Quebec/1714808/2015|2015-02-27": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA",
+      "segments_confidence": {
+        "PA": 1.0,
+        "MP": 1.0,
+        "PB2": 0.002
+      }
+    },
+    "NODE_0001714": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0001720": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA",
+      "segments_confidence": {
+        "PB2": 0.216,
+        "PA": 1.0,
+        "MP": 1.0,
+        "NP": 0.33
+      }
+    },
+    "NODE_0001724": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PB1": 0.108,
+        "PA": 0.093,
+        "NS": 0.002
+      }
+    },
+    "NODE_0001726": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PB2",
+      "segments_confidence": {
+        "PB2": 0.974,
+        "NP": 1.0,
+        "PB1": 0.04
+      }
+    },
+    "A/swine/Quebec/DM_38/2017|2017-09-05": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "NODE_0001771": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "NP": 1.0,
+        "NS": 1.0
+      }
+    },
+    "NODE_0001781": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PB2": 0.007
+      }
+    },
+    "NODE_0001782": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, NS",
+      "segments_confidence": {
+        "NA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Iowa/13C038/2013|2013-03-26": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NS",
+      "segments_confidence": {
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0001740": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, PA, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0001741": {
+      "Reassorted": true,
+      "confidence": "0.965",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "NP": 0.53679,
+        "PA": 0.55648,
+        "PB2": 0.52435
+      }
+    },
+    "A/swine/Manitoba/D0379/2015|2015-05-07": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "PB2": 0.494,
+        "NP": 0.482,
+        "PA": 0.463
+      }
+    },
+    "NODE_0001700": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, PA",
+      "segments_confidence": {
+        "PB2": 0.233,
+        "NP": 1.0,
+        "PA": 1.0,
+        "MP": 1.0,
+        "PB1": 0.089
+      }
+    },
+    "A/swine/Manitoba/D0481/2017|2017-02-16": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA",
+      "segments_confidence": {
+        "PB2": 0.148,
+        "PA": 0.999,
+        "MP": 1.0,
+        "NP": 0.05
+      }
+    },
+    "NODE_0001426": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "PB1": 0.003
+      }
+    },
+    "A/swine/QC/2108-2/2009|2009-04-03": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NP, NS, PA, PB1, PB2",
+      "segments_confidence": {
+        "PB2": 1.0,
+        "PB1": 1.0,
+        "NP": 1.0,
+        "PA": 1.0,
+        "NS": 1.0,
+        "MP": 1.0
+      }
+    },
+    "A/swine/Quebec/1279825/2011|2011-03-10": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Quebec/1257777/2010|2010-11-08": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA",
+      "segments_confidence": {
+        "PB2": 0.13,
+        "PA": 0.785,
+        "MP": 1.0,
+        "NP": 0.609,
+        "NS": 0.011
+      }
+    },
+    "NODE_0001444": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, PA",
+      "segments_confidence": {
+        "PA": 1.0,
+        "MP": 1.0,
+        "NP": 0.487
+      }
+    },
+    "A/swine/Illinois/A01116190/2011|2011-08-25": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/Minnesota/18/2012|2012-09-10": {
+      "Reassorted": true,
+      "confidence": "0.999",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "NODE_0001451": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "PA": 0.534
+      }
+    },
+    "A/swine/Ontario/G10/2014|2014-09-04": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Ontario/114-13/2012|2012-10-09": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0,
+        "PB1": 0.053,
+        "NP": 0.144
+      }
+    },
+    "NODE_0001474": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP, NA, PB1",
+      "segments_confidence": {
+        "PB1": 1.0,
+        "NA": 1.0,
+        "MP": 1.0
+      }
+    },
+    "NODE_0001475": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "A/swine/Saskatchewan/SD0258/2017|2017-11-27": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP",
+      "segments_confidence": {
+        "NP": 1.0
+      }
+    },
+    "A/swine/Kansas/11-107824/2011|2011-03-18": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "A/swine/Iowa/A01202889/2011|2011-11-18": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 1.0,
+        "PB2": 0.092
+      }
+    },
+    "NODE_0001479": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Quebec/1279920/2011|2011-03-09": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS, PA",
+      "segments_confidence": {
+        "NP": 1.0,
+        "PA": 0.999,
+        "NS": 1.0
+      }
+    },
+    "A/swine/Ontario/G14/2014|2014-08-12": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NP, NS",
+      "segments_confidence": {
+        "NP": 1.0,
+        "NS": 1.0
+      }
+    },
+    "A/swine/Ontario/104-25/2012|2012-01-13": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PB2",
+      "segments_confidence": {
+        "PB2": 1.0
+      }
+    },
+    "A/swine/Ontario/107-22/2012|2012-04-15": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "PA",
+      "segments_confidence": {
+        "PA": 1.0
+      }
+    },
+    "NODE_0001513": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA, PA, PB1",
+      "segments_confidence": {
+        "PB2": 0.278,
+        "PB1": 1.0,
+        "NA": 1.0,
+        "PA": 0.995,
+        "NS": 0.296
+      }
+    },
+    "A/swine/Nebraska/I038468/2024|2024-04-11": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NA",
+      "segments_confidence": {
+        "NA": 1.0
+      }
+    },
+    "NODE_0001312": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "MP",
+      "segments_confidence": {
+        "MP": 1.0
+      }
+    },
+    "A/swine/Minnesota/578/2007|2007-01-24": {
+      "Reassorted": true,
+      "confidence": "1.000",
+      "reassortment_events": "NS",
+      "segments_confidence": {
+        "NS": 1.0
+      }
+    }
+  },
+  "branches": {
+    "NODE_0000009": {
+      "labels": {
+        "Reassorted Segments": "6 (MP, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/Udon_Thani/NIAH464/2004|2004-01-01": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, NS)"
+      }
+    },
+    "A/swine/Italy/66945/2006|2006-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Brilon/4685/2005|2005-11-25": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Spain/42386/2002|2002-01-01": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB1)"
+      }
+    },
+    "A/swine/Luenne/4529/2005|2005-10-06": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Feldbach/4589/2005|2005-10-20": {
+      "labels": {
+        "Reassorted Segments": "3 (NA, NP, NS)"
+      }
+    },
+    "NODE_0000068": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NP, NS)"
+      }
+    },
+    "NODE_0000070": {
+      "labels": {
+        "Reassorted Segments": "4 (MP, NP, NS, PB2)"
+      }
+    },
+    "A/swine/Harmstrub/5445/2006|2006-08-03": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Herford/5932/2007|2007-02-19": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Nordhuemmling/4917/2006|2006-01-27": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Vreden/5982/2007|2007-03-08": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0000093": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, NS)"
+      }
+    },
+    "NODE_0000041": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000047": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NP)"
+      }
+    },
+    "A/swine/Melle/IDT5706/2006|2006-11-16": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, NS)"
+      }
+    },
+    "A/swine/Appel/3339/2004|2004-07-05": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Hoerstel/3763/2004|2004-12-06": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB1)"
+      }
+    },
+    "A/swine/Hassendorf/2929/2004|2004-01-26": {
+      "labels": {
+        "Reassorted Segments": "5 (NA, NP, NS, PB1, PB2)"
+      }
+    },
+    "A/swine/Kevelaer/2892/2004|2004-01-06": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, NS)"
+      }
+    },
+    "A/swine/Hilter/5143/2006|2006-04-10": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Sassenberg/3762/2004|2004-12-17": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, PA)"
+      }
+    },
+    "NODE_0000142": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Germany/Ottendorf-IDT11910/2010|2010-04-29": {
+      "labels": {
+        "Reassorted Segments": "6 (MP, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000146": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0000157": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0000155": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NS)"
+      }
+    },
+    "A/swine/Rheine/7912a/2008|2008-11-04": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB1)"
+      }
+    },
+    "A/swine/Stresow/7919a/2008|2008-11-03": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NA, NP, NS, PA)"
+      }
+    },
+    "A/swine/Holtrup/6358/2007|2007-08-09": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NA)"
+      }
+    },
+    "NODE_0000169": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Germany/R83/2011|2011-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Spain/12/2010|2010-03-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0000208": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Belgium/Valdegem-581/2010|2010-11-26": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Germany/Stadtloder-IDT11945/2010|2010-05-10": {
+      "labels": {
+        "Reassorted Segments": "4 (MP, NS, PA, PB1)"
+      }
+    },
+    "NODE_0000188": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, PA, PB2)"
+      }
+    },
+    "NODE_0000190": {
+      "labels": {
+        "Reassorted Segments": "3 (NS, PA, PB2)"
+      }
+    },
+    "NODE_0000191": {
+      "labels": {
+        "Reassorted Segments": "5 (NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/Italy/171855/2011|2011-09-01": {
+      "labels": {
+        "Reassorted Segments": "3 (NS, PA, PB2)"
+      }
+    },
+    "A/swine/Spain/16677/2011|2011-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Borgentreich/8083/2008|2008-11-24": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0000225": {
+      "labels": {
+        "Reassorted Segments": "3 (NP, PA, PB2)"
+      }
+    },
+    "NODE_0000227": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0000230": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Italy/134414/2014|2014-09-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Italy/341031-3/2014|2014-09-01": {
+      "labels": {
+        "Reassorted Segments": "4 (MP, NS, PA, PB1)"
+      }
+    },
+    "A/swine/Italy/248147-8/2015|2015-09-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0000251": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Italy/323027/2017|2017-06-28": {
+      "labels": {
+        "Reassorted Segments": "4 (NS, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/Italy/257055/2018|2018-11-07": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0000270": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0000260": {
+      "labels": {
+        "Reassorted Segments": "6 (MP, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000307": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0000323": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0000347": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, PA, PB2)"
+      }
+    },
+    "A/swine/Italy/64500/2019|2019-02-21": {
+      "labels": {
+        "Reassorted Segments": "7 (MP, NA, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000361": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB1)"
+      }
+    },
+    "A/swine/Italy/124375/2020|2020-05-07": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NP)"
+      }
+    },
+    "NODE_0000364": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000365": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Belgium/Gent-82/2020|2020-02-07": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Warendorf/18914/2013|2013-10-16": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0000305": {
+      "labels": {
+        "Reassorted Segments": "4 (NS, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/Haltern/14710/2012|2012-02-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Ruethen/14808/2012|2012-02-13": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "NODE_0000310": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0000317": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PB2)"
+      }
+    },
+    "A/swine/Bad_Wuennenberg/17298/2013|2013-02-12": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Rhede/20749/2014|2014-10-13": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/Germany/R655/2012|2012-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0000284": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, PB2)"
+      }
+    },
+    "A/swine/Wuerusreuth/IDT10990/2009|2009-11-17": {
+      "labels": {
+        "Reassorted Segments": "4 (NA, NP, PA, PB2)"
+      }
+    },
+    "A/swine/Vreden/7613-1/2008|2008-09-30": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0000217": {
+      "labels": {
+        "Reassorted Segments": "4 (NP, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/Billerbeck/14098/2011|2011-10-19": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Ascheberg/13209/2011|2011-03-28": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NS)"
+      }
+    },
+    "A/swine/Spain/54008/2004|2004-01-01": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB1)"
+      }
+    },
+    "NODE_0000371": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, PA, PB2)"
+      }
+    },
+    "NODE_0000373": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Guangdong/968/2006|2006-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Guangdong/811/2006|2006-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000384": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Guangdong/L23/2010|2010-02-01": {
+      "labels": {
+        "Reassorted Segments": "3 (NP, PB1, PB2)"
+      }
+    },
+    "A/swine/Heilongjiang/1/05|2005-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/HuNan/01/2008|2008-03-10": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000393": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, NS)"
+      }
+    },
+    "NODE_0000394": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Obihiro/10/1985|1985-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Heilongjiang/10/2007|2007-08-01": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, PA)"
+      }
+    },
+    "NODE_0000415": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/Minnesota/A01785592/2018|2018-08-07": {
+      "labels": {
+        "Reassorted Segments": "2 (NS, PA)"
+      }
+    },
+    "A/swine/Iowa/A02478877/2019|2019-11-12": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB2)"
+      }
+    },
+    "A/swine/Texas/A02245653/2020|2020-05-21": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Ohio/OH21-12902/2021|2021-05-28": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Tennessee/A02157798/2018|2018-04-12": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB1)"
+      }
+    },
+    "A/swine/Oklahoma/A02524467/2020|2020-07-02": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/Swine/Nebraska/209/98|1998-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Mexico/9634750/2013|2013-02-24": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Ontario/00130/97|1997-01-01": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, NS, PA, PB2)"
+      }
+    },
+    "NODE_0000436": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000452": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, NS, PA, PB2)"
+      }
+    },
+    "NODE_0000455": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, NS, PA, PB2)"
+      }
+    },
+    "A/swine/Jilin/37/2008|2008-10-30": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NS)"
+      }
+    },
+    "A/swine/Guangdong/02/2005|2005-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Guangdong/166/06|2006-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0000468": {
+      "labels": {
+        "Reassorted Segments": "5 (NA, NP, NS, PB1, PB2)"
+      }
+    },
+    "NODE_0000469": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PA)"
+      }
+    },
+    "A/swine/Shandong/133/2007|2007-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0000466": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "A/swine/Sichuan/01/2006|2006-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Guangdong/L5/2010|2010-02-01": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PA)"
+      }
+    },
+    "NODE_0000473": {
+      "labels": {
+        "Reassorted Segments": "2 (NS, PB2)"
+      }
+    },
+    "A/swine/Guangdong/Z5/2003|2003-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0000483": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NP, NS)"
+      }
+    },
+    "NODE_0000502": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, NS, PA, PB2)"
+      }
+    },
+    "NODE_0000529": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, NS, PA, PB2)"
+      }
+    },
+    "NODE_0000532": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, NS, PA, PB2)"
+      }
+    },
+    "NODE_0000534": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000542": {
+      "labels": {
+        "Reassorted Segments": "6 (MP, NA, NP, NS, PA, PB2)"
+      }
+    },
+    "NODE_0000554": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0000559": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "NODE_0000618": {
+      "labels": {
+        "Reassorted Segments": "3 (NP, PA, PB1)"
+      }
+    },
+    "NODE_0000622": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Iowa/A02136685/2017|2017-11-17": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0000624": {
+      "labels": {
+        "Reassorted Segments": "4 (MP, NS, PA, PB1)"
+      }
+    },
+    "A/swine/Indiana/A01797992/2019|2019-04-24": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000674": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NA, PB2)"
+      }
+    },
+    "NODE_0000631": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "NODE_0000633": {
+      "labels": {
+        "Reassorted Segments": "7 (MP, NA, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/North_Carolina/A02478551/2019|2019-06-24": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Iowa/A02862419/2024|2024-03-15": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Illinois/A02862053/2023|2023-11-17": {
+      "labels": {
+        "Reassorted Segments": "5 (NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000708": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Indiana/A02862011/2023|2023-11-08": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0000728": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB2)"
+      }
+    },
+    "A/swine/Ohio/A02861975/2023|2023-11-01": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, NS)"
+      }
+    },
+    "A/swine/North_Carolina/A02862290/2024|2024-02-08": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "A/swine/Indiana/22TOSU1728/2022|2022-07-14": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Minnesota/A02978617/2023|2023-11-13": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Iowa/22TOSU3985/2022|2022-08-15": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/Iowa/A02139353/2018|2018-01-04": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, PA)"
+      }
+    },
+    "A/swine/Illinois/A02524521/2020|2020-07-29": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000603": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, NP)"
+      }
+    },
+    "NODE_0000604": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, PA)"
+      }
+    },
+    "NODE_0000577": {
+      "labels": {
+        "Reassorted Segments": "3 (NS, PA, PB1)"
+      }
+    },
+    "A/swine/Indiana/16TOSU7610/2016|2016-07-01": {
+      "labels": {
+        "Reassorted Segments": "7 (MP, NA, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000591": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PB1)"
+      }
+    },
+    "NODE_0000594": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Iowa/A02861998/2023|2023-11-06": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Oklahoma/A02479121/2020|2020-03-06": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0000562": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NA)"
+      }
+    },
+    "A/swine/Iowa/A01732489/2016|2016-02-25": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Iowa/A02636132/2021|2021-09-10": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0000569": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PB1)"
+      }
+    },
+    "A/swine/Iowa/A02479022/2020|2020-01-22": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, PA)"
+      }
+    },
+    "NODE_0000557": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/Missouri/A01782798/2016|2016-10-28": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, PA)"
+      }
+    },
+    "NODE_0000547": {
+      "labels": {
+        "Reassorted Segments": "7 (MP, NA, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000549": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000731": {
+      "labels": {
+        "Reassorted Segments": "6 (MP, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0000746": {
+      "labels": {
+        "Reassorted Segments": "6 (NA, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "A/wild_boar/Spain/45560-1/2021|2021-12-11": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB2)"
+      }
+    },
+    "A/swine/Spain/46314-2/2020|2020-04-30": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000751": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000756": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/Swine/Cambodia/TangKrang/060301/2011/H3N2|2011-01-01": {
+      "labels": {
+        "Reassorted Segments": "3 (NA, NP, NS)"
+      }
+    },
+    "A/swine/Hong_Kong/3516/2012|2012-09-20": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "NODE_0000804": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, NP)"
+      }
+    },
+    "A/swine/Hanoi/6_545/2016|2016-06-30": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000846": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0000861": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/China/JG13/2019|2019-01-01": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NS)"
+      }
+    },
+    "NODE_0001017": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Hong_Kong/3635/2016|2016-09-07": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Hong_Kong/2308/2014|2014-06-05": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001065": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Hong_Kong/NS4306/2012|2012-11-15": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Hong_Kong/4893/2012|2012-12-20": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Hong_Kong/4944/2015|2015-11-19": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NS)"
+      }
+    },
+    "NODE_0000875": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "NODE_0000895": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "NODE_0001089": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001091": {
+      "labels": {
+        "Reassorted Segments": "3 (NP, NS, PA)"
+      }
+    },
+    "NODE_0001107": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB2)"
+      }
+    },
+    "NODE_0001113": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Chachoengsao/NIAH105583-052-62/2012|2012-02-02": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NA)"
+      }
+    },
+    "NODE_0001112": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0001165": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "NODE_0001168": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0001176": {
+      "labels": {
+        "Reassorted Segments": "5 (NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0001204": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Minnesota/00395/2004|2004-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/IN/PU542/04|2004-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Nebraska/A02034991/2015|2015-07-30": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001297": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/MI/PU243/04|2004-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Quebec/1708732/2015|2015-02-12": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001536": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001541": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001543": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001561": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001583": {
+      "labels": {
+        "Reassorted Segments": "3 (PA, PB1, PB2)"
+      }
+    },
+    "NODE_0001587": {
+      "labels": {
+        "Reassorted Segments": "3 (PA, PB1, PB2)"
+      }
+    },
+    "NODE_0001584": {
+      "labels": {
+        "Reassorted Segments": "3 (PA, PB1, PB2)"
+      }
+    },
+    "NODE_0001586": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NP, NS)"
+      }
+    },
+    "NODE_0001551": {
+      "labels": {
+        "Reassorted Segments": "4 (NP, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0001365": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NP)"
+      }
+    },
+    "A/swine/Quebec/1561816/2014|2014-01-20": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Quebec/1626561/2014|2014-07-02": {
+      "labels": {
+        "Reassorted Segments": "4 (NA, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/Quebec/1698182/2014|2014-01-21": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NP, PA)"
+      }
+    },
+    "A/swine/Saskatchewan/SD0096/2015|2015-04-03": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001395": {
+      "labels": {
+        "Reassorted Segments": "4 (MP, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0001397": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001404": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, PB1, PB2)"
+      }
+    },
+    "A/swine/Mexico/7932475/2010|2010-11-28": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001413": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0001788": {
+      "labels": {
+        "Reassorted Segments": "2 (NS, PB2)"
+      }
+    },
+    "A/swine/Texas/A01049914/2011|2011-04-28": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Nebraska/A01116984/2011|2011-11-03": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB2)"
+      }
+    },
+    "NODE_0001799": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB1)"
+      }
+    },
+    "NODE_0001803": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0001818": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Kansas/A01377243/2014|2014-03-07": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0001825": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Ohio/11SW344/2011|2011-09-30": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "NODE_0001835": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "NODE_0001841": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, PB2)"
+      }
+    },
+    "NODE_0001871": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0001872": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Indiana/13TOSU1050/2013|2013-07-01": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "NODE_0001896": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0001892": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0001897": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NP, PB2)"
+      }
+    },
+    "NODE_0001879": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "A/swine/Ohio/12TOSU318/2012|2012-08-03": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/California/A00968949/2014|2014-07-02": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0001901": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/Iowa/A02479075/2020|2020-02-19": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Illinois/A01565507/2014|2014-09-16": {
+      "labels": {
+        "Reassorted Segments": "2 (NA, PA)"
+      }
+    },
+    "A/swine/North_Carolina/A01270394/2012|2012-05-31": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Iowa/A01795793/2015|2015-11-05": {
+      "labels": {
+        "Reassorted Segments": "2 (NS, PB1)"
+      }
+    },
+    "NODE_0001850": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "NODE_0001853": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0001858": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/North_Carolina/A01555111/2014|2014-12-05": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/North_Dakota/A01782435/2016|2016-10-18": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0001932": {
+      "labels": {
+        "Reassorted Segments": "2 (NS, PA)"
+      }
+    },
+    "NODE_0001942": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0001944": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB2)"
+      }
+    },
+    "NODE_0001957": {
+      "labels": {
+        "Reassorted Segments": "2 (PA, PB2)"
+      }
+    },
+    "A/swine/Ohio/23TOSU4179/2023|2023-08-01": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001961": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Minnesota/A02978561/2023|2023-09-20": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "NODE_0001968": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Iowa/C39563/2022|2022-04-22": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "NODE_0001994": {
+      "labels": {
+        "Reassorted Segments": "3 (NS, PB1, PB2)"
+      }
+    },
+    "NODE_0001920": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Korea/S2001/2015|2015-07-02": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    },
+    "A/swine/Korea/KSB/2012|2012-03-01": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0001922": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NS)"
+      }
+    },
+    "A/swine/Korea/CY02-09/2012|2012-02-07": {
+      "labels": {
+        "Reassorted Segments": "4 (NA, NS, PA, PB2)"
+      }
+    },
+    "A/swine/Korea/CY03-12/2012|2012-03-06": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "A/swine/Iowa/A01202659/2011|2011-10-06": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NS)"
+      }
+    },
+    "A/swine/Ohio/13TOSU2130/2013|2013-08-01": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Iowa/MT_12_07_4290/2012|2012-08-31": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "NODE_0001658": {
+      "labels": {
+        "Reassorted Segments": "4 (MP, NP, PA, PB2)"
+      }
+    },
+    "A/swine/Arkansas/A01840240/2014|2014-12-22": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/Ohio/14TOSU21808/2014|2014-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/Ohio/14TOSU0566/2014|2014-01-01": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "A/swine/Kentucky/15TOSU18783/2015|2015-08-30": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NS, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/Kentucky/15TOSU2007/2015|2015-11-08": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0001673": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, NS, PB1, PB2)"
+      }
+    },
+    "A/swine/Minnesota/A01201424/2010|2010-11-09": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Quebec/1714808/2015|2015-02-27": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PA)"
+      }
+    },
+    "NODE_0001714": {
+      "labels": {
+        "Reassorted Segments": "5 (MP, NP, PA, PB1, PB2)"
+      }
+    },
+    "NODE_0001720": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PA)"
+      }
+    },
+    "NODE_0001724": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, PB2)"
+      }
+    },
+    "NODE_0001726": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, PB2)"
+      }
+    },
+    "A/swine/Quebec/DM_38/2017|2017-09-05": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001771": {
+      "labels": {
+        "Reassorted Segments": "3 (NP, NS, PB1)"
+      }
+    },
+    "NODE_0001781": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, PB1)"
+      }
+    },
+    "NODE_0001782": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NA, NS)"
+      }
+    },
+    "A/swine/Iowa/13C038/2013|2013-03-26": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, NS)"
+      }
+    },
+    "NODE_0001740": {
+      "labels": {
+        "Reassorted Segments": "4 (MP, NP, PA, PB2)"
+      }
+    },
+    "NODE_0001741": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Manitoba/D0379/2015|2015-05-07": {
+      "labels": {
+        "Reassorted Segments": "1 (PB1)"
+      }
+    },
+    "NODE_0001700": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NP, PA)"
+      }
+    },
+    "A/swine/Manitoba/D0481/2017|2017-02-16": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PA)"
+      }
+    },
+    "NODE_0001426": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/QC/2108-2/2009|2009-04-03": {
+      "labels": {
+        "Reassorted Segments": "6 (MP, NP, NS, PA, PB1, PB2)"
+      }
+    },
+    "A/swine/Quebec/1279825/2011|2011-03-10": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Quebec/1257777/2010|2010-11-08": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PA)"
+      }
+    },
+    "NODE_0001444": {
+      "labels": {
+        "Reassorted Segments": "2 (MP, PA)"
+      }
+    },
+    "A/swine/Illinois/A01116190/2011|2011-08-25": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Minnesota/18/2012|2012-09-10": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "NODE_0001451": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Ontario/G10/2014|2014-09-04": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Ontario/114-13/2012|2012-10-09": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "NODE_0001474": {
+      "labels": {
+        "Reassorted Segments": "3 (MP, NA, PB1)"
+      }
+    },
+    "NODE_0001475": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "A/swine/Saskatchewan/SD0258/2017|2017-11-27": {
+      "labels": {
+        "Reassorted Segments": "1 (NP)"
+      }
+    },
+    "A/swine/Kansas/11-107824/2011|2011-03-18": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "A/swine/Iowa/A01202889/2011|2011-11-18": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, NS)"
+      }
+    },
+    "NODE_0001479": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Quebec/1279920/2011|2011-03-09": {
+      "labels": {
+        "Reassorted Segments": "3 (NP, NS, PA)"
+      }
+    },
+    "A/swine/Ontario/G14/2014|2014-08-12": {
+      "labels": {
+        "Reassorted Segments": "2 (NP, NS)"
+      }
+    },
+    "A/swine/Ontario/104-25/2012|2012-01-13": {
+      "labels": {
+        "Reassorted Segments": "1 (PB2)"
+      }
+    },
+    "A/swine/Ontario/107-22/2012|2012-04-15": {
+      "labels": {
+        "Reassorted Segments": "1 (PA)"
+      }
+    },
+    "NODE_0001513": {
+      "labels": {
+        "Reassorted Segments": "3 (NA, PA, PB1)"
+      }
+    },
+    "A/swine/Nebraska/I038468/2024|2024-04-11": {
+      "labels": {
+        "Reassorted Segments": "1 (NA)"
+      }
+    },
+    "NODE_0001312": {
+      "labels": {
+        "Reassorted Segments": "1 (MP)"
+      }
+    },
+    "A/swine/Minnesota/578/2007|2007-01-24": {
+      "labels": {
+        "Reassorted Segments": "1 (NS)"
+      }
+    }
+  }
+}
