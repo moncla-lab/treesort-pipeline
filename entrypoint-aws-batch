@@ -1,0 +1,55 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "================================"
+echo "AWS Batch MWE Job Starting"
+echo "================================"
+echo "Working directory: $(pwd)"
+echo "Run ID: ${RUN_ID:-unknown}"
+echo ""
+
+# Get the workdir URL from environment variable set by job submission
+WORKDIR_URL="${TREESORT_AWS_BATCH_WORKDIR_URL:-}"
+
+if [ -z "$WORKDIR_URL" ]; then
+    echo "Error: TREESORT_AWS_BATCH_WORKDIR_URL not set"
+    exit 1
+fi
+
+# Extract bucket and key from S3 URL
+BUCKET=$(echo "$WORKDIR_URL" | sed 's|s3://||' | cut -d/ -f1)
+KEY=$(echo "$WORKDIR_URL" | sed 's|s3://||' | cut -d/ -f2-)
+
+echo "Downloading workdir from S3..."
+echo "  Bucket: $BUCKET"
+echo "  Key: $KEY"
+aws s3 cp "$WORKDIR_URL" workdir.zip
+
+echo ""
+echo "Extracting workdir..."
+unzip -o -q workdir.zip
+
+echo ""
+echo "Workdir contents:"
+ls -la
+
+echo ""
+echo "================================"
+echo "PROCESSING DATA"
+echo "================================"
+
+snakemake -j 10 all
+
+# Package results
+echo "Creating results archive..."
+zip -q -r results.zip .
+
+# Upload results back to S3
+RESULTS_KEY=$(echo "$KEY" | sed 's/\.zip$//')-results.zip
+echo "Uploading to s3://${BUCKET}/${RESULTS_KEY}"
+aws s3 cp results.zip "s3://${BUCKET}/${RESULTS_KEY}"
+
+echo ""
+echo "================================"
+echo "Job Complete!"
+echo "================================"
