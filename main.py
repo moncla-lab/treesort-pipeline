@@ -112,14 +112,6 @@ def main():
             print(f"Error: Directory '{workdir}' does not exist", file=sys.stderr)
             return 1
 
-        # Check for input data
-        input_file = workdir / "data" / "input.txt"
-        if not input_file.exists():
-            print(f"Warning: {input_file} does not exist", file=sys.stderr)
-            print("Creating sample input.txt...", file=sys.stderr)
-            input_file.parent.mkdir(exist_ok=True)
-            input_file.write_text("Hello from local machine!\nThis was processed on AWS Batch.\n")
-
         # Generate unique run ID
         run_id = f"run-{uuid.uuid4().hex[:8]}"
         print(f"Starting job: {run_id}")
@@ -197,15 +189,6 @@ def main():
                 print("=" * 60)
                 print("SUCCESS!")
                 print("=" * 60)
-
-                # Show output if it exists
-                output_file = workdir / "data" / "output.txt"
-                if output_file.exists():
-                    print("\nOutput file contents:")
-                    print("-" * 40)
-                    print(output_file.read_text())
-                    print("-" * 40)
-
                 return 0
 
             except Exception as e:

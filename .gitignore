@@ -1,2 +1,33 @@
+# Job tracking
 .last-job-id
-.snakemake
+
+# Snakemake
+.snakemake/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Results and artifacts
+results/
+*.zip
+workdir.zip
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

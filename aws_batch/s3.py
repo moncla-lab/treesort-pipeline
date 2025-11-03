@@ -3,6 +3,8 @@
 import os
 import io
 import time
+import subprocess
+import tempfile
 from pathlib import Path
 from zipfile import ZipFile, ZipInfo
 from zlib import crc32
@@ -23,6 +25,8 @@ DEFAULT_EXCLUDES = {
     ".pytest_cache",
     ".coverage",
     "*.log",
+    "*.zip",  # Don't upload previous workdir/results zip files
+    ".last-job-id",  # Don't upload job tracking metadata
 }
 
 # Snakemake subdirs to preserve
@@ -145,13 +149,11 @@ def download_workdir(
 ):
     """Download and extract workdir from S3.
 
-    Only downloads files that have changed (based on CRC32).
-
     Args:
         s3_url: S3 URL of the workdir ZIP
         workdir: Local directory to extract to
-        overwrite: Whether to overwrite without checking
-        check_crc: Whether to check CRC32 before overwriting
+        overwrite: Ignored (kept for compatibility)
+        check_crc: Ignored (kept for compatibility)
         region: AWS region
 
     Returns:
@@ -163,56 +165,20 @@ def download_workdir(
     # Ensure workdir exists
     workdir.mkdir(parents=True, exist_ok=True)
 
-    extracted = 0
-    skipped = 0
+    # Download to temp file and extract
+    with tempfile.NamedTemporaryFile(suffix='.zip', delete=False) as tmp:
+        tmp_path = tmp.name
 
-    # Stream ZIP from S3
-    with fsspec.open(s3_url, "rb") as remote_file:
-        with ZipFile(remote_file, "r") as zipf:
-            members = zipf.namelist()
-            total_files = len(members)
-
-            for member_name in members:
-                member = zipf.getinfo(member_name)
-                target_path = workdir / member_name
-
-                # Check if we need to extract
-                should_extract = overwrite or not target_path.exists()
-
-                if not should_extract and check_crc and target_path.is_file():
-                    # Compare CRC32
-                    with open(target_path, "rb") as f:
-                        local_crc = crc32(f.read())
-
-                    if local_crc != member.CRC:
-                        should_extract = True
-
-                if should_extract:
-                    # Ensure parent directory exists
-                    target_path.parent.mkdir(parents=True, exist_ok=True)
-
-                    # Extract file
-                    with zipf.open(member) as source:
-                        with open(target_path, "wb") as target:
-                            target.write(source.read())
-
-                    # Preserve modification time
-                    date_time = time.mktime(member.date_time + (0, 0, -1))
-                    os.utime(target_path, (date_time, date_time))
-
-                    extracted += 1
-                else:
-                    skipped += 1
-
-                if (extracted + skipped) % 100 == 0:
-                    print(f"  Processed {extracted + skipped}/{total_files} files...")
-
-    elapsed = time.time() - start_time
-    print(
-        f"Download complete: {extracted} extracted, {skipped} unchanged ({elapsed:.1f}s)"
-    )
-
-    return extracted
+    try:
+        subprocess.run(['aws', 's3', 'cp', s3_url, tmp_path], check=True)
+        subprocess.run(['unzip', '-o', '-q', tmp_path, '-d', str(workdir)], check=True)
+        extracted = len(list(workdir.rglob('*')))
+        elapsed = time.time() - start_time
+        print(f"Download complete: {extracted} files extracted ({elapsed:.1f}s)")
+        return extracted
+    finally:
+        if os.path.exists(tmp_path):
+            os.unlink(tmp_path)
 
 
 def list_bucket_runs(
