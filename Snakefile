@@ -7,8 +7,10 @@ REPS = range(3)
 rule all:
 	input:
 		"results/summary/treesort_auspice/treesort.json",
-		"results/summary/log.csv"
-	
+		"results/summary/log.csv",
+		"results/benchmarks/all_benchmarks_detailed.csv",
+		"results/benchmarks/all_benchmarks_summary.csv"
+
 
 """Specify all input files here.  """
 rule files:
@@ -37,6 +39,8 @@ rule tree:
 		tree = "results/{rep}/trees_unrooted/{subtype}_{segment}.nwk"
 	params:
 		method = "iqtree"
+	benchmark:
+		"results/benchmarks/tree/{rep}/{subtype}_{segment}.tsv"
 	shadow:
 		"minimal"
 	shell:
@@ -56,6 +60,8 @@ rule root:
 		dates = files.dates
 	output:
 		tree = "results/{rep}/trees_rooted/{subtype}_{segment}_rooted/rerooted.newick"
+	benchmark:
+		"results/benchmarks/root/{rep}/{subtype}_{segment}.tsv"
 	shell:
 		"""
 		treetime clock \
@@ -76,6 +82,8 @@ rule treesort:
 		)
 	output:
 		  tree = "results/{rep}/annotated.tre"
+	benchmark:
+		"results/benchmarks/treesort/{rep}.tsv"
 	shell:
 		"""
 		# Copy only what treesort needs
@@ -106,6 +114,8 @@ rule prep:
 		tree = rules.treesort.output.tree
 	output:
 		outdir = "results/{rep}/output.nwk"
+	benchmark:
+		"results/benchmarks/prep/{rep}.tsv"
 	shell:
 		"python scripts/prep.py --tree {input.tree} --outdir {output.outdir}"
 		
@@ -115,6 +125,8 @@ rule rea:
 		tree = rules.prep.output.outdir
 	output:
 		json = "results/{rep}/rea.json",
+	benchmark:
+		"results/benchmarks/rea/{rep}.tsv"
 	shell:
 		"python scripts/rea.py --tree {input.tree} --outdir {output.json}"
 		
@@ -127,6 +139,8 @@ rule summary:
 		nwk_tree = "results/summary/summary.nwk",
 		nexus_tree = "results/summary/summary.nexus",
 		node_data = "results/summary/summary.json"
+	benchmark:
+		"results/benchmarks/summary/summary.tsv"
 	shell:
 		"python scripts/summary.py --jsons {input.jsons} --backbone {input.backbone} --threshold 0.95 --summary_nwk {output.nwk_tree} --summary_nexus {output.nexus_tree} --node_data {output.node_data}"
 
@@ -141,6 +155,8 @@ rule cladeset_map:
 		export_tree = "results/summary/cladeset/treesort.nwk",
 		node_data = "results/summary/cladeset/node.json",
 		debug_path = "results/summary/cladeset/debug.txt"
+	benchmark:
+		"results/benchmarks/cladeset_map/cladeset_map.tsv"
 	shell:
 		"python scripts/mapper.py --summary_json {input.node_data} --source_tree {input.source} --target_tree {input.target} --output_labeled_tree {output.export_tree} --output_node_data {output.node_data} --debug > {output.debug_path}"
 
@@ -153,6 +169,8 @@ rule log:
 		aln = files.backbone_aln
 	output:
 		log_csv = "results/summary/log.csv"
+	benchmark:
+		"results/benchmarks/log/log.tsv"
 	shell:
 		"python scripts/rea_rate.py --backbone {files.backbone} --trees {input.trees} --summary_tree {input.summary_tree} --backbone_aln {input.aln} --log_file {output.log_csv}"
 
@@ -165,6 +183,8 @@ rule ancestral:
 		node_data = "results/summary/cladeset/div_tree/nt_muts/nt-muts.json"
 	params:
 		inference = "joint"
+	benchmark:
+		"results/benchmarks/ancestral/ancestral.tsv"
 	shell:
 		"""
 		augur ancestral \
@@ -183,6 +203,8 @@ rule translate:
 		reference = files.reference
 	output:
 		node_data = "results/summary/cladeset/div_tree/aa_muts/aa-muts.json"
+	benchmark:
+		"results/benchmarks/translate/translate.tsv"
 	shell:
 		"""
 		augur translate \
@@ -201,6 +223,8 @@ rule traits_cladeset:
 		node_data = "results/summary/cladeset/traits/traits.json"
 	params:
 		columns = 'host country region subtype order'
+	benchmark:
+		"results/benchmarks/traits_cladeset/traits_cladeset.tsv"
 	shell:
 		"""
 		augur traits \
@@ -220,6 +244,8 @@ rule traits_treesort:
 		node_data = "results/summary/traits/traits.json"
 	params:
 		columns = 'host country region subtype order'
+	benchmark:
+		"results/benchmarks/traits_treesort/traits_treesort.tsv"
 	shell:
 		"""
 		augur traits \
@@ -244,6 +270,8 @@ rule export:
 		lat_long = files.lat_long
 	output:
 		auspice_json = "results/summary/treesort_auspice/treesort.json"
+	benchmark:
+		"results/benchmarks/export/export.tsv"
 	shell:
 		"""
 		augur export v2 \
@@ -255,5 +283,39 @@ rule export:
 			--colors {input.colors} \
 			--lat-longs {input.lat_long} \
 			--output {output.auspice_json}
+		"""
+
+rule aggregate_benchmarks:
+	message: "Aggregating all benchmark statistics"
+	input:
+		# Rules with wildcards for rep, subtype, and segment
+		tree = expand("results/benchmarks/tree/{rep}/{subtype}_{segment}.tsv",
+			rep=REPS, subtype=SUBTYPES, segment=SEGMENTS),
+		root = expand("results/benchmarks/root/{rep}/{subtype}_{segment}.tsv",
+			rep=REPS, subtype=SUBTYPES, segment=SEGMENTS),
+		# Rules with rep wildcard only
+		treesort = expand("results/benchmarks/treesort/{rep}.tsv", rep=REPS),
+		prep = expand("results/benchmarks/prep/{rep}.tsv", rep=REPS),
+		rea = expand("results/benchmarks/rea/{rep}.tsv", rep=REPS),
+		# Rules without wildcards
+		summary = "results/benchmarks/summary/summary.tsv",
+		cladeset_map = "results/benchmarks/cladeset_map/cladeset_map.tsv",
+		log = "results/benchmarks/log/log.tsv",
+		ancestral = "results/benchmarks/ancestral/ancestral.tsv",
+		translate = "results/benchmarks/translate/translate.tsv",
+		traits_cladeset = "results/benchmarks/traits_cladeset/traits_cladeset.tsv",
+		traits_treesort = "results/benchmarks/traits_treesort/traits_treesort.tsv",
+		export = "results/benchmarks/export/export.tsv"
+	output:
+		detailed = "results/benchmarks/all_benchmarks_detailed.csv",
+		summary = "results/benchmarks/all_benchmarks_summary.csv"
+	shell:
+		"""
+		python scripts/aggregate_benchmarks.py \
+			--benchmarks {input.tree} {input.root} {input.treesort} {input.prep} {input.rea} \
+				{input.summary} {input.cladeset_map} {input.log} {input.ancestral} \
+				{input.translate} {input.traits_cladeset} {input.traits_treesort} {input.export} \
+			--detailed {output.detailed} \
+			--summary {output.summary}
 		"""
 
