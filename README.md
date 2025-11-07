@@ -47,7 +47,7 @@ Activate the conda environment:
 
 ## Prerequisites 
 
-1. This pipeline assumes you already have generated alignment files, metadata files, and divergence trees for your dataset.
+1. This pipeline assumes you already have generated alignment files, metadata & config files, and divergence trees for your dataset.
    Things to keep in mind:
    
    	a. Each sample should include the strain name and collection date. For example, a fasta file header should look like:
@@ -108,7 +108,7 @@ Activate the conda environment:
 			date > clock.txt; snakemake -k -j $NUMBER-OF-JOBS all >> output.log; date >> clock.txt
 	
 Here, ```clock.txt``` records compute time. The ```output.log``` will store the outputs of the pipeline for debugging if needed.
-The ```-k``` flag tells snakemake that if there is an error, to keep going if with remaining independent jobs. 
+The ```-k``` flag tells snakemake that if there is an error, to keep going with remaining independent jobs. 
 Since this pipeline is parallelized, the ```-j``` flag denotes how many jobs to run at once. Thus, ```$NUMBER_OF_JOBS``` should be at least 1, and no more than the number of cores on your computer.
 
 **Using the example data:**
