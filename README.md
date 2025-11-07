@@ -76,7 +76,7 @@ Activate the conda environment:
 	a. the ```data``` folder which should include:
 		
 	* a folder with your alignments
-	* a folder named ```backbone``` with the annotated tree generated in (2) and converted to newick format in (4) in addition to the original backbone input tree before TreeSort was run on it
+	* a folder named ```backbone``` with the annotated **rooted** tree generated in (2) and converted to newick format in (4) in addition to the **rooted** backbone tree before TreeSort was run on it
     * a ```metadata.csv``` with the ancestral traits you want inferred by discrete trait analysis in [```rule traits```](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/traits.html)
     * a folder named ```config``` which includes a reference file in the subfolder ```ref```, a ```colors.tsv```, a ```lat_longs.tsv```, and an ```auspice_config.json```
 	* the ```strains_dates.csv``` generated in (3)
