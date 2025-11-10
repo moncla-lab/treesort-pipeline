@@ -43,7 +43,7 @@ def normalize_tree_taxa(tree):
 def build_source_leaf_map_from_tree_string(tree_path):
 	"""
 	Builds a comprehensive map of {node_label: leaf_set} from source tree,
-	handling both internal nodes (NODE_*) and leaf nodes.
+	handling both internal nodes (TS_NODE_*) and leaf nodes.
 	"""
 	print("--- Building source leaf map from tree string ---")
 	
@@ -77,7 +77,7 @@ def build_source_leaf_map_from_tree_string(tree_path):
 		print(f"Warning: Could not parse full tree: {e}")
 	
 	# Extract internal nodes using regex approach as backup
-	label_matches = list(re.finditer(r'\)(NODE_\d+)', tree_string))
+	label_matches = list(re.finditer(r'\)(TS_NODE_\d+)', tree_string))
 	
 	for match in label_matches:
 		node_label = match.group(1)
@@ -124,7 +124,7 @@ def get_labeled_canonical_tree(newick_path):
 	node_counter = 0
 	for node in tree.postorder_internal_node_iter():
 		if not node.label:
-			node.label = f"NODE_{node_counter:07d}"
+			node.label = f"TS_NODE_{node_counter:07d}"
 			node_counter += 1
 	
 	return tree
@@ -287,7 +287,7 @@ def main(args):
 		confidence = data.get("reassorted_confidence", {}).get("True", 0)
 		print(source_node_label,data,confidence)
 		
-		if args.debug and source_node_label.startswith("NODE"):
+		if args.debug and source_node_label.startswith("TS_NODE"):
 			print(f"\n--- Processing {source_node_label} (confidence: {confidence:.3f}) ---")
 		
 		if is_reassorted and float(confidence) >= float(CONFIDENCE_THRESHOLD):
