@@ -15,6 +15,7 @@
       "title": "Reassorted",
       "type": "categorical"
     },
+
     {
       "key": "segments",
       "title": "Segments",
@@ -22,9 +23,10 @@
     },
     {
       "key": "divergence",
-      "title": "Reassorted Segment Divergence",
+      "title": "Divergence",
       "type": "categorical"
     },
+
     {
       "key": "country",
       "title": "Country",
