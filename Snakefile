@@ -158,7 +158,7 @@ rule cladeset_map:
 	benchmark:
 		"results/benchmarks/cladeset_map/cladeset_map.tsv"
 	shell:
-		"python scripts/mapper.py --summary_json {input.node_data} --source_tree {input.source} --target_tree {input.target} --output_labeled_tree {output.export_tree} --output_node_data {output.node_data} --debug > {output.debug_path}"
+		"python scripts/mapper.py --support_threshold 0.95 --summary_json {input.node_data} --source_tree {input.source} --target_tree {input.target} --output_labeled_tree {output.export_tree} --output_node_data {output.node_data} --debug > {output.debug_path}"
 
 rule log:
 	message: "creating a log file of reassortment rates and segment info"
@@ -284,7 +284,6 @@ rule export:
 			--lat-longs {input.lat_long} \
 			--output {output.auspice_json}
 		"""
-
 rule aggregate_benchmarks:
 	message: "Aggregating all benchmark statistics"
 	input:
