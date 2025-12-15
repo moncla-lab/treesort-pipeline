@@ -1,0 +1,105 @@
+LOCUS       CY006016                1764 bp    cRNA    linear   VRL 14-MAY-2008
+DEFINITION  Influenza A virus (A/duck/Nanchang/1681/1992(H3N8)) segment 4,
+            complete sequence.
+ACCESSION   CY006016
+VERSION     CY006016.1
+KEYWORDS    .
+SOURCE      Influenza A virus (A/duck/Nanchang/1681/1992(H3N8))
+  ORGANISM  Influenza A virus (A/duck/Nanchang/1681/1992(H3N8))
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Insthoviricetes; Articulavirales;
+            Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus
+            influenzae.
+REFERENCE   1  (bases 1 to 1764)
+  AUTHORS   Obenauer,J.C., Denson,J., Mehta,P.K., Su,X., Mukatira,S.,
+            Finkelstein,D.B., Xu,X., Wang,J., Ma,J., Fan,Y., Rakestraw,K.M.,
+            Webster,R.G., Hoffmann,E., Krauss,S., Zheng,J., Zhang,Z. and
+            Naeve,C.W.
+  TITLE     Large-scale sequence analysis of avian influenza isolates
+  JOURNAL   Science 311 (5767), 1576-1580 (2006)
+   PUBMED   16439620
+REFERENCE   2  (bases 1 to 1764)
+  AUTHORS   Obenauer,J.C., Denson,J., Mehta,P.K., Su,X., Mukatira,S.,
+            Finkelstein,D.B., Xu,X., Wang,J., Ma,J., Fan,Y., Rakestraw,K.M.,
+            Webster,R.G., Hoffmann,E., Krauss,S., Zheng,J., Zhang,Z. and
+            Naeve,C.W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-NOV-2005) Hartwell Center for Bioinformatics &
+            Biotechnology, St. Jude Children's Research Hospital, 332 North
+            Lauderdale Str., Memphis, TN 38105, USA
+FEATURES             Location/Qualifiers
+     source          1..1764
+                     /organism="Influenza A virus
+                     (A/duck/Nanchang/1681/1992(H3N8))"
+                     /mol_type="viral cRNA"
+                     /strain="A/duck/Nanchang/1681/1992"
+                     /serotype="H3N8"
+                     /host="Avian"
+                     /db_xref="taxon:352557"
+                     /segment="4"
+                     /geo_loc_name="China: Nanchang"
+                     /collection_date="01-Dec-1992"
+     primer_bind     1..19
+                     /note="PCR amplification primer sequence"
+     gene            29..1729
+                     /gene="HA"
+     CDS             29..1729
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="ABB88183.1"
+                     /translation="MKTVIALSYIFCLAFGQDLSGNDNSTATLCLGHHAVPNGTIVKT
+                     ITDDQIEVTNATELVQSSSKGKICNNPHRILDGRDCTLVDALLGDPHCDVFQDETWDL
+                     FVERSNAFSNCYPYDVPDYASLRSLVASSGTLEFITEGFTWTGVTQNGGSNACKRGPA
+                     NGFFSRLNWLTKSGNAYPMLNVTMPNNDNFDKLYIWGVHHPSTNQEQTNLYVQASGRV
+                     TVSTRRSQQTIIPNIGSRPWVRGQSGRISIYWTIVKPGDVLVINSNGNLIAPRGYFKM
+                     RTGKSSIMRSDAPIDTCISECITPNGSIPNDKPFQNVNKITYGACPKYVKQNTLKLAT
+                     GMRNVPEKQTRGLFGAIAGFIENGWEGMIDGWYGFRHQNSEGTGQAADLKSTQAAIDQ
+                     INGKLNRVIEKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQ
+                     HTIDLTDSEMNKLFEKTRRQLRENAEDMGNGCFKIYHKCDNACIESIRNGTYDHDIYR
+                     DEALNNRFQIKGVELKSGYKDWILWISFAISCFLLCVVLLGFIMWACQRGNIRCNICI
+                     "
+     sig_peptide     29..76
+                     /gene="HA"
+     mat_peptide     77..1063
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1064..1726
+                     /gene="HA"
+                     /product="HA2"
+     primer_bind     complement(1745..1764)
+                     /note="PCR amplification primer sequence"
+ORIGIN      
+        1 agcaaaagca ggggataatt cattaatcat gaagaccgtt attgctttga gctacatttt
+       61 ctgtctggct ttcggtcagg acctttcagg gaatgacaac agtacagcaa cactgtgcct
+      121 gggacaccat gcagtaccga atgggacaat agtgaaaaca atcacagatg atcagattga
+      181 ggtgactaat gctaccgagc tagttcaaag ctcttcaaaa gggaaaatat gcaacaatcc
+      241 tcacaggatc cttgatggaa gggactgcac actagtagat gccctactgg gggatcctca
+      301 ttgcgatgtc tttcaagatg aaacatggga cctttttgtg gagcggagca atgctttcag
+      361 caattgttac ccgtacgatg taccagacta tgcatccctt cgatccctag ttgcatcatc
+      421 aggcacattg gagttcatca cggaaggttt cacttggaca ggagtaactc agaatggagg
+      481 gagcaatgct tgcaaaaggg gacctgctaa cggtttcttc agtagattga actggttgac
+      541 taagtcagga aacgcatatc caatgttgaa cgtgactatg ccaaacaatg acaattttga
+      601 caaactatac atctggggag ttcaccatcc gagcacgaat caagaacaaa ccaatctgta
+      661 tgttcaagcc tcaggaagag tcacagtctc taccaggcga agccaacaga ctataatccc
+      721 gaacattgga tctagaccct gggtaagggg ccagtctggc agaataagca tctattggac
+      781 aatagtcaaa cctggggacg tactagtaat caatagtaat ggaaacctaa tcgctcctcg
+      841 gggttatttc aagatgcgca ctgggaaaag ctcaataatg agatcagatg cacctattga
+      901 cacctgcatt tctgaatgca tcactccaaa tggaagcatc cccaatgaca agccctttca
+      961 aaatgtaaac aagatcacat acggagcatg tcccaaatat gtgaagcaga acaccctgaa
+     1021 gttggcaaca ggaatgcgga atgtacctga gaaacaaacc agaggcctat tcggtgcaat
+     1081 agcaggtttt atagaaaatg gatgggaagg gatgatagat ggttggtatg gcttcaggca
+     1141 tcaaaattcc gaaggtacag gacaagcagc agaccttaaa agcactcagg cagccattga
+     1201 ccagatcaat gggaaattga acagggtaat tgaaaagacg aatgagaaat tccatcaaat
+     1261 cgaaaaggaa ttctccgaag tagaagggag gattcaggac cttgagaaat acgttgaaga
+     1321 cacaaagata gatctctggt cttacaatgc ggagcttctt gttgccctag agaatcagca
+     1381 tacaattgat ttgactgatt cagaaatgaa caaattgttt gaaaagacca ggaggcaact
+     1441 gagggaaaat gccgaagaca tgggcaatgg ttgtttcaag atataccaca agtgtgacaa
+     1501 tgcttgcata gagtcaatta gaaacgggac ttatgaccat gatatatatc gagatgaggc
+     1561 attgaacaac cggttccaga tcaaaggtgt tgagctaaaa tctggataca aagactggat
+     1621 cctgtggatt tcctttgcca tatcatgctt tttgctttgt gttgttttgc tggggttcat
+     1681 tatgtgggcc tgccagagag gcaacattag gtgcaacatt tgcatttgag tatactaata
+     1741 attaaaaaca cccttgtttc tact
+//
+
