@@ -5086,6 +5086,7 @@
     "A/duck/Guangdong/455/2000|2000-01-01": {
       "aa_muts": {
         "HA": [
+          "S9P",
           "E74K",
           "S214G",
           "K236E",
@@ -10334,6 +10335,7 @@
           "H77Y",
           "F99I",
           "Q108*",
+          "*113R",
           "R116G",
           "S124N",
           "I132V",
@@ -21879,7 +21881,6 @@
           "N389D",
           "D397N",
           "D456N",
-          "M485V",
           "T508I"
         ]
       }
@@ -23511,6 +23512,7 @@
           "A439T",
           "S446P",
           "F451S",
+          "V485M",
           "R496W",
           "H502Y"
         ]
@@ -23882,13 +23884,13 @@
       "aa_muts": {
         "HA": [
           "E4K",
-          "P9S",
           "W12R",
           "S30P",
           "G55S",
           "E74K",
           "A83T",
           "R105C",
+          "*113R",
           "F126L",
           "R131G",
           "K143N",
@@ -23900,7 +23902,6 @@
           "D204N",
           "Y229H",
           "S263P",
-          "F270L",
           "D274H",
           "N288H",
           "R292*",
@@ -23937,6 +23938,7 @@
           "G414D",
           "Y448H",
           "T467V",
+          "V485M",
           "P500S",
           "V529M",
           "A544T"
@@ -24439,14 +24441,15 @@
     "NODE_0000948": {
       "aa_muts": {
         "HA": [
-          "M26V",
-          "*53R",
-          "I91L",
-          "G210S",
-          "L291F",
-          "I328V",
-          "G430D",
-          "N463D"
+          "N36D",
+          "K177E",
+          "P201S",
+          "E228K",
+          "R287*",
+          "P406S",
+          "S511P",
+          "S513P",
+          "A553E"
         ]
       }
     },
@@ -24456,12 +24459,11 @@
           "F11L",
           "S32G",
           "W35R",
-          "R113*",
           "R136G",
           "E220K",
+          "L270F",
           "N389D",
           "G469R",
-          "M485V",
           "F543L"
         ]
       }
@@ -24469,7 +24471,6 @@
     "NODE_0000950": {
       "aa_muts": {
         "HA": [
-          "P9S",
           "W12L",
           "P27L",
           "S30P",
@@ -24558,41 +24559,39 @@
       "aa_muts": {
         "HA": [
           "L3I",
-          "D36N",
+          "V26M",
           "*44R",
-          "I91F",
+          "R53*",
+          "L91F",
           "N95D",
           "G101*",
           "V132I",
           "R172L",
-          "E177K",
-          "S201P",
+          "S210G",
           "Y225H",
-          "K228E",
           "R254H",
-          "F270L",
-          "*287R",
+          "F291L",
           "L306F",
           "D312N",
+          "V328I",
           "T336A",
-          "S406P",
-          "P511S",
-          "P513S",
-          "A519T",
-          "E553A"
+          "D430G",
+          "D463N",
+          "A519T"
         ]
       }
     },
     "NODE_0000953": {
       "aa_muts": {
         "HA": [
-          "P9F",
+          "S9F",
           "G10V",
           "N63D",
           "S92P",
           "S98P",
           "K103E",
           "R105C",
+          "*113R",
           "T130I",
           "T155A",
           "K200Q",
@@ -24615,7 +24614,6 @@
           "E401K",
           "C437R",
           "Q476*",
-          "M485V",
           "K520E",
           "F543S"
         ]
@@ -24830,10 +24828,12 @@
     "NODE_0000966": {
       "aa_muts": {
         "HA": [
+          "S9P",
           "G75R",
           "K182E",
           "R371*",
           "D481N",
+          "V485M",
           "F543I"
         ]
       }
@@ -24847,7 +24847,6 @@
           "G84W",
           "G85R",
           "F99L",
-          "R113*",
           "R158W",
           "S174P",
           "Q205*",
@@ -25867,11 +25866,11 @@
         "HA": []
       },
       "aa_sequences": {
-        "HA": "YCLELHFLPGFWSEPSRE*QQYSNTMPGTSCSAEWDNSEDNHR*SD*GD*CY*AGSKLFNRENMQQSS*DP*WEGLHTNRCPAGGSSLRCISR*NMGSFCGAKQRFQQLLPLRCTRLCLPSIPSCFIRHTRVHH*RFHLDRSKPEWRERCLQKRTCQRLLQ*IELVD*VRKRISSVERDYAKQ*QF*QTIHLGCSPPEHKSRTDQPVCSGLRESHSLYQEKSTDYNPKYWI*TLGKGPVWQNKHLLDNSQTWGRTGNQ**WKSNCSSGLFQDADWEKLNNEIRCTY*NLHLRMHYSKWKHP**QALSKCKQDHIRSMSQICEAEYPKIGNRNAECT*ETNQRSIRCNSRVHRKWMGRNDRWLVWLQAPKLRRYRTSSRP*KHSSGH*PNQWEIEQGD*KDE*EVPSNRKGILRGRRKDSGS*EIR*RHKGRSLVLQCRTSCCPREPAYN*FD*FRDEQIV*KNQEATEGEC*RHGQWLLQDIPQM*QCLHRIN*KRDL*P*HIPR*GTEQPVPDQRC*AKIWIQRLDPVDFLCHIMLFALCCFVGVHYVGLPERQH*VQHLHLSILI"
+        "HA": "YCLELHFLSGFWSEPSRE*QQYSNTVPGTSCSAEWNNSEDNHR*SD*GD*CYRAGSKLFNRENMQQSS*DP*WEGLHTNRCPAGGSSLRCLSR*NMGSFCGAKQRFQQLLPL*CTRLCLPSIPSCFIRHTRVHH*RFHLDRSKPEWRERCLQKRTCQRLLQ*IELVD*VRKRISSVKRDYAKQ*QF*QTIHLGCSPPEHKPRTDQPVCSSLRESHSLYQEKSTDYNPEYWI*TLGKGPVWQNKHLLDNSQTWGRTGNQ**WKSNCSSGLLQDADWEKLNNEIRCTYRNLHFRMHYSKWKHP**QALSKCKQDHIRSMSQICEAEYPKVGNRNAECT*ETNQRSIRCNSRVHRKWMGRNDRWLVWLQAPKLRRYRTSSRP*KHSSGH*PNQWEIEQGD*KDE*EVPPNRKGILRGRRKDSGS*EIR*RHKDRSLVLQCRTSCCPREPAYN*FD*FRDEQIV*KDQEATEGEC*RHGQWLLQDIPQV*QCLHRIN*KRDL*P*HIPR*GTEQSVSDQRC*AKIWIQRLDPVDFLCHIMLFALCCFVGVHYVGLPARQH*VQHLHLSILI"
       }
     }
   },
   "reference": {
-    "HA": "YCLELHFLPGFWSEPSRE*QQYSNTMPGTSCSAEWDNSEDNHR*SD*GD*CY*AGSKLFNRENMQQSS*DP*WEGLHTNRCPAGGSSLRCISR*NMGSFCGAKQRFQQLLPLRCTRLCLPSIPSCFIRHTRVHH*RFHLDRSKPEWRERCLQKRTCQRLLQ*IELVD*VRKRISSVERDYAKQ*QF*QTIHLGCSPPEHKSRTDQPVCSGLRESHSLYQEKSTDYNPKYWI*TLGKGPVWQNKHLLDNSQTWGRTGNQ**WKSNCSSGLFQDADWEKLNNEIRCTY*NLHLRMHYSKWKHP**QALSKCKQDHIRSMSQICEAEYPKIGNRNAECT*ETNQRSIRCNSRVHRKWMGRNDRWLVWLQAPKLRRYRTSSRP*KHSSGH*PNQWEIEQGD*KDE*EVPSNRKGILRGRRKDSGS*EIR*RHKGRSLVLQCRTSCCPREPAYN*FD*FRDEQIV*KNQEATEGEC*RHGQWLLQDIPQM*QCLHRIN*KRDL*P*HIPR*GTEQPVPDQRC*AKIWIQRLDPVDFLCHIMLFALCCFVGVHYVGLPERQH*VQHLHLSILI"
+    "HA": "YCLELHFLSGFWSEPSRE*QQYSNTVPGTSCSAEWNNSEDNHR*SD*GD*CYRAGSKLFNRENMQQSS*DP*WEGLHTNRCPAGGSSLRCLSR*NMGSFCGAKQRFQQLLPL*CTRLCLPSIPSCFIRHTRVHH*RFHLDRSKPEWRERCLQKRTCQRLLQ*IELVD*VRKRISSVKRDYAKQ*QF*QTIHLGCSPPEHKPRTDQPVCSSLRESHSLYQEKSTDYNPEYWI*TLGKGPVWQNKHLLDNSQTWGRTGNQ**WKSNCSSGLLQDADWEKLNNEIRCTYRNLHFRMHYSKWKHP**QALSKCKQDHIRSMSQICEAEYPKVGNRNAECT*ETNQRSIRCNSRVHRKWMGRNDRWLVWLQAPKLRRYRTSSRP*KHSSGH*PNQWEIEQGD*KDE*EVPPNRKGILRGRRKDSGS*EIR*RHKDRSLVLQCRTSCCPREPAYN*FD*FRDEQIV*KDQEATEGEC*RHGQWLLQDIPQV*QCLHRIN*KRDL*P*HIPR*GTEQSVSDQRC*AKIWIQRLDPVDFLCHIMLFALCCFVGVHYVGLPARQH*VQHLHLSILI"
   }
 }

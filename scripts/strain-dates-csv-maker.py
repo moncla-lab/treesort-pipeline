@@ -41,8 +41,11 @@ def create_date_csv(aln_date_map):
         date_file.write("name, date\n")
         
         for strain, date_str in aln_date_map.items():
+        
+        	# change to 01: metadata["date"] = metadata["date"].str.replace('XX', '01')
 
             date = datetime.strptime(date_str, '%Y-%m-%d')
+            
             
             # convert to decimal year because thats what treetime uses
             dec_date = date.year + ((date.month - 1) * 30 + date.day) / 365.0
@@ -53,6 +56,7 @@ df = fasta_to_df(args.aln)
 
 df["strain"] = df["header"].str.split('|').str[0]
 df["date"] = df["header"].str.split('|').str[1]
+df["date"] = df["date"].str.replace('XX', '01')
 
 aln_date_map = dict(zip(df['header'].str.replace(">", ""), df['date']))
 

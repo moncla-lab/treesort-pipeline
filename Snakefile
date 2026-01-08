@@ -7,7 +7,8 @@ REPS = range(3)
 rule all:
 	input:
 		"results/summary/treesort_auspice/treesort.json",
-		"results/summary/log.csv"
+		"results/summary/log.csv",
+		"results/summary/traits/traits.json"
 	
 
 """Specify all input files here.  """
