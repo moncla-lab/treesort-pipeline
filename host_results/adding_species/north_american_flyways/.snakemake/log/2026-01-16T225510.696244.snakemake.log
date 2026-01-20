@@ -1,0 +1,50 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: Mac
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job       count
+------  -------
+all           1
+export        1
+total         2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Jan 16 22:55:10 2026]
+Job 1: Exporting data files for for auspice
+Reason: Missing output files: treesort.json
+RuleException:
+CalledProcessError in file "/Users/monclalab1/Documents/h3nx/h3nx_build/adding_species/north_american_flyways/Snakefile", line 37:
+Command 'set -euo pipefail;  
+		augur export v2 			--tree treesort.nwk 			--metadata meta.csv 			--node-data cladeset/node.json traits_treesort/traits.json cladeset/div_tree/nt_muts/nt-muts.json cladeset/div_tree/aa_muts/aa-muts.json			--auspice-config config/auspice_config_h3nx.json 			--include-root-sequence 			--colors config/colors_h3nx.tsv 			--lat-longs config/lat_longs_h3nx.tsv 			--output treesort.json' returned non-zero exit status 2.
+[Fri Jan 16 22:55:12 2026]
+Error in rule export:
+    message: None
+    jobid: 1
+    input: treesort.nwk, meta.csv, cladeset/node.json, traits_treesort/traits.json, cladeset/div_tree/nt_muts/nt-muts.json, cladeset/div_tree/aa_muts/aa-muts.json, config/auspice_config_h3nx.json, config/colors_h3nx.tsv, config/lat_longs_h3nx.tsv
+    output: treesort.json
+    shell:
+        
+		augur export v2 			--tree treesort.nwk 			--metadata meta.csv 			--node-data cladeset/node.json traits_treesort/traits.json cladeset/div_tree/nt_muts/nt-muts.json cladeset/div_tree/aa_muts/aa-muts.json			--auspice-config config/auspice_config_h3nx.json 			--include-root-sequence 			--colors config/colors_h3nx.tsv 			--lat-longs config/lat_longs_h3nx.tsv 			--output treesort.json
+		
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Fri Jan 16 22:55:12 2026]
+Error in rule export:
+    message: None
+    jobid: 1
+    input: treesort.nwk, meta.csv, cladeset/node.json, traits_treesort/traits.json, cladeset/div_tree/nt_muts/nt-muts.json, cladeset/div_tree/aa_muts/aa-muts.json, config/auspice_config_h3nx.json, config/colors_h3nx.tsv, config/lat_longs_h3nx.tsv
+    output: treesort.json
+    shell:
+        
+		augur export v2 			--tree treesort.nwk 			--metadata meta.csv 			--node-data cladeset/node.json traits_treesort/traits.json cladeset/div_tree/nt_muts/nt-muts.json cladeset/div_tree/aa_muts/aa-muts.json			--auspice-config config/auspice_config_h3nx.json 			--include-root-sequence 			--colors config/colors_h3nx.tsv 			--lat-longs config/lat_longs_h3nx.tsv 			--output treesort.json
+		
+        (command exited with non-zero exit code)
+Complete log(s): /Users/monclalab1/Documents/h3nx/h3nx_build/adding_species/north_american_flyways/.snakemake/log/2026-01-16T225510.696244.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

@@ -1,0 +1,25 @@
+Map from character to field name
+A:	Canada
+B:	Guatemala
+C:	Usa
+D:	?
+
+
+Substitution rate (mu): 17.030259
+
+Equilibrium frequencies (pi_i):
+  A: 0.2061
+  B: 0.097
+  C: 0.6969
+
+Symmetrized rates from j->i (W_ij):
+	A	B	C
+  A	0	0.1294	3.1277
+  B	0.1294	0	0.7128
+  C	3.1277	0.7128	0
+
+Actual rates from j->i (Q_ij):
+	A	B	C
+  A	0	0.0267	0.6446
+  B	0.0126	0	0.0692
+  C	2.1796	0.4967	0

@@ -1,0 +1,47 @@
+"""Here, define your wildcards. To include more subtypes or gene segments, simply
+add those to these lists, separated by commas"""
+
+rule all:
+	input:
+		"auspice/treesort.json"
+
+rule files:
+	params:
+		metadata = "meta.csv",
+		colors = "config/colors_h3nx.tsv",
+		lat_long = "config/lat_longs_h3nx.tsv",
+		auspice_config = "config/auspice_config_h3nx.json",
+		tree = "treesort.nwk",
+		cladeset = "cladeset/node.json",
+		traits = "traits_treesort/traits.json", 
+		anc = "cladeset/div_tree/nt_muts/nt-muts.json",
+		translate = "cladeset/div_tree/aa_muts/aa-muts.json"
+		
+files = rules.files.params
+
+"""This rule exports the results of the pipeline into JSON format, which is required
+for visualization in auspice. To make changes to the categories of metadata
+that are colored, or how the data is visualized, alter the auspice_config files"""
+rule export:
+	message: "Exporting data files for for auspice"
+	input:
+		tree = files.tree,
+		metadata = files.metadata,
+		node_data = [files.cladeset,files.traits,files.anc,files.translate],
+		auspice_config = files.auspice_config,
+		colors = files.colors,
+		lat_long = files.lat_long
+	output:
+		auspice_json = "auspice/treesort.json"
+	shell:
+		"""
+		augur export v2 \
+			--tree {input.tree} \
+			--metadata {input.metadata} \
+			--node-data {input.node_data}\
+			--auspice-config {input.auspice_config} \
+			--include-root-sequence \
+			--colors {input.colors} \
+			--lat-longs {input.lat_long} \
+			--output {output.auspice_json}
+		"""

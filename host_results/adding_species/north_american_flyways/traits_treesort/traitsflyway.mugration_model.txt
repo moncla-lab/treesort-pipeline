@@ -1,0 +1,33 @@
+Map from character to field name
+A:	atlantic_flyway
+B:	central_flyway
+C:	mississippi_flyway
+D:	pacific_flyway
+E:	unknown
+F:	?
+
+
+Substitution rate (mu): 27.341592
+
+Equilibrium frequencies (pi_i):
+  A: 0.1772
+  B: 0.2046
+  C: 0.1982
+  D: 0.2195
+  E: 0.2005
+
+Symmetrized rates from j->i (W_ij):
+	A	B	C	D	E
+  A	0	2.0312	2.6612	0.2936	0.3188
+  B	2.0312	0	3.9313	2.0507	0.1451
+  C	2.6612	3.9313	0	0.7286	0.3548
+  D	0.2936	2.0507	0.7286	0	0.1563
+  E	0.3188	0.1451	0.3548	0.1563	0
+
+Actual rates from j->i (Q_ij):
+	A	B	C	D	E
+  A	0	0.3599	0.4715	0.052	0.0565
+  B	0.4156	0	0.8045	0.4196	0.0297
+  C	0.5274	0.7791	0	0.1444	0.0703
+  D	0.0645	0.4502	0.1599	0	0.0343
+  E	0.0639	0.0291	0.0711	0.0313	0

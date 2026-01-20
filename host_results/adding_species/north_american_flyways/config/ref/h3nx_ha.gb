@@ -1,0 +1,96 @@
+LOCUS       CY180732                1732 bp    cRNA    linear   VRL 22-APR-2014
+DEFINITION  Influenza A virus (A/duck/Minnesota/54/1974(H3N8)) hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   CY180732
+VERSION     CY180732.1
+DBLINK      BioProject: PRJNA183620
+KEYWORDS    .
+SOURCE      Influenza A virus (A/duck/Minnesota/54/1974(H3N8))
+  ORGANISM  Influenza A virus (A/duck/Minnesota/54/1974(H3N8))
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Insthoviricetes; Articulavirales;
+            Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus
+            influenzae.
+REFERENCE   1  (bases 1 to 1732)
+  CONSRTM   The NIAID Influenza Genome Sequencing Consortium
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-MAR-2014) on behalf of JCVI/St Jude Children's
+            Research Laboratory and University of Wisconsin-Madison/NCBI,
+            National Center for Biotechnology Information, NIH, Bethesda, MD
+            20894, USA
+COMMENT     This work was supported by the National Institute of Allergy and
+            Infectious Diseases (NIAID), Genome Sequencing Centers for
+            Infectious Diseases (GSCID) program.
+FEATURES             Location/Qualifiers
+     source          1..1732
+                     /organism="Influenza A virus
+                     (A/duck/Minnesota/54/1974(H3N8))"
+                     /mol_type="viral cRNA"
+                     /strain="A/duck/Minnesota/54/1974"
+                     /serotype="H3N8"
+                     /host="duck"
+                     /db_xref="taxon:1445148"
+                     /segment="4"
+                     /geo_loc_name="USA: Minnesota"
+                     /collection_date="1974"
+     misc_feature    1..1732
+                     /db_xref="IRD:NIGSP_SSC_00413.HA"
+     gene            15..1715
+                     /gene="HA"
+     CDS             15..1715
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="AHN03929.1"
+                     /translation="MKTIIVLSCFFCLAFSQDLSENNNNTATLCLGHHAVPNGTIVKT
+                     ITDDQIEVTNATELVQSSSTGKICNNPHRILDGRDCTLIDALLGDPHCDVFQDETWDL
+                     YVERSSAFSNCYPYDVPDYASLRSLVASSGTLEFITEGFTWTGVTQNGGSGACKRGPS
+                     NGFFSRLNWLTKSGSAYPVLNVTMPNNDNFDKLYVWGVHHPSTNQEQTSLYVQASGRV
+                     TVSTRRSQQTIIPNIGSRPWVRGQSGRISIYWTIVKPGDILVINSNGNLIAPRGYFKM
+                     RTGRSSIMRSDAPIDTCISECITPNGSIPNDKPFQNVNKITYGACPKYIKQSTLKLAT
+                     GMRNVPEKQSRGLFGAIAGFIENGWEGMIDGWYGFRHQNSEGTGQAADLKSTQAAIDQ
+                     INGKLNRVIEKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQ
+                     HTIDLTDSEMNKLFEKTRRQLRENAEDMGNGCFKIYHKCDNACIESIRNGTYDHDIYR
+                     DEALNNRFQIKGVELKSGYKDWILWISFAISCFLLCVVLLGFIMWACQRGNIRCNICI
+                     "
+     sig_peptide     15..62
+                     /gene="HA"
+     mat_peptide     63..1049
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1050..1712
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 taattctatt aatcatgaag accattattg ttctaagctg ttttttctgt ctggctttca
+       61 gccaagatct ttcggagaac aacaacaaca ctgcaacact atgcttggga caccatgcag
+      121 taccaaatgg aacaatagtg aaaacaataa cggatgatca aattgaagtg actaatgcca
+      181 ctgaactggt tcagagctcc tcgacaggga aaatatgcaa caatcctcac agaattcttg
+      241 atggaagaga ctgcacacta atagatgctc tactagggga tcctcattgt gatgtattcc
+      301 aagatgaaac atgggacctt tatgtagagc gcagcagtgc tttcagcaac tgctacccat
+      361 atgatgtgcc agactatgca tctctcagat ctctagtggc ttcatcagga accctagaat
+      421 tcatcaccga aggctttacg tggacaggag tcacacaaaa tggggggagt ggtgcttgca
+      481 aaagagggcc ctctaatggt ttcttcagta gactgaattg gctgaccaaa tctgggagcg
+      541 cttatccagt gctgaacgtg actatgccga ataatgataa ctttgacaag ttgtacgtat
+      601 ggggagttca tcacccaagc acaaaccaag agcaaaccag cctgtatgtt caagcatcgg
+      661 gaagggtcac agtttcaact agaagaagcc agcaaaccat aattcctaat atcggatcca
+      721 ggccttgggt cagaggccaa tcagggagaa taagtatcta ctggacaata gtaaagccag
+      781 gagatatact ggtgatcaac agcaatggaa atctaattgc tcctcgaggc tactttaaga
+      841 tgcgcactgg gagaagctct ataatgagat cagatgcacc tattgacaca tgtatctctg
+      901 agtgtatcac tcctaacggg agcatcccca atgacaagcc ctttcagaat gtaaacaaaa
+      961 ttacttatgg agcatgtccc aaatatatca aacagagcac cctaaagttg gcaacgggga
+     1021 tgcggaatgt acctgagaaa cagtccaggg gtctgttcgg tgcaatagca gggttcatag
+     1081 aaaatggatg ggagggaatg atagacggtt ggtatggttt caggcatcag aactcagaag
+     1141 gtacaggaca agcagcagac cttaaaagca ctcaagccgc catcgaccag atcaatggga
+     1201 aattgaaccg agtaatcgag aaaacaaatg aaaagtttca tcagattgaa aaggaatttt
+     1261 ccgaagtgga agggagaatt caggaccttg agaaatatgt tgaagacact aaaatagatc
+     1321 tatggtctta caatgcggag cttcttgtgg ccctggaaaa ccagcataca attgatctga
+     1381 ctgattcaga aatgaacaaa ctatttgaga agacaaggag acaactgagg gagaatgctg
+     1441 aagatatggg taatggttgc ttcaaaatat accacaaatg tgacaacgct tgtatagagt
+     1501 caatcaggaa tgggacttat gatcatgaca tatacagaga tgaagcacta aacaatcgat
+     1561 ttcagatcaa gggtgtggag ctaaaatctg gatacaaaga ttggatccta tggatttcct
+     1621 ttgccatatc atgctttttg ctgtgtgttg ttctactggg attcatcatg tgggcctgcc
+     1681 agagaggcaa cattaggtgc aacatttgca tttgagtata ttaataatta aa
+//
+
