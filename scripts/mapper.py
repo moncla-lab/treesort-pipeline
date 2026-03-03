@@ -13,32 +13,15 @@ import argparse
 import random
 import re
 import sys
-
-def normalize_taxon_label(label):
-	"""
-	Normalizes taxon labels to consistent 'strain|date' format.
-	Handles both 'strain|date' and 'strain|date|date' formats.
-	"""
-	if not label:
-		return label
-	
-	# Remove quotes and whitespace
-	clean_label = label.strip().strip("'\"")
-	
-	# Split by pipe and take first two parts (strain|date)
-	parts = clean_label.split('|')
-	if len(parts) >= 2:
-		return f"{parts[0]}|{parts[1]}"
-	else:
-		return clean_label
-
-def normalize_tree_taxa(tree):
-	"""
-	Normalizes all taxon labels in a tree to consistent format.
-	"""
-	for leaf in tree.leaf_nodes():
-		if leaf.taxon and leaf.taxon.label:
-			leaf.taxon.label = normalize_taxon_label(leaf.taxon.label)
+from tree_utils import (
+	normalize_taxon_label,
+	normalize_tree_taxa,
+	load_tree,
+	label_internal_nodes,
+	build_leaf_map,
+	build_leaf_map_inverse,
+	ancestral_walk,
+)
 
 def build_source_leaf_map_from_tree_string(tree_path):
 	"""
@@ -115,36 +98,16 @@ def build_source_leaf_map_from_tree_string(tree_path):
 	return source_leaf_map
 
 def get_labeled_canonical_tree(newick_path):
-	"""
-	Parses the target newick tree and labels all unlabeled internal nodes.
-	"""
-	tree = dendropy.Tree.get(path=newick_path, schema="newick", preserve_underscores=True)
-	normalize_tree_taxa(tree)
-	
-	node_counter = 0
-	for node in tree.postorder_internal_node_iter():
-		if not node.label:
-			node.label = f"NODE_{node_counter:07d}"
-			node_counter += 1
-	
+	"""Parses the target newick tree and labels all unlabeled internal nodes."""
+	tree = load_tree(newick_path)
+	label_internal_nodes(tree)
 	return tree
 
 def build_target_leaf_map(target_tree):
-	"""
-	Builds efficient leaf mapping for target tree with both forward and inverse maps.
-	"""
-	target_leaf_map = {}
-	target_leaf_map_inv = {}
-	
-	for node in target_tree.preorder_node_iter():
-		node_label = node.label or (node.taxon and node.taxon.label)
-		if node_label:
-			leaf_set = frozenset(leaf.taxon.label for leaf in node.leaf_nodes() 
-							   if leaf.taxon and leaf.taxon.label)
-			target_leaf_map[node_label] = leaf_set
-			target_leaf_map_inv[leaf_set] = node_label
-	
-	return target_leaf_map, target_leaf_map_inv
+	"""Build forward and inverse leaf maps for target tree."""
+	forward = build_leaf_map(target_tree)
+	inverse = build_leaf_map_inverse(forward)
+	return forward, inverse
 
 def map_node_with_ancestral_walk(source_leaf_set, target_tree, target_leaf_map_inv, debug=False, node_label=""):
 	"""
@@ -187,9 +150,88 @@ def map_node_with_ancestral_walk(source_leaf_set, target_tree, target_leaf_map_i
 		
 		current_node = current_node.parent_node
 	
-	if debug: 
+	if debug:
 		print(f"  ✗ Ancestral walk failed for {node_label}")
 	return None
+
+def flatten_node_data(data_list):
+	"""
+	Flatten a list of node data dicts into one merged dict.
+	Uses '+' separator on divergence to indicate merged events.
+	"""
+	# Filter to only reassorted entries, or take last if none reassorted
+	reassorted = [d for d in data_list if d.get("reassorted") == "True"]
+	to_merge = reassorted if reassorted else data_list[-1:]
+
+	if len(to_merge) == 1:
+		return to_merge[0]
+
+	# Merge multiple reassorted entries
+	segments = set()
+	div_by_segment = {}  # {segment: [values]}
+	seg_confidences = {}
+	div_confidences = {}
+	div_entropies = {}
+
+	for d in to_merge:
+		# Collect segments
+		for s in d.get("segments", "").split(","):
+			if s.strip():
+				segments.add(s.strip())
+
+		# Parse divergences like "PB2(31), NA(93)" into {segment: [values]}
+		div_str = d.get("divergence", "")
+		if div_str:
+			for part in div_str.split(","):
+				part = part.strip()
+				if "(" in part and ")" in part:
+					seg = part[:part.index("(")].strip()
+					val = part[part.index("(")+1:part.index(")")].strip()
+					if seg not in div_by_segment:
+						div_by_segment[seg] = []
+					div_by_segment[seg].append(val)
+
+		# Merge segment confidences (take max)
+		for seg, conf in d.get("segments_confidence", {}).items():
+			if seg not in seg_confidences or conf > seg_confidences[seg]:
+				seg_confidences[seg] = conf
+
+		# Merge divergence confidences
+		for seg, dist_dict in d.get("divergence_confidence", {}).items():
+			if seg not in div_confidences:
+				div_confidences[seg] = {}
+			div_confidences[seg].update(dist_dict)
+
+		# Merge divergence entropies (take min = more certain)
+		for seg, ent in d.get("divergence_entropy", {}).items():
+			if seg not in div_entropies or ent < div_entropies[seg]:
+				div_entropies[seg] = ent
+
+	# Format divergence: same segment gets "SEG(val1 + val2)", different segments joined with ", "
+	div_parts = []
+	for seg in sorted(div_by_segment.keys()):
+		vals = div_by_segment[seg]
+		if len(vals) > 1:
+			div_parts.append(f"{seg}({' + '.join(vals)})")
+		else:
+			div_parts.append(f"{seg}({vals[0]})")
+
+	# Build merged result from first entry as template
+	result = to_merge[0].copy()
+	result["reassorted"] = "True"
+	result["segments"] = ", ".join(sorted(segments))
+	result["divergence"] = ", ".join(div_parts)
+	result["segments_confidence"] = seg_confidences
+	result["divergence_confidence"] = div_confidences
+	result["divergence_entropy"] = div_entropies
+
+	# Take max True confidence
+	max_true_conf = max(d.get("reassorted_confidence", {}).get("True", 0) for d in to_merge)
+	result["reassorted_confidence"] = {"True": max_true_conf, "False": 1 - max_true_conf}
+	result["reassorted_entropy"] = min(d.get("reassorted_entropy", 0) for d in to_merge)
+	result["segments_entropy"] = min(d.get("segments_entropy", 0) for d in to_merge)
+
+	return result
 
 def create_augur_node_data(mapped_summary_data):
 	"""
@@ -292,28 +334,54 @@ def main(args):
 		
 		if is_reassorted and float(confidence) >= float(CONFIDENCE_THRESHOLD):
 			high_confidence_count += 1
-		
-		if source_node_label in source_leaf_map:
-			source_leaf_set = source_leaf_map[source_node_label]
+
+		# Normalize lookup key: summary.json uses TS_NODE_X, tree uses NODE_X
+		lookup_key = source_node_label
+		if source_node_label.startswith("TS_NODE_"):
+			lookup_key = source_node_label[3:]  # Strip "TS_" prefix
+
+		if lookup_key in source_leaf_map:
+			source_leaf_set = source_leaf_map[lookup_key]
 			target_node_label = map_node_with_ancestral_walk(
-				source_leaf_set, target_tree, target_leaf_map_inv, 
+				source_leaf_set, target_tree, target_leaf_map_inv,
 				args.debug, source_node_label
 			)
-			
+
 			if target_node_label:
-				mapped_summary_data[target_node_label] = data
+				if target_node_label not in mapped_summary_data:
+					mapped_summary_data[target_node_label] = []
+				mapped_summary_data[target_node_label].append(data)
 				mapped_count += 1
 			elif args.debug:
 				print(f"  ✗ Failed to map {source_node_label}")
 		else:
 			if args.debug:
 				print(f"  ✗ {source_node_label} not found in source leaf map")
-	
+
+	# Flatten accumulated lists into single dicts
+	for target_node_label, data_list in mapped_summary_data.items():
+		mapped_summary_data[target_node_label] = flatten_node_data(data_list)
+
 	print(f"\nSUMMARY:")
 	print(f"  High confidence events in summary: {high_confidence_count}")
 	print(f"  Successfully mapped to target tree: {mapped_count}")
-#	  print(f"	Mapping success rate: {mapped_count/high_confidence_count*100:.1f}%")
-	
+
+	# Identify target nodes that received NO annotations
+	all_target_internal = [node.label for node in target_tree.preorder_node_iter()
+						   if node.label and 'NODE' in node.label]
+	annotated_targets = set(mapped_summary_data.keys())
+	unannotated_targets = [t for t in all_target_internal if t not in annotated_targets]
+
+	print(f"  Target internal nodes: {len(all_target_internal)}")
+	print(f"  Target nodes with annotations: {len(annotated_targets)}")
+	print(f"  Target nodes WITHOUT annotations: {len(unannotated_targets)}")
+
+	if args.debug and unannotated_targets:
+		print(f"\n--- Sample unannotated target nodes (first 5) ---")
+		for target_label in unannotated_targets[:5]:
+			target_leaves = target_leaf_map.get(target_label, set())
+			print(f"  {target_label}: {len(target_leaves)} leaves")
+
 	# Generate output files
 	print("--- Generating output files ---")
 	
