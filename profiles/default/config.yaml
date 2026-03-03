@@ -1,0 +1,11 @@
+# Default workflow profile
+jobs: 1000
+
+# Default resources for all rules
+default-resources:
+  mem_mb: 2000
+
+# Rule-specific resource overrides
+set-resources:
+  treesort:
+    mem_mb: 16000

@@ -8,8 +8,14 @@ rule all:
 	input:
 		"results/summary/treesort_auspice/treesort.json",
 		"results/summary/log.csv",
-		"results/summary/traits/traits.json"
-	
+		"results/summary/traits/traits.json",
+		"results/diagnostics/unmapped_targets.json",
+		"results/diagnostics/unannotated_nodes.json",
+		"results/diagnostics/auspice_validation.json",
+		"results/diagnostics/verify.done",
+		"results/benchmarks/all_benchmarks_detailed.csv",
+		"results/benchmarks/all_benchmarks_summary.csv"
+
 
 """Specify all input files here.  """
 rule files:
@@ -26,7 +32,7 @@ rule files:
 		colors = "EXAMPLE_DATA/config/colors_h3nx.tsv",
 		lat_long = "EXAMPLE_DATA/config/lat_longs_h3nx.tsv",
 		auspice_config = "EXAMPLE_DATA/config/auspice_config_h3nx.json"
-		
+
 
 files = rules.files.params
 
@@ -40,6 +46,8 @@ rule tree:
 		method = "iqtree"
 	shadow:
 		"minimal"
+	benchmark:
+		"results/benchmarks/tree/{rep}/{subtype}_{segment}.tsv"
 	shell:
 		"""
 		augur tree \
@@ -48,7 +56,7 @@ rule tree:
 			--method {params.method} \
 			--nthreads 1
 		"""
-		
+
 rule root:
 	message: "Inferring root"
 	input:
@@ -57,6 +65,8 @@ rule root:
 		dates = files.dates
 	output:
 		tree = "results/{rep}/trees_rooted/{subtype}_{segment}_rooted/rerooted.newick"
+	benchmark:
+		"results/benchmarks/root/{rep}/{subtype}_{segment}.tsv"
 	shell:
 		"""
 		treetime clock \
@@ -65,7 +75,7 @@ rule root:
 			--aln {input.alignment} \
 			--outdir "results/{wildcards.rep}/trees_rooted/{wildcards.subtype}_{wildcards.segment}_rooted"
 		"""
-	   
+
 rule treesort:
 	message: "running treesort to infer reassortment events"
 	input:
@@ -77,48 +87,54 @@ rule treesort:
 		)
 	output:
 		  tree = "results/{rep}/annotated.tre"
+	benchmark:
+		"results/benchmarks/treesort/{rep}.tsv"
 	shell:
 		"""
 		# Copy only what treesort needs
 		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/alignments
 		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/backbone
-		
+
 		# Copy FASTA files only (not logs)
 		cp EXAMPLE_DATA/alignments/*.fasta results/{wildcards.rep}/EXAMPLE_DATA/alignments/
-		
+
 		# Copy descriptor
 		cp {input.descriptor} results/{wildcards.rep}/
 
 		# Copy backbone tree
 		cp EXAMPLE_DATA/backbone/backbone.nwk results/{wildcards.rep}/EXAMPLE_DATA/backbone
-		
+
 		# Run treesort in isolated environment
 		cd results/{wildcards.rep}
 		treesort -i descriptor.csv -o annotated.tre --no-collapse
-		
+
 		# Copy result back and cleanup
 		rm -rf results/{wildcards.rep}/EXAMPLE_DATA results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
 		rm -rf results/{wildcards.rep}/treesort-descriptor-*/descriptor.csv.concatenated.fasta
 		"""
-		
+
 rule prep:
 	message: "converting annotated treesort tree into a newick to be read in by rule rea"
 	input:
 		tree = rules.treesort.output.tree
 	output:
 		outdir = "results/{rep}/output.nwk"
+	benchmark:
+		"results/benchmarks/prep/{rep}.tsv"
 	shell:
 		"python scripts/prep.py --tree {input.tree} --outdir {output.outdir}"
-		
+
 rule rea:
 	message: "creating a reassortment summary json for each tree"
 	input:
 		tree = rules.prep.output.outdir
 	output:
 		json = "results/{rep}/rea.json",
+	benchmark:
+		"results/benchmarks/rea/{rep}.tsv"
 	shell:
 		"python scripts/rea.py --tree {input.tree} --outdir {output.json}"
-		
+
 rule summary:
 	message: "creating a summary tree and node data with high confidence reassortments"
 	input:
@@ -128,6 +144,8 @@ rule summary:
 		nwk_tree = "results/summary/summary.nwk",
 		nexus_tree = "results/summary/summary.nexus",
 		node_data = "results/summary/summary.json"
+	benchmark:
+		"results/benchmarks/summary/summary.tsv"
 	shell:
 		"python scripts/summary.py --jsons {input.jsons} --backbone {input.backbone} --threshold 0.95 --summary_nwk {output.nwk_tree} --summary_nexus {output.nexus_tree} --node_data {output.node_data}"
 
@@ -142,6 +160,8 @@ rule cladeset_map:
 		export_tree = "results/summary/cladeset/treesort.nwk",
 		node_data = "results/summary/cladeset/node.json",
 		debug_path = "results/summary/cladeset/debug.txt"
+	benchmark:
+		"results/benchmarks/cladeset_map/cladeset_map.tsv"
 	shell:
 		"python scripts/mapper.py --support_threshold 0.95 --summary_json {input.node_data} --source_tree {input.source} --target_tree {input.target} --output_labeled_tree {output.export_tree} --output_node_data {output.node_data} --debug > {output.debug_path}"
 
@@ -154,6 +174,8 @@ rule log:
 		aln = files.backbone_aln
 	output:
 		log_csv = "results/summary/log.csv"
+	benchmark:
+		"results/benchmarks/log/log.tsv"
 	shell:
 		"python scripts/rea_rate.py --backbone {files.backbone} --trees {input.trees} --summary_tree {input.summary_tree} --backbone_aln {input.aln} --log_file {output.log_csv}"
 
@@ -166,6 +188,8 @@ rule ancestral:
 		node_data = "results/summary/cladeset/div_tree/nt_muts/nt-muts.json"
 	params:
 		inference = "joint"
+	benchmark:
+		"results/benchmarks/ancestral/ancestral.tsv"
 	shell:
 		"""
 		augur ancestral \
@@ -184,6 +208,8 @@ rule translate:
 		reference = files.reference
 	output:
 		node_data = "results/summary/cladeset/div_tree/aa_muts/aa-muts.json"
+	benchmark:
+		"results/benchmarks/translate/translate.tsv"
 	shell:
 		"""
 		augur translate \
@@ -202,6 +228,8 @@ rule traits_cladeset:
 		node_data = "results/summary/cladeset/traits/traits.json"
 	params:
 		columns = 'host country region subtype order'
+	benchmark:
+		"results/benchmarks/traits_cladeset/traits_cladeset.tsv"
 	shell:
 		"""
 		augur traits \
@@ -211,7 +239,7 @@ rule traits_cladeset:
 			--columns {params.columns} \
 			--confidence
 		"""
-		
+
 rule traits_treesort:
 	message: "Inferring ancestral traits for {params.columns!s}"
 	input:
@@ -221,6 +249,8 @@ rule traits_treesort:
 		node_data = "results/summary/traits/traits.json"
 	params:
 		columns = 'host country region subtype order'
+	benchmark:
+		"results/benchmarks/traits_treesort/traits_treesort.tsv"
 	shell:
 		"""
 		augur traits \
@@ -245,6 +275,8 @@ rule export:
 		lat_long = files.lat_long
 	output:
 		auspice_json = "results/summary/treesort_auspice/treesort.json"
+	benchmark:
+		"results/benchmarks/export/export.tsv"
 	shell:
 		"""
 		augur export v2 \
@@ -256,4 +288,99 @@ rule export:
 			--colors {input.colors} \
 			--lat-longs {input.lat_long} \
 			--output {output.auspice_json}
+		"""
+
+rule diagnose_unmapped_targets:
+	message: "Diagnosing unmapped target nodes"
+	input:
+		source = files.backbone_tree,
+		target = files.target_tree,
+		_cladeset_done = rules.cladeset_map.output.node_data
+	output:
+		json = "results/diagnostics/unmapped_targets.json"
+	threads: 1
+	resources:
+		mem_mb=200,
+		runtime=5
+	benchmark:
+		"results/benchmarks/diagnose_unmapped_targets/diagnose_unmapped_targets.tsv"
+	shell:
+		"python scripts/diagnose_unmapped_targets.py --source {input.source} --target {input.target} --output {output.json}"
+
+rule diagnose_unannotated:
+	message: "Diagnosing unannotated target nodes"
+	input:
+		target = files.target_tree,
+		node_data = rules.cladeset_map.output.node_data
+	output:
+		json = "results/diagnostics/unannotated_nodes.json"
+	threads: 1
+	resources:
+		mem_mb=200,
+		runtime=5
+	benchmark:
+		"results/benchmarks/diagnose_unannotated/diagnose_unannotated.tsv"
+	shell:
+		"python scripts/diagnose_unannotated.py --target {input.target} --node_data {input.node_data} --output {output.json}"
+
+rule validate_auspice_annotations:
+	message: "Validating reassortment annotations in Auspice export"
+	input:
+		auspice = rules.export.output.auspice_json,
+		unannotated = rules.diagnose_unannotated.output.json
+	output:
+		json = "results/diagnostics/auspice_validation.json"
+	threads: 1
+	resources:
+		mem_mb=200,
+		runtime=5
+	benchmark:
+		"results/benchmarks/validate_auspice/validate_auspice.tsv"
+	shell:
+		"python scripts/validate_auspice_annotations.py --auspice {input.auspice} --unannotated {input.unannotated} --output {output.json}"
+
+rule verify_diagnostics:
+	message: "Verifying diagnostic outputs"
+	input:
+		unmapped = rules.diagnose_unmapped_targets.output.json,
+		unannotated = rules.diagnose_unannotated.output.json,
+		auspice = rules.validate_auspice_annotations.output.json
+	output:
+		done = touch("results/diagnostics/verify.done")
+	shell:
+		"python scripts/verify_diagnostics.py"
+
+rule aggregate_benchmarks:
+	message: "Aggregating all benchmark statistics"
+	input:
+		tree = expand("results/benchmarks/tree/{rep}/{subtype}_{segment}.tsv",
+			rep=REPS, subtype=SUBTYPES, segment=SEGMENTS),
+		root = expand("results/benchmarks/root/{rep}/{subtype}_{segment}.tsv",
+			rep=REPS, subtype=SUBTYPES, segment=SEGMENTS),
+		treesort = expand("results/benchmarks/treesort/{rep}.tsv", rep=REPS),
+		prep = expand("results/benchmarks/prep/{rep}.tsv", rep=REPS),
+		rea = expand("results/benchmarks/rea/{rep}.tsv", rep=REPS),
+		summary = "results/benchmarks/summary/summary.tsv",
+		cladeset_map = "results/benchmarks/cladeset_map/cladeset_map.tsv",
+		log = "results/benchmarks/log/log.tsv",
+		ancestral = "results/benchmarks/ancestral/ancestral.tsv",
+		translate = "results/benchmarks/translate/translate.tsv",
+		traits_cladeset = "results/benchmarks/traits_cladeset/traits_cladeset.tsv",
+		traits_treesort = "results/benchmarks/traits_treesort/traits_treesort.tsv",
+		export = "results/benchmarks/export/export.tsv",
+		diagnose_unmapped = "results/benchmarks/diagnose_unmapped_targets/diagnose_unmapped_targets.tsv",
+		diagnose_unannotated = "results/benchmarks/diagnose_unannotated/diagnose_unannotated.tsv",
+		validate_auspice = "results/benchmarks/validate_auspice/validate_auspice.tsv"
+	output:
+		detailed = "results/benchmarks/all_benchmarks_detailed.csv",
+		summary = "results/benchmarks/all_benchmarks_summary.csv"
+	shell:
+		"""
+		python scripts/aggregate_benchmarks.py \
+			--benchmarks {input.tree} {input.root} {input.treesort} {input.prep} {input.rea} \
+				{input.summary} {input.cladeset_map} {input.log} {input.ancestral} \
+				{input.translate} {input.traits_cladeset} {input.traits_treesort} {input.export} \
+				{input.diagnose_unmapped} {input.diagnose_unannotated} {input.validate_auspice} \
+			--detailed {output.detailed} \
+			--summary {output.summary}
 		"""
