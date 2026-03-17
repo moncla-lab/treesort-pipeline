@@ -76,8 +76,8 @@ rule root:
 			--outdir "results/{wildcards.rep}/trees_rooted/{wildcards.subtype}_{wildcards.segment}_rooted"
 		"""
 
-rule treesort:
-	message: "running treesort to infer reassortment events"
+rule treesort_prep:
+	message: "copying files into per-rep working directory for treesort"
 	input:
 		descriptor = files.treesort_descriptor,
 		trees = expand(
@@ -86,31 +86,45 @@ rule treesort:
 			segment=SEGMENTS
 		)
 	output:
-		  tree = "results/{rep}/annotated.tre"
+		done = touch("results/{rep}/treesort_prep.done")
+	benchmark:
+		"results/benchmarks/treesort_prep/{rep}.tsv"
+	shell:
+		"""
+		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/alignments
+		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/backbone
+		cp EXAMPLE_DATA/alignments/*.fasta results/{wildcards.rep}/EXAMPLE_DATA/alignments/
+		cp {input.descriptor} results/{wildcards.rep}/
+		cp EXAMPLE_DATA/backbone/backbone.nwk results/{wildcards.rep}/EXAMPLE_DATA/backbone
+		"""
+
+rule treesort:
+	message: "running treesort to infer reassortment events"
+	input:
+		prep_done = rules.treesort_prep.output.done
+	output:
+		tree = "results/{rep}/annotated.tre"
 	benchmark:
 		"results/benchmarks/treesort/{rep}.tsv"
 	shell:
 		"""
-		# Copy only what treesort needs
-		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/alignments
-		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/backbone
-
-		# Copy FASTA files only (not logs)
-		cp EXAMPLE_DATA/alignments/*.fasta results/{wildcards.rep}/EXAMPLE_DATA/alignments/
-
-		# Copy descriptor
-		cp {input.descriptor} results/{wildcards.rep}/
-
-		# Copy backbone tree
-		cp EXAMPLE_DATA/backbone/backbone.nwk results/{wildcards.rep}/EXAMPLE_DATA/backbone
-
-		# Run treesort in isolated environment
 		cd results/{wildcards.rep}
-		treesort -i descriptor.csv -o annotated.tre --no-collapse
 
-		# Copy result back and cleanup
-		rm -rf results/{wildcards.rep}/EXAMPLE_DATA results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
-		rm -rf results/{wildcards.rep}/treesort-descriptor-*/descriptor.csv.concatenated.fasta
+		max_attempts=10
+		for attempt in $(seq 1 $max_attempts); do
+			treesort -i descriptor.csv -o annotated.tre --no-collapse && break
+			echo "treesort attempt $attempt failed, retrying..." >&2
+			rm -f annotated.tre
+		done
+
+		if [ ! -s annotated.tre ]; then
+			echo "treesort failed to produce non-empty annotated.tre after $max_attempts attempts" >&2
+			exit 1
+		fi
+
+		# Cleanup temporary copies
+		rm -rf EXAMPLE_DATA results/trees_rooted descriptor.csv
+		rm -rf treesort-descriptor-*/descriptor.csv.concatenated.fasta
 		"""
 
 rule prep:
@@ -357,6 +371,7 @@ rule aggregate_benchmarks:
 			rep=REPS, subtype=SUBTYPES, segment=SEGMENTS),
 		root = expand("results/benchmarks/root/{rep}/{subtype}_{segment}.tsv",
 			rep=REPS, subtype=SUBTYPES, segment=SEGMENTS),
+		treesort_prep = expand("results/benchmarks/treesort_prep/{rep}.tsv", rep=REPS),
 		treesort = expand("results/benchmarks/treesort/{rep}.tsv", rep=REPS),
 		prep = expand("results/benchmarks/prep/{rep}.tsv", rep=REPS),
 		rea = expand("results/benchmarks/rea/{rep}.tsv", rep=REPS),
@@ -377,7 +392,7 @@ rule aggregate_benchmarks:
 	shell:
 		"""
 		python scripts/aggregate_benchmarks.py \
-			--benchmarks {input.tree} {input.root} {input.treesort} {input.prep} {input.rea} \
+			--benchmarks {input.tree} {input.root} {input.treesort_prep} {input.treesort} {input.prep} {input.rea} \
 				{input.summary} {input.cladeset_map} {input.log} {input.ancestral} \
 				{input.translate} {input.traits_cladeset} {input.traits_treesort} {input.export} \
 				{input.diagnose_unmapped} {input.diagnose_unannotated} {input.validate_auspice} \
