@@ -44,6 +44,17 @@ Activate the conda environment:
 
    			conda activate treesort-pipeline
 
+## Recommendation
+
+When increasing the number of REPS and working with more sequences, a large amount of memory can be allocated and released in short periods of time. Overall system stability seems to improve when using jemalloc in the terminal window you run your pipeline. You can install it with:
+
+			sudo apt-get update
+			sudo apt-get install libjemalloc-dev
+
+And enable it in your terminal window before running the pipeline with:
+
+			export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+
 
 ## Prerequisites 
 
