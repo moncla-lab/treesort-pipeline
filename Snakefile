@@ -2,7 +2,7 @@
 add those to these lists, separated by commas"""
 SUBTYPES = ["h3nx"]
 SEGMENTS = ["pb2","pb1","na","np","pa","ns","mp"]
-REPS = range(3)
+REPS = range(1000)
 
 rule all:
 	input:
@@ -15,90 +15,181 @@ rule all:
 rule files:
 	params:
 		backbone = "ha",
-		aln = "EXAMPLE_DATA/alignments/{subtype}_{segment}.fasta",
-		dates = "EXAMPLE_DATA/strain_dates.csv",
+		aln = "data/alignments/{subtype}_{segment}.fasta",
+		dates = "data/strain_dates.csv",
 		treesort_descriptor = "descriptor.csv",
-		backbone_tree = "EXAMPLE_DATA/backbone/backbone.nwk",
-		target_tree = "EXAMPLE_DATA/backbone/original.nwk",
-		backbone_aln = "EXAMPLE_DATA/alignments/h3nx_ha.fasta",
-		metadata = "EXAMPLE_DATA/metadata.csv",
-		reference = "EXAMPLE_DATA/config/ref/h3nx_ha.gb",
-		colors = "EXAMPLE_DATA/config/colors_h3nx.tsv",
-		lat_long = "EXAMPLE_DATA/config/lat_longs_h3nx.tsv",
-		auspice_config = "EXAMPLE_DATA/config/auspice_config_h3nx.json"
+		backbone_tree = "data/backbone/backbone.nwk",
+		target_tree = "data/backbone/original.nwk",
+		backbone_aln = "data/alignments/h3nx_ha.fasta",
+		metadata = "data/metadata.csv",
+		reference = "data/config/ref/h3nx_ha.gb",
+		colors = "data/config/colors_h3nx.tsv",
+		lat_long = "data/config/lat_longs_h3nx.tsv",
+		auspice_config = "data/config/auspice_config_h3nx.json"
 		
 
 files = rules.files.params
 
 rule tree:
 	message: "Building tree"
+	resources:
+		mem_mb = 3000
+	shadow: "shallow"
 	input:
 		alignment = files.aln
 	output:
 		tree = "results/{rep}/trees_unrooted/{subtype}_{segment}.nwk"
+	threads: 1
 	params:
 		method = "iqtree"
-	shadow:
-		"minimal"
 	shell:
 		"""
+		#Add some random sleeping so we don't overwhelm RAM and storage
+		sleep $[ ( $RANDOM % 2 ) + 1 ]s
+		
+		#Isolation of input
+		cp {input.alignment} temp_align.fasta
+		
+		# Force RAM shadow directory use
+		export TMPDIR=$(pwd)
+		export TEMP=$(pwd)
+		export TMP=$(pwd)
+		
+		ulimit -s unlimited
+		export MALLOC_TRIM_THRESHOLD_=-1
+		export OMP_NUM_THREADS={threads}
+
+		mkdir -p $(dirname {output.tree})
+
 		augur tree \
-			--alignment {input.alignment} \
+			--alignment temp_align.fasta \
 			--output {output.tree} \
 			--method {params.method} \
-			--nthreads 1
+			--nthreads {threads}
+		
+		#Cooldown
+		sleep $[ ( $RANDOM % 2 ) + 1 ]s
+
 		"""
 		
 rule root:
 	message: "Inferring root"
+	resources:
+		mem_mb = 3000
+	threads: 1
 	input:
 		tree = rules.tree.output.tree,
 		alignment = files.aln,
 		dates = files.dates
 	output:
 		tree = "results/{rep}/trees_rooted/{subtype}_{segment}_rooted/rerooted.newick"
+	shadow: "shallow"
 	shell:
 		"""
+		#Add some random sleeping so we don't overwhelm RAM and storage
+		sleep $[ ( $RANDOM % 2 ) + 1 ]s
+		
+		# Stabilize things
+		ulimit -s unlimited
+		ulimit -l 100000000
+		export MALLOC_TRIM_THRESHOLD_=-1
+		
+		# Force RAM shadow directory use
+		export TMPDIR=$(pwd)
+		export TEMP=$(pwd)
+		export TMP=$(pwd)
+		
+		mkdir -p $(dirname {output.tree})
+
 		treetime clock \
 			--tree {input.tree} \
 			--dates {input.dates} \
 			--aln {input.alignment} \
-			--outdir "results/{wildcards.rep}/trees_rooted/{wildcards.subtype}_{wildcards.segment}_rooted"
+			--outdir $(dirname {output.tree})
+		
+		#Cooldown
+		sleep $[ ( $RANDOM % 2 ) + 1 ]s
+
 		"""
 	   
 rule treesort:
-	message: "running treesort to infer reassortment events"
+	message: "Running treesort for rep {wildcards.rep}"
+	threads: 4
+	retries: 5
+	
+	#Throttle how many of these rules can run at once.
+	resources:
+		treesort_limit = 1,
+		mem_mb = 30000
 	input:
 		descriptor = files.treesort_descriptor,
+		backbone_tree = files.backbone_tree,
 		trees = expand(
 			"results/{{rep}}/trees_rooted/{subtype}_{segment}_rooted/rerooted.newick",
 			subtype=SUBTYPES,
 			segment=SEGMENTS
-		)
+			)
 	output:
 		  tree = "results/{rep}/annotated.tre"
-	shell:
-		"""
-		# Copy only what treesort needs
-		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/alignments
-		mkdir -p results/{wildcards.rep}/EXAMPLE_DATA/backbone
+	log:
+		"results/{rep}/treesort.log"
+	shadow: "shallow"
+	shell:	
+		"""		
+		#Add some random sleeping so we don't overwhelm RAM and storage
+		sleep $[ ( $RANDOM % 2 ) + 1 ]s
 		
-		# Copy FASTA files only (not logs)
-		cp EXAMPLE_DATA/alignments/*.fasta results/{wildcards.rep}/EXAMPLE_DATA/alignments/
+		# Increase stack and memory size for good measure bc likely using high threads
+		ulimit -c 0
+		ulimit -s unlimited
+		ulimit -l 100000000
 		
-		# Copy descriptor
-		cp {input.descriptor} results/{wildcards.rep}/
+		# Attempt to prevent high core systems from creating memory allocation issues
+		export MALLOC_ARENA_MAX=1
+		export MALLOC_TRIM_THRESHOLD_=-1		
+		#export OMP_NUM_THREADS={threads}
+		#export MKL_NUM_THREADS={threads}
+		#export OPENBLAS_NUM_THREADS={threads}
+		#export VECLIB_MAXIMUM_THREADS={threads}
+		#export NUMEXPR_NUM_THREADS={threads}
+		
+		# Force RAM shadow directory use
+		export TMPDIR=$(pwd)
+		export TEMP=$(pwd)
+		export TMP=$(pwd)
 
-		# Copy backbone tree
-		cp EXAMPLE_DATA/backbone/backbone.nwk results/{wildcards.rep}/EXAMPLE_DATA/backbone
+		# Create temp dir structure this rule expects inside the RAM backed shadow dir
+		mkdir -p data/ha
 		
-		# Run treesort in isolated environment
-		cd results/{wildcards.rep}
-		treesort -i descriptor.csv -o annotated.tre --no-collapse
+		# Symlink from expected location of backbone to where it is actually located
+		ln -sf ../../{input.backbone_tree} data/ha/output.nwk
 		
-		# Copy result back and cleanup
-		rm -rf results/{wildcards.rep}/EXAMPLE_DATA results/{wildcards.rep}/results/trees_rooted results/{wildcards.rep}/descriptor.csv
-		rm -rf results/{wildcards.rep}/treesort-descriptor-*/descriptor.csv.concatenated.fasta
+		# Recreate expected nested tree structure since tempfs is a flat dir
+		for tree_path in {input.trees}; do
+		FILE_PATH=$(echo "$tree_path" | cut -d'/' -f3-)
+		DIR_NAME=$(dirname "$FILE_PATH")
+		mkdir -p "$DIR_NAME"
+		#Link file on nv storage to this RAM backed dir
+		ln -sf "../../$tree_path" "$FILE_PATH"
+		done
+		
+		#Create output in shadow directory
+		mkdir -p $(dirname {output.tree})
+
+		# Run treesort directly using symlink to root dir
+		treesort -i {input.descriptor} -o annotated.tre --no-collapse || true
+		
+		#Cooldown
+		sleep $[ ( $RANDOM % 2 ) + 1 ]s
+		
+		if [ -s "annotated.tre" ]; then
+			echo "Treesort output detected. Ignoring potential exit code 139." >> {log}
+			mv annotated.tre $(dirname {output.tree})/
+		else
+			echo "Treesort failed: Output file missing or empty." >> {log}
+			exit 1
+		fi
+
 		"""
 		
 rule prep:
@@ -120,16 +211,33 @@ rule rea:
 		"python scripts/rea.py --tree {input.tree} --outdir {output.json}"
 		
 rule summary:
-	message: "creating a summary tree and node data with high confidence reassortments"
+	message: "creating a summary tree and node data with replicates"
 	input:
 		jsons = expand("results/{rep}/rea.json", rep=REPS),
 		backbone = files.backbone_tree
 	output:
 		nwk_tree = "results/summary/summary.nwk",
 		nexus_tree = "results/summary/summary.nexus",
-		node_data = "results/summary/summary.json"
-	shell:
-		"python scripts/summary.py --jsons {input.jsons} --backbone {input.backbone} --threshold 0.95 --summary_nwk {output.nwk_tree} --summary_nexus {output.nexus_tree} --node_data {output.node_data}"
+		node_data = "results/summary/summary.json",
+		manifest = "results/summary/input_manifest.txt"
+	resources:
+		mem_mb = 64000
+	run:
+		#Write the too long file list to text file
+		with open(output.manifest, 'w') as f:
+			for json_path in input.jsons:
+				f.write(json_path + "\n")
+		shell(
+			"""
+			sleep $[ ( $RANDOM % 10 ) + 1 ]s
+			
+			ulimit -n 65000
+			export MALLOC_ARENA_MAX=1
+			
+			python scripts/summary.py --jsons {output.manifest} --backbone {input.backbone} --threshold 0.95 --summary_nwk {output.nwk_tree} \
+			--summary_nexus {output.nexus_tree} --node_data {output.node_data}
+			"""
+		)
 
 # stephen shank wrote mapper.py
 rule cladeset_map:
@@ -155,7 +263,10 @@ rule log:
 	output:
 		log_csv = "results/summary/log.csv"
 	shell:
-		"python scripts/rea_rate.py --backbone {files.backbone} --trees {input.trees} --summary_tree {input.summary_tree} --backbone_aln {input.aln} --log_file {output.log_csv}"
+		"""
+		ulimit -n 65536
+		python scripts/rea_rate.py --backbone {files.backbone} --trees {input.trees} --summary_tree {input.summary_tree} --backbone_aln {input.aln} --log_file {output.log_csv}
+		"""
 
 rule ancestral:
 	message: "Reconstructing ancestral sequences and mutations"
@@ -166,6 +277,7 @@ rule ancestral:
 		node_data = "results/summary/cladeset/div_tree/nt_muts/nt-muts.json"
 	params:
 		inference = "joint"
+	shadow: "minimal"
 	shell:
 		"""
 		augur ancestral \
@@ -202,6 +314,7 @@ rule traits_cladeset:
 		node_data = "results/summary/cladeset/traits/traits.json"
 	params:
 		columns = 'host country region subtype order'
+	shadow: "minimal"
 	shell:
 		"""
 		augur traits \
@@ -221,6 +334,7 @@ rule traits_treesort:
 		node_data = "results/summary/traits/traits.json"
 	params:
 		columns = 'host country region subtype order'
+	shadow: "minimal"
 	shell:
 		"""
 		augur traits \
@@ -234,8 +348,9 @@ rule traits_treesort:
 """This rule exports the results of the pipeline into JSON format, which is required
 for visualization in auspice. To make changes to the categories of metadata
 that are colored, or how the data is visualized, alter the auspice_config files"""
+
 rule export:
-	message: "Exporting data files for for auspice"
+	message: "Exporting data files for auspice"
 	input:
 		tree = rules.cladeset_map.output.export_tree,
 		metadata = files.metadata,
