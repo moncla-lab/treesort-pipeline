@@ -116,11 +116,14 @@ And enable it in your terminal window before running the pipeline with:
 
 **3. Run the pipeline:**
 
-			date > clock.txt; snakemake -k -j $NUMBER-OF-JOBS all >> output.log; date >> clock.txt
+			date > clock.txt; snakemake -k --cores 184 --jobs 120 --restart-times 3 --resources treesort_limit=24 --resources mem_mb=800000 --shadow-prefix /dev/shm --forceall >> output.log; date >> clock.txt
 	
 Here, ```clock.txt``` records compute time. The ```output.log``` will store the outputs of the pipeline for debugging if needed.
 The ```-k``` flag tells snakemake that if there is an error, to keep going with remaining independent jobs. 
-Since this pipeline is parallelized, the ```-j``` flag denotes how many jobs to run at once. Thus, ```$NUMBER_OF_JOBS``` should be at least 1, and no more than the number of cores on your computer.
+Since this pipeline is parallelized, the ```--jobs``` flag denotes the max number of jobs to run at once and ```--cores``` attempts to limit core usage based on the number of jobs being run and the number of cores each running job calls for. The resources ```treesort_limit``` and ```mem_mb``` attempt to keep memory usage in check as well as the number of concurrent treesort rules which have a longer runtime and are more memory intensive based on evaluation with test data. ```--restart-times``` sets a global number of restart attempts for failed rules. ```--shadow-prefix``` tells Snakemake where to put working folders for rules that use shadow, so in this case the standard shared memory location in Linux that is RAM backed and mouned with tmpfs.
+
+NOTE:
+In this example ```--cores```, ```--jobs```, and the set ```--resources``` were found on a test machine running a 96c/192t AMD Threadripper 79995WX and 1TB of RAM. If running on a machine with fewer resources these will have to be scaled down significantly. A Snakefile for benchmarking is a work in progress to allow profiling resource usage for each rule against 1-3 ```REPS```. This should be useful in finding optimal resource settings for your hardware. 
 
 **Using the example data:**
 
