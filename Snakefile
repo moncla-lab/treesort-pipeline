@@ -69,7 +69,6 @@ rule tree:
 		
 		#Cooldown
 		sleep $[ ( $RANDOM % 2 ) + 1 ]s
-
 		"""
 		
 rule root:
@@ -109,7 +108,6 @@ rule root:
 		
 		#Cooldown
 		sleep $[ ( $RANDOM % 2 ) + 1 ]s
-
 		"""
 	   
 rule treesort:
@@ -189,7 +187,6 @@ rule treesort:
 			echo "Treesort failed: Output file missing or empty." >> {log}
 			exit 1
 		fi
-
 		"""
 		
 rule prep:
