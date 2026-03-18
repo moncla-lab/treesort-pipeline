@@ -7,7 +7,8 @@ import random
 from collections import defaultdict, Counter
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--jsons', nargs='+', required=True, help='list of JSON files from different reps')
+# This argument now accepts a single file path (the manifest), not a list of strings
+parser.add_argument('--jsons', type=str, required=True, help='path to manifest file with list of jsons')
 parser.add_argument('--backbone', type=str, required=True, help='backbone tree to put reassortments back on')
 parser.add_argument('--threshold', type=float, default=0.95, help='only annotating reassortment events with a confidence above this threshold')
 parser.add_argument('--summary_nwk', type=str, required=True, help='summary nwk tree')
@@ -16,6 +17,12 @@ parser.add_argument('--node_data', type=str, required=True, help='node data for 
 
 
 args = parser.parse_args()
+
+# args.jsons now goes to manifest file
+with open(args.jsons, 'r') as f:
+    # Create a list, stripping newlines and empty lines
+    json_file_list = [line.strip() for line in f if line.strip()]
+
 
 def summary_json(jsons, threshold, node_data):
 
@@ -33,7 +40,9 @@ def summary_json(jsons, threshold, node_data):
 			
 		return H
 	
-	n_jsons = len(args.jsons)
+
+    #Used to be n_jsons = len(args.jsons)
+	n_jsons = len(jsons) 
 	
 	node_annotations_summary = defaultdict(lambda: {
 		'reassorted': 0,
@@ -172,5 +181,6 @@ def summary_tree(summary_json, backbone, nwk_path, nexus_path):
 	tree.write(path=nwk_path, schema="newick", suppress_annotations = False)
 	tree.write(path=nexus_path, schema="nexus", suppress_annotations = False)
 
-summary_json(args.jsons, args.threshold, args.node_data)
+# We now pass 'json_file_list' (the list of 1000 paths) instead of args.jsons
+summary_json(json_file_list, args.threshold, args.node_data)
 summary_tree(args.node_data, args.backbone, args.summary_nwk, args.summary_nexus)
