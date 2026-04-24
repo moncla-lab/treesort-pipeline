@@ -3,7 +3,8 @@ add those to these lists, separated by commas"""
 
 rule all:
 	input:
-		"auspice/treesort.json"
+		"auspice/treesort.json",
+		"traits_summary/traits.json"
 
 rule files:
 	params:
@@ -11,13 +12,52 @@ rule files:
 		colors = "config/colors_h3nx.tsv",
 		lat_long = "config/lat_longs_h3nx.tsv",
 		auspice_config = "config/auspice_config_h3nx.json",
-		tree = "treesort.nwk",
+		treesort_tree = "summary.nwk",
+		cladeset_tree = "treesort.nwk",
 		cladeset = "cladeset/node.json",
-		traits = "traits_treesort/traits.json", 
 		anc = "cladeset/div_tree/nt_muts/nt-muts.json",
 		translate = "cladeset/div_tree/aa_muts/aa-muts.json"
 		
 files = rules.files.params
+
+
+rule traits_cladeset:
+	message: "Inferring ancestral traits for {params.columns!s}"
+	input:
+		tree = files.cladeset_tree,
+		metadata = files.metadata
+	output:
+		node_data = "traits_cladeset/traits.json"
+	params:
+		columns = 'host country subtype broad order flyway'
+	shell:
+		"""
+		augur traits \
+			--tree {input.tree} \
+			--metadata {input.metadata} \
+			--output {output.node_data} \
+			--columns {params.columns} \
+			--confidence
+		"""
+		
+rule traits_treesort:
+	message: "Inferring ancestral traits for {params.columns!s}"
+	input:
+		tree = files.treesort_tree,
+		metadata = files.metadata
+	output:
+		node_data = "traits_summary/traits.json"
+	params:
+		columns = 'host country subtype broad order flyway'
+	shell:
+		"""
+		augur traits \
+			--tree {input.tree} \
+			--metadata {input.metadata} \
+			--output {output.node_data} \
+			--columns {params.columns} \
+			--confidence
+		"""
 
 """This rule exports the results of the pipeline into JSON format, which is required
 for visualization in auspice. To make changes to the categories of metadata
@@ -25,9 +65,9 @@ that are colored, or how the data is visualized, alter the auspice_config files"
 rule export:
 	message: "Exporting data files for for auspice"
 	input:
-		tree = files.tree,
+		tree = files.cladeset_tree,
 		metadata = files.metadata,
-		node_data = [files.cladeset,files.traits,files.anc,files.translate],
+		node_data = [rules.traits_cladeset.output.node_data, files.cladeset, files.anc, files.translate],
 		auspice_config = files.auspice_config,
 		colors = files.colors,
 		lat_long = files.lat_long

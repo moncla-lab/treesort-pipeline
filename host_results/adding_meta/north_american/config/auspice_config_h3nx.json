@@ -36,6 +36,11 @@
       "type": "categorical"
     },
     {
+      "key": "broad",
+      "title": "Species",
+      "type": "categorical"
+    },
+    {
       "key": "flyway",
       "title": "Flyway",
       "type": "categorical"
